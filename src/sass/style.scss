@@ -5,8 +5,12 @@ $theme-colors: (
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
+// Font styles
+@import "typography";
+
 body {
     padding-top:56px;
+    font-family: "IBMPlexSans";
 }
 .footer {
     margin-top:3rem;

@@ -48,6 +48,11 @@ function js() {
         .pipe(gulp.dest('site/js'));
 }
 
+function fonts() {
+    return gulp.src('src/fonts/*')
+      .pipe(gulp.dest('site/fonts'));
+}
+
 function serve() {
     browserSync.init({
         open: true,
@@ -77,6 +82,7 @@ function del() {
 exports.css = css;
 exports.html = html;
 exports.js = js;
+exports.fonts = fonts;
 exports.del = del;
-exports.serve = gulp.parallel(html, css, js, watchFiles, serve);
-exports.default = gulp.series(del, html, css, js);
+exports.serve = gulp.parallel(html, css, js, fonts, watchFiles, serve);
+exports.default = gulp.series(del, html, css, js, fonts);
