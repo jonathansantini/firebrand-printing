@@ -1,20 +1,10 @@
-$theme-colors: (
-    "primary": blue,
-    "dark": #000000
-);
+// Font styles
+@import "fonts";
+@import "typography";
+
+@import "variables";
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
-// Font styles
-@import "typography";
+@import "global";
 
-body {
-    padding-top:56px;
-    font-family: "IBMPlexSans";
-}
-.footer {
-    margin-top:3rem;
-}
-.navbar {
-    border-bottom:1px solid #eee;
-}

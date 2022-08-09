@@ -53,6 +53,11 @@ function fonts() {
       .pipe(gulp.dest('site/fonts'));
 }
 
+function icons() {
+    return gulp.src('src/icons/*')
+      .pipe(gulp.dest('site/icons'));
+}
+
 function serve() {
     browserSync.init({
         open: true,
@@ -83,6 +88,7 @@ exports.css = css;
 exports.html = html;
 exports.js = js;
 exports.fonts = fonts;
+exports.icons = icons;
 exports.del = del;
-exports.serve = gulp.parallel(html, css, js, fonts, watchFiles, serve);
-exports.default = gulp.series(del, html, css, js, fonts);
+exports.serve = gulp.parallel(html, css, js, fonts, icons, watchFiles, serve);
+exports.default = gulp.series(del, html, css, js, fonts, icons);
