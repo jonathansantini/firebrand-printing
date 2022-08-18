@@ -58,6 +58,11 @@ function icons() {
       .pipe(gulp.dest('site/icons'));
 }
 
+function img() {
+    return gulp.src('src/img/*')
+      .pipe(gulp.dest('site/img'));
+}
+
 function serve() {
     browserSync.init({
         open: true,
@@ -87,8 +92,9 @@ function del() {
 exports.css = css;
 exports.html = html;
 exports.js = js;
+exports.img = img;
 exports.fonts = fonts;
 exports.icons = icons;
 exports.del = del;
-exports.serve = gulp.parallel(html, css, js, fonts, icons, watchFiles, serve);
-exports.default = gulp.series(del, html, css, js, fonts, icons);
+exports.serve = gulp.parallel(html, css, js, img, fonts, icons, watchFiles, serve);
+exports.default = gulp.series(del, html, css, js, img, fonts, icons);
