@@ -61,34 +61,43 @@
                 </div>
             </nav>
         </header>
-        <div class="container mt-5 mb-5">
-             <h1 class="display-3">Pages</h1>
-
-            <ul>
-                <li><a href="styleguide.html">Styleguide</a>
-                </li>
-            </ul>
-            <ul>
-                <li><a href="home.html">Home</a>
-                </li>
-            </ul>
-            <ul>
-                <li><a href="account-create.html">Create Account</a>
-                </li>
-            </ul>
-            <ul>
-                <li><a href="account-login.html">Login</a>
-                </li>
-            </ul>
-            <ul>
-                <li><a href="account-forgot-password.html">Forgot Password</a>
-                </li>
-            </ul>
-            <ul>
-                <li><a href="account-reset-password.html">Reset Password</a>
-                </li>
-            </ul>
-        </div>
+        <main class="site-main">
+            <section class="container-sm my-6 py-6">
+                <div class="row justify-content-center">
+                    <div class="col col-sm-12 col-lg-6">
+                        <div class="text-center">
+                             <h1 class="display-2 text-purple">Log in</h1>
+                            <div>Save designs, track your orders, and check out faster.</div>
+                        </div>
+                        <form action="" class="my-6">
+                            <div class="row mt-3">
+                                <div class="col">
+                                    <label for="email" class="form-label">Email Address*</label>
+                                    <input type="email" class="form-control" id="email"
+                                    placeholder="Enter your email address">
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col">
+                                    <label for="password" class="form-label">Password*</label>
+                                    <input type="password" class="form-control" id="password"
+                                    placeholder="Enter your password">
+                                </div>
+                            </div>
+                            <div class="row mt-6">
+                                <div class="col text-center">
+                                    <input class="btn btn-disabled" type="submit" value="Log In" disabled>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col text-center">Don't have an account? <a href="account-create.html" class="link link-dark-blue">Create an account</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
         <footer class="container-fluid bg-dark-blue">
             <div class="container py-6 text-light">
                 <div class="row py-4 my-4 g-0">
