@@ -1,1 +1,41 @@
-// Linksa {  font-family: $font-family-sans-serif;  font-style: normal;  font-weight: 600;  font-size: 0.875rem;  line-height: 1.25rem;  letter-spacing: 0.08em;  text-transform: uppercase;  text-decoration: none;  &:hover {    text-decoration: underline;  }  img {    position: relative;    top: -0.0625rem;  }}a.link-underline {  text-decoration: underline;  &:hover {    text-decoration: none;  }}a.link-capitalize {  text-transform: capitalize;}// Buttons.btn {  text-transform: uppercase;}.btn:disabled {  color: $color-light;}
+// Links
+a {
+  font-family: $font-family-sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  img {
+    position: relative;
+    top: -0.0625rem;
+  }
+}
+
+a.link-underline {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+a.link-capitalize {
+  text-transform: capitalize;
+}
+
+// Buttons
+.btn {
+  text-transform: uppercase;
+}
+
+.btn:disabled {
+  color: $color-light;
+}
