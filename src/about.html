@@ -1,24 +1,53 @@
-<partial src="header.html"></partial>
+<partial src="header.html" title="About"></partial>
 
-<div class="jumbotron pt-5 pb-5 bg-white text-center justify-content-center align-items-center mb-0">
-  <div class="container">
-    <h1 class="display-3">About</h1>
-    <p class="lead">Basic5 is a responsive A Bootstrap 5 Boilerplate with Gulp, Sass, BrowserSync.</p>
-  </div>
-</div>
+<main class="site-main">
+  <section class="container my-6 py-6">
+    <div class="row p-6" style="background: url('/img/about-hero.jpg') no-repeat; background-size: cover; background-position: center;">
+      <div class="col-sm-12 col-lg-5 text-light p-6 m-6">
+        <h1>We can bring your printing ideas to life</h1>
+        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum morbi sit at proin tempor.</div>
+      </div>
+    </div>
+    <div class="row mt-6 pt-6 text-center">
+      <div class="col">
+        <div class="bg-light-orange p-2 mb-4 rounded-2 d-inline-block">
+          <img class="img-fluid" src="/icons/icon-pen.svg" alt="Pen nib">
+        </div>
+        <h2 class="display-4">Customize your products</h2>
+        <div>Whether you need a logo badge, control panel, UL label, or informational label, Firebrand has you and your product covered.</div>
+      </div>
+      <div class="col">
+        <div class="bg-light-orange p-2 mb-4 rounded-2 d-inline-block">
+          <img class="img-fluid" src="/icons/icon-barcode.svg" alt="Pen nib">
+        </div>
+        <h2 class="display-4">Organize</h2>
+        <div>Keep your organization running smoothly by tracking equipment and labeling work areas with our durable, easy-to-read asset tags.</div>
+      </div>
+      <div class="col">
+        <div class="bg-light-orange p-2 mb-4 rounded-2 d-inline-block">
+          <img class="img-fluid" src="/icons/icon-microphone.svg" alt="Pen nib">
+        </div>
+        <h2 class="display-4">Advertise</h2>
+        <div>Our packaging labels catch the eye of picky consumers. And custom bumper stickers and window clings can make a larger impression.</div>
+      </div>
+    </div>
+  </section>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-4">
-    <img class="img-fluid" src="https://images.unsplash.com/photo-1579032365451-d20e00c0ed23?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+  <section class="container-fluid bg-light-purple">
+    <div class="container py-6 my-6">
+      <div class="row py-6 g-6">
+        <div class="col">
+          <img class="img-fluid" src="/img/placeholder.png" alt="Placeholder">
+        </div>
+        <div class="col d-flex flex-column justify-content-center">
+          <p>Our mission is twofold: to meet our customers’ needs, and delight them with our attention to customer service; and to run our business with honesty and integrity. We believe that by treating our customers with respect and honesty, we build the kind of relationship that leads to mutual success.</p>
+          <p>We understand the importance of your labeling: it’s the first thing consumers see when deciding which product to purchase; it’s the label that warns a user of a potential hazard when using your product; it’s the control panel that a user touches a thousand times a day. We take pride in understanding how our customers use our product and work hard to make your first impression your best.</p>
+        </div>
+      </div>
     </div>
-    <div class="col-md-4">
-      <img class="img-fluid" src="https://images.unsplash.com/photo-1579032365437-9f9d275b0db0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
-    </div>
-    <div class="col-md-4">
-      <img class="img-fluid"  src="https://images.unsplash.com/photo-1579033060982-1bb5b083f4fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
-    </div>
-  </div>
-</div>    
+  </section>
+
+  <partial src="banner-contact.html"></partial>
+</main>
 
 <partial src="footer.html"></partial>
