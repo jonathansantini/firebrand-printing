@@ -93,10 +93,13 @@ $form-label-color: $color-dark-gray;
 $input-padding-x: 0.625rem;
 $input-padding-y: 0.625rem;
 
-  // Navbar
+// Navbar
 $navbar-dark-color: $color-dark;
 $navbar-dark-hover-color: $color-dark-blue;
 $navbar-dark-active-color:  $color-dark-blue;
 
 $navbar-padding-y: 1.75rem;
 $navbar-brand-font-size: 0.875rem;
+
+// Breadcrumbs
+$breadcrumb-divider: quote(">");
