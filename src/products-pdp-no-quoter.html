@@ -1,0 +1,40 @@
+<partial src="header.html" title="PDP/Quoter"></partial>
+
+<main class="site-main">
+
+  <partial src="quoter/breadcrumbs.html" title="Product Name"></partial>
+
+  <section class="container mt-4">
+    <div class="row g-6">
+
+      <partial src="quoter/carousel.html"></partial>
+
+      <div class="col-sm-12 col-lg-6">
+        <h1 class="display-2">Product Name</h1>
+        <div>Product description. Quisque id ultrices dolor. Nam tincidunt nunc in ante porttitor mollis.</div>
+        <div class="mt-4"><strong>Call to action</strong></div>
+        <form action="/">
+          <div class="row mt-4">
+            <div class="col">
+              <label for="request" class="form-label">Quote request</label>
+              <textarea rows="8" style="height: 90%;" type="text" class="form-control" id="request" placeholder="Describe your request in detail"></textarea>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col d-grid">
+              <input class="btn btn-dark-blue" type="submit" value="Request A Quote">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <partial src="quoter/product-details.html"></partial>
+
+  <partial src="product-row.html" blockTitle="Related Products" title1="Container Labels" alt1="Container Labels" alt2="Bumper Stickers" title2="Bumper Stickers" alt3="Promotional Stickers" title3="Promotional Stickers"></partial>
+
+  <partial src="banner-contact.html"></partial>
+</main>
+
+<partial src="footer.html"></partial>

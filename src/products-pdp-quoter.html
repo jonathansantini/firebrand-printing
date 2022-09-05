@@ -2,61 +2,13 @@
 
 <main class="site-main">
 
-  <section class="container mt-7">
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="./">Home</a>
-        </li>
-        <li class="breadcrumb-item">
-          <a href="/products-plp.html">Products</a>
-        </li>
-        <li class="breadcrumb-item active" aria-current="page">
-          UL Labels
-        </li>
-      </ol>
-    </nav>
-    <div class="row pt-4 g-6">
-      <div class="col-sm-12 col-lg-6">
-        <div id="productImages" class="carousel slide carousel-fade" data-bs-ride="false">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./img/placeholder-product.png" class="d-block w-100" alt="Image 1">
-            </div>
-            <div class="carousel-item">
-              <img style="filter: invert(100%)" src="./img/placeholder-product.png" class="d-block w-100" alt="Image 2">
-            </div>
-            <div class="carousel-item">
-              <img style="filter: hue-rotate(180deg);" src="./img/placeholder-product.png" class="d-block w-100" alt="Image 3">
-            </div>
-            <div class="carousel-item">
-              <img style="filter: hue-rotate(90deg);" src="./img/placeholder-product.png" class="d-block w-100" alt="Image 3">
-            </div>
-          </div>
-          <div class="row row-cols-5 mt-4">
-            <div class="col">
-              <a href="./" data-bs-target="#productImages" data-bs-slide-to="0" class="active border-disabled" aria-current="true" aria-label="Slide 1">
-                <img src="./img/placeholder-product.png" class="d-block w-100" alt="Image 1">
-              </a>
-            </div>
-            <div class="col">
-              <a href="./" data-bs-target="#productImages" data-bs-slide-to="1" aria-label="Slide 2">
-                <img style="filter: invert(100%)" src="./img/placeholder-product.png" class="d-block w-100" alt="Image 2">
-              </a>
-            </div>
-            <div class="col">
-              <a href="./" data-bs-target="#productImages" data-bs-slide-to="2" aria-label="Slide 3">
-                <img style="filter: hue-rotate(180deg);" src="./img/placeholder-product.png" class="d-block w-100" alt="Image 3">
-              </a>
-            </div>
-            <div class="col">
-              <a href="./" type="button" data-bs-target="#productImages" data-bs-slide-to="3" aria-label="Slide 4">
-                <img style="filter: hue-rotate(90deg);" src="./img/placeholder-product.png" class="d-block w-100" alt="Image 3">
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+  <partial src="quoter/breadcrumbs.html" title="UL Labels"></partial>
+
+  <section class="container mt-4">
+    <div class="row g-6">
+
+      <partial src="quoter/carousel.html"></partial>
+
       <div class="col-sm-12 col-lg-6">
         <h1 class="display-2">UL Labels</h1>
         <div>Custom UL-certified labels for products intended for the US and Canadian markets.</div>
@@ -88,77 +40,9 @@
     </div>
   </section>
 
-  <section class="container mt-6 pt-6">
-    <div class="row">
-      <div class="col">
-        <ul class="nav nav-tabs nav-fill product-info-tabs" id="productInfo" role="tablist">
-          <li class="nav-item w-50" role="presentation">
-            <button class="nav-link text-uppercase active" id="detail-tab" data-bs-toggle="tab" data-bs-target="#detail-tab-pane" type="button" role="tab" aria-controls="detail-tab-pane" aria-selected="true">Detail</button>
-          </li>
-          <li class="nav-item w-50" role="presentation">
-            <button class="nav-link text-uppercase" id="consider-tab" data-bs-toggle="tab" data-bs-target="#consider-tab-pane" type="button" role="tab" aria-controls="consider-tab-pane" aria-selected="false">What to consider</button>
-          </li>
-        </ul>
-        <div class="tab-content mt-4 pt-4" id="productInfoContent">
-          <div class="tab-pane fade show active" id="detail-tab-pane" role="tabpanel" aria-labelledby="detail-tab" tabindex="0">
-            <ul>
-              <li>What material should it be printed on? We offer clear, white, and several metallic options to complement the overall design of your product. All of our materials feature excellent adhesives that meet UL specifications.</li>
-              <li class="mt-4">How much protection does your label need? Adding an overlaminate provides surface protection for the printing on your label. For maximum scratch and impact protection, choose polycarbonate; for excellent scratch protection, a gloss overlaminate will suffice. Labels without laminates are still durable and somewhat scratch resistant but a laminate can also add a more sophisticated appearance and texture in addition to protection from damage.</li>
-            </ul>
-          </div>
-          <div class="tab-pane fade" id="consider-tab-pane" role="tabpanel" aria-labelledby="consider-tab" tabindex="0">
-            <ul>
-              <li>Consider adding your branding to your label. Unlike many UL label providers, we offer a wide spectrum of printing colors to get just the right look – turn a boring regulatory label into a branding opportunity!</li>
-              <li class="mt-4">How much protection does your label need? Adding an overlaminate provides surface protection for the printing on your label. For maximum scratch and impact protection, choose polycarbonate; for excellent scratch protection, a gloss overlaminate will suffice. Labels without laminates are still durable and somewhat scratch resistant but a laminate can also add a more sophisticated appearance and texture in addition to protection from damage.</li>
-              <li class="mt-4">What material should it be printed on? We offer clear, white, and several metallic options to complement the overall design of your product. All of our materials feature excellent adhesives that meet UL specifications.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <partial src="quoter/product-details.html"></partial>
 
-  <section class="container pt-6">
-    <h2 class="display-3 text-dark-gray">Related Products</h2>
-    <div class="row row-cols-1 row-cols-lg-3">
-      <div class="feature col">
-        <div class="row p-2">
-          <div class="col border rounded-2 p-3">
-            <a href="./">
-              <div class="mb-3 text-center">
-                <img class="img-fluid" src="./img/placeholder-medium.png" alt="Container Labels">
-              </div>
-              <h2 class="display-5 text-blue text-capitalize line-height-2">Container Labels</h2>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="feature col">
-        <div class="row p-2">
-          <div class="col border rounded-2 p-3">
-            <a href="./">
-              <div class="mb-3 text-center">
-                <img class="img-fluid" src="./img/placeholder-medium.png" alt="Bumper Stickers">
-              </div>
-              <h2 class="display-5 text-blue text-capitalize line-height-2">Bumper Stickers</h2>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="feature col">
-        <div class="row p-2">
-          <div class="col border rounded-2 p-3">
-            <a href="./">
-              <div class="mb-3 text-center">
-                <img class="img-fluid" src="./img/placeholder-medium.png" alt="Promotional Stickers">
-              </div>
-              <h2 class="display-5 text-blue text-capitalize line-height-2">Promotional Stickers</h2>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <partial src="product-row.html" blockTitle="Related Products" title1="Container Labels" alt1="Container Labels" alt2="Bumper Stickers" title2="Bumper Stickers" alt3="Promotional Stickers" title3="Promotional Stickers"></partial>
 
   <partial src="banner-contact.html"></partial>
 </main>
