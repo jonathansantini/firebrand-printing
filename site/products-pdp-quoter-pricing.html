@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="icon" href="./img/icon.png" />
+        <title>PDP/Quoter</title>
+    </head>
+    
+    <body>
+        <header class="site-header border-bottom border-purple">
+            <section class="promo-banner container-fluid">
+                <div class="promo-banner__message"> <a href="./" class="promo-banner__link link-light">SAVE UP TO 20% ON ALL LABELS BY USING THE CODE SUMMERPRINT20</a>
+
+                </div>
+            </section>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+
+                    </button> <a class="navbar-brand" href="./"><img src="./img/logo-firebrand.svg" alt="Firebrand"></a>
+
+                    <div
+                    class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                            <li class="nav-item mx-3"> <a class="nav-link link-dark active" aria-current="page" href="about.html">About</a>
+
+                            </li>
+                            <li class="nav-item mx-3 dropdown"> <a class="nav-link link-dark dropdown-toggle" href="./" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Products
+          </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="./">Action</a>
+
+                                    </li>
+                                    <li><a class="dropdown-item" href="./">Another action</a>
+
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="./">Something else here</a>
+
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mx-4"> <a class="nav-link link-dark" href="./contact.html">Contact</a>
+
+                            </li>
+                            <li class="nav-item mx-2"> <a class="nav-link link-dark" href="./account.html"><img src="./icons/icon-account.svg" alt="Account"></a>
+
+                            </li>
+                            <li class="nav-item mx-2 cart"> <a class="nav-link link-dark cart-link" href="./cart.html">
+            <span class="cart-total text-dark-orange">3</span>
+            <img src="./icons/icon-cart.svg" alt="Cart">
+          </a>
+
+                            </li>
+                        </ul>
+                </div>
+                </div>
+            </nav>
+        </header>
+        <main class="site-main">
+            <section class="container mt-7">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"> <a href="./">Home</a>
+
+                        </li>
+                        <li class="breadcrumb-item"> <a href="/products-plp.html">Products</a>
+
+                        </li>
+                        <li class="breadcrumb-item"> <a href="/products-plp-quoter.html">UL Labels</a>
+
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">Pricing</li>
+                    </ol>
+                </nav>
+            </section>
+            <section class="container mt-4">
+                <div class="row">
+                    <div class="col">
+                         <h1 class="display-1">UL Labels Pricing</h1>
+
+                        <div>Custom UL-certified labels for products intended for the US and Canadian
+                            markets.</div>
+                    </div>
+                    <div class="col">
+                        <ul class="list-unstyled list-inline text-end">
+                            <li class="list-inline-item"> <a href="javascript:alert('PRINT');"><img src="./icons/icon-printer.svg" alt="Print Page"></a>
+
+                            </li>
+                            <li class="list-inline-item"> <a href="mailto:info@firebrandprinting.com">
+              <img src="./icons/icon-email.svg" alt="Email Page">
+            </a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-4 mb-6 gx-6">
+                    <div class="col-sm-12 col-lg-7">
+                        <div class="accordion" id="productInfo">
+                            <div class="accordion-item">
+                                 <h2 class="accordion-header" id="productDetails">
+              <button class="accordion-button display-2 text-uppercase text-dark-gray" type="button" data-bs-toggle="collapse" data-bs-target="#productDetailsCollapse" aria-expanded="true" aria-controls="productDetailsCollapse">
+                Product Details
+              </button>
+            </h2>
+
+                                <div id="productDetailsCollapse" class="accordion-collapse collapse show"
+                                aria-labelledby="headingOne" data-bs-parent="#productInfo">
+                                    <div class="accordion-body pt-0 pb-4">
+                                        <form action="">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <label for="quantity" class="form-label">Quantity</label>
+                                                    <input type="text" class="form-control" id="quantity"
+                                                    placeholder="Enter product quantity">
+                                                </div>
+                                            </div>
+                                            <div class="row mt-3">
+                                                <div class="col">
+                                                    <label for="width" class="form-label">Width (in inches)*</label>
+                                                    <input type="text" class="form-control" id="width"
+                                                    placeholder="Enter width">
+                                                </div>
+                                                <div class="col">
+                                                    <label for="height" class="form-label">Height (in inches)*</label>
+                                                    <input type="text" class="form-control" id="height"
+                                                    placeholder="Enter height">
+                                                </div>
+                                            </div>
+                                            <div class="row mt-3">
+                                                <div class="col">
+                                                    <label for="material" class="form-label">Material</label>
+                                                    <select class="form-select" id="material" aria-label="Select material dropdown">
+                                                        <option selected>Select a material</option>
+                                                        <option value="1">White Polyester, 2 mil</option>
+                                                        <option value="2">Black Polyester, 2 mil</option>
+                                                        <option value="3">Blue Polyester, 2 mil</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-3">
+                                                <div class="col">
+                                                    <label for="overlaminate" class="form-label">Overlaminate</label>
+                                                    <select class="form-select" id="overlaminate" aria-label="Select Overlaminate">
+                                                        <option selected>Select overlaminate</option>
+                                                        <option value="1">Gloss Polyester, 1 mil</option>
+                                                        <option value="2">Matte Polyester, 1 mil</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-3">
+                                                <div class="col">
+                                                    <label for="formFactor" class="form-label">Form Factor</label>
+                                                    <select class="form-select" id="formFactor" aria-label="Select Form Factor">
+                                                        <option selected>Select Form Factor</option>
+                                                        <option value="1">Rolls</option>
+                                                        <option value="2">Sheets</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-3">
+                                                <div class="col">
+                                                    <label for="cutouts" class="form-label">Number of cutouts</label>
+                                                    <input type="password" class="form-control" id="cutouts"
+                                                    placeholder="Add number of cutouts">
+                                                </div>
+                                            </div>
+                                            <div class="row mt-5">
+                                                <div class="col-8">
+                                                    <div class="text-dark-gray">Colors</div>
+                                                    <ul class="row list-unstyled mt-2">
+                                                        <li class="col-6 d-flex align-items-center">
+                                                            <input type="checkbox" name="black" value="" id="color">
+                                                            <div class="color-swatch mx-2" style="width: 2rem; height: 2rem; border-radius: 1rem; background-color: #000;"></div>
+                                                            <label for="color" class="form-label m-0">Black</label>
+                                                        </li>
+                                                        <li class="col-6 d-flex align-items-center">
+                                                            <input type="checkbox" name="green" value="" id="color">
+                                                            <div class="color-swatch mx-2" style="width: 2rem; height: 2rem; border-radius: 1rem; background-color: #095E47;"></div>
+                                                            <label for="color" class="form-label m-0">Green</label>
+                                                        </li>
+                                                        <li class="col-6 d-flex align-items-center mt-3">
+                                                            <input type="checkbox" name="red" value="" id="color">
+                                                            <div class="color-swatch mx-2" style="width: 2rem; height: 2rem; border-radius: 1rem; background-color: #B90721;"></div>
+                                                            <label for="color" class="form-label m-0">Red</label>
+                                                        </li>
+                                                        <li class="col-6 d-flex align-items-center mt-3">
+                                                            <input type="checkbox" name="blue" value="" id="color">
+                                                            <div class="color-swatch mx-2" style="width: 2rem; height: 2rem; border-radius: 1rem; background-color: #042384;"></div>
+                                                            <label for="color" class="form-label m-0">Blue</label>
+                                                        </li>
+                                                        <li class="col-6 d-flex align-items-center mt-3">
+                                                            <input type="checkbox" name="orange" value="" id="color">
+                                                            <div class="color-swatch mx-2" style="width: 2rem; height: 2rem; border-radius: 1rem; background-color: #F55C1E;"></div>
+                                                            <label for="color" class="form-label m-0">Orange</label>
+                                                        </li>
+                                                        <li class="col-6 d-flex align-items-center mt-3">
+                                                            <input type="checkbox" name="purple" value="" id="color">
+                                                            <div class="color-swatch mx-2" style="width: 2rem; height: 2rem; border-radius: 1rem; background-color: #47397C;"></div>
+                                                            <label for="color" class="form-label m-0">Purple</label>
+                                                        </li>
+                                                        <li class="col-6 d-flex align-items-center mt-3">
+                                                            <input type="checkbox" name="yellow" value="" id="color">
+                                                            <div class="color-swatch mx-2" style="width: 2rem; height: 2rem; border-radius: 1rem; background-color: #FECE2F;"></div>
+                                                            <label for="color" class="form-label m-0">Yellow</label>
+                                                        </li>
+                                                        <li class="col-6 d-flex align-items-center mt-3">
+                                                            <input type="checkbox" name="eco-green" value="" id="color">
+                                                            <div class="color-swatch mx-2" style="width: 2rem; height: 2rem; border-radius: 1rem; background-color: #A5D93B;"></div>
+                                                            <label for="color" class="form-label m-0">Eco Green</label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-5">
+                                                <div class="col-8">
+                                                    <div class="text-dark-gray">PMS Colors</div>
+                                                    <ul class="list-unstyled mt-2">
+                                                        <li class="d-flex">
+                                                            <input type="text" class="form-control w-50" id="pms-color" placeholder="Enter PMS color">
+                                                        </li>
+                                                        <li class="d-flex mt-2 align-items-center">
+                                                            <input type="text" class="form-control w-50" id="pms-color" placeholder="Enter PMS color"> <a class="link-underline ms-4" href="javascript:alert('Added PMS color');">+ Add more</a>
+
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-5">
+                                                <div class="col text-center d-flex">
+                                                    <button type="button" class="btn btn-dark-blue flex-grow-1">Continue</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mt-6">
+                                 <h2 class="accordion-header" id="fileUpload">
+              <button class="accordion-button collapsed display-2 text-uppercase text-dark-gray" type="button" data-bs-toggle="collapse" data-bs-target="#fileUploadCollapse" aria-expanded="false" aria-controls="fileUploadCollapse">
+                File Upload
+              </button>
+            </h2>
+
+                                <div id="fileUploadCollapse" class="accordion-collapse collapse" aria-labelledby="fileUpload"
+                                data-bs-parent="#productInfo">
+                                    <div class="accordion-body pt-0 pb-4">
+                                        <div>File Upload</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-5">
+                        <div class="row bg-light-purple rounded-1">
+                            <div class="col p-5">
+                                <ul class="list-unstyled line-height-4 p-0 m-0">
+                                    <li><strong>Quantity:</strong> 31,200</li>
+                                    <li><strong>Size:</strong> 4.5” x 3.5”</li>
+                                    <li><strong>Material:</strong> White Polyester, 2 mil</li>
+                                    <li><strong>Overlaminate:</strong> Gloss Polyester, 1 mil</li>
+                                    <li><strong>Color(s):</strong> Red, Orange</li>
+                                    <li><strong>PMS:</strong> PMS1785</li>
+                                    <li><strong>Artwork Uploaded:</strong> No</li>
+                                    <li><strong>Proof Options:</strong> Yes Proof</li>
+                                    <li><strong>Part Number:</strong> 300</li>
+                                    <li><strong>Production Time:</strong> Standard</li>
+                                    <li><strong>Notes:</strong> No</li>
+                                    <li class="border-top mt-3 pt-3 line-height-5 d-flex justify-content-between align-content-center"> <strong>Product Price</strong>
+
+                                        <div class="display-4 text-purple">$145.00</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col p-0 d-flex">
+                                <button type="button" class="btn btn-disabled flex-grow-1" disabled>Add To Cart</button>
+                            </div>
+                        </div>
+                        <div class="row border mt-6">
+                            <div class="col p-5">
+                                 <h3 class="display-4 fw-normal font-sans-serif">Volume discount</h3>
+
+                                <table class="table table-borderless">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Quantity</th>
+                                            <th class="text-center" scope="col">Price per piece</th>
+                                            <th class="text-end" scope="col">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="border-top">
+                                        <tr>
+                                            <td>10,000</td>
+                                            <td class="text-center">$2.10</td>
+                                            <td class="text-end">$210,000.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>250,000</td>
+                                            <td class="text-center">$1.56</td>
+                                            <td class="text-end">$390,000.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>500,000</td>
+                                            <td class="text-center">$1.15</td>
+                                            <td class="text-end">$575,000.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="container-fluid bg-dark-blue">
+            <div class="container py-6 text-light">
+                <div class="row py-4 my-4 g-0">
+                    <div class="col mb-3"> <a href="./" class="d-flex align-items-center mb-3 link-light text-decoration-none">
+                    <img src="./img/logo-firebrand-light.svg" alt="Firebrand">
+                </a>
+
+                        <div class="my-4">916A 14th Ave
+                            <br>Seattle, WA 98122</div>
+                        <div> <a href="tel:18666653473" class="link-light">+1 (866) 665-3473</a>
+ <a href="mailto:support@firebrandprinting.com"
+                            class="link-light">support@firebrandprinting.com</a>
+
+                        </div>
+                    </div>
+                    <div class="col mb-3"></div>
+                    <div class="col mb-3">
+                         <h5>Section</h5>
+
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="./" class="nav-link p-0 text-light">Company</a>
+
+                            </li>
+                            <li class="nav-item mb-2"><a href="./" class="nav-link p-0 text-light">About</a>
+
+                            </li>
+                            <li class="nav-item mb-2"><a href="./" class="nav-link p-0 text-light">Contact</a>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col mb-3">
+                         <h5>Section</h5>
+
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="./" class="nav-link p-0 text-light">Products</a>
+
+                            </li>
+                            <li class="nav-item mb-2"><a href="./" class="nav-link p-0 text-light">UL Labels</a>
+
+                            </li>
+                            <li class="nav-item mb-2"><a href="./" class="nav-link p-0 text-light">QL Labels</a>
+
+                            </li>
+                            <li class="nav-item mb-2"><a href="./" class="nav-link p-0 text-light">View All</a>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col mb-3">
+                         <h5>Section</h5>
+
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="./" class="nav-link p-0 text-light">Quicklinks</a>
+
+                            </li>
+                            <li class="nav-item mb-2"><a href="./" class="nav-link p-0 text-light">Get A Quote</a>
+
+                            </li>
+                            <li class="nav-item mb-2"><a href="./" class="nav-link p-0 text-light">My Account</a>
+
+                            </li>
+                            <li class="nav-item mb-2"><a href="./" class="nav-link p-0 text-light">Order History</a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row justify-content-between g-0 pt-4 mt-4 border-top">
+                    <div class="col mb-3">
+                        <ul class="nav">
+                            <li class="nav-item"><a href="./" class="p-0 text-light text-capitalize display-6">Terms of Service</a>
+
+                            </li>
+                            <li class="nav-item"><a href="./" class="px-3 text-light text-capitalize display-6">Privacy Policy</a>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col text-center display-6">©2022 Firebrand, Inc. All rights reserved.</div>
+                    <div class="col">
+                        <ul class="nav justify-content-end">
+                            <li class="nav-item"><a href="./" class="nav-link p-1 text-light"><img src="./icons/icon-linkedin.svg" alt="LinkedIn"></a>
+
+                            </li>
+                            <li class="nav-item"><a href="./" class="nav-link p-1 text-light"><img src="./icons/icon-facebook.svg" alt="Facebook"></a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./js/all.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,242 @@
+<partial src="header.html" title="PDP/Quoter"></partial>
+
+<main class="site-main">
+
+  <partial src="quoter/breadcrumbs-pricing.html" title="UL Labels" title2="Pricing"></partial>
+
+  <section class="container mt-4">
+    <div class="row">
+      <div class="col">
+        <h1 class="display-1">UL Labels Pricing</h1>
+        <div>Custom UL-certified labels for products intended for the US and Canadian markets.</div>
+      </div>
+      <div class="col">
+        <ul class="list-unstyled list-inline text-end">
+          <li class="list-inline-item">
+            <a href="javascript:alert('PRINT');"><img src="./icons/icon-printer.svg" alt="Print Page"></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="mailto:info@firebrandprinting.com">
+              <img src="./icons/icon-email.svg" alt="Email Page">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row mt-4 mb-6 gx-6">
+      <div class="col-sm-12 col-lg-7">
+        <div class="accordion" id="productInfo">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="productDetails">
+              <button class="accordion-button display-2 text-uppercase text-dark-gray" type="button" data-bs-toggle="collapse" data-bs-target="#productDetailsCollapse" aria-expanded="true" aria-controls="productDetailsCollapse">
+                Product Details
+              </button>
+            </h2>
+            <div id="productDetailsCollapse" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#productInfo">
+              <div class="accordion-body pt-0 pb-4">
+                <form action="">
+                  <div class="row">
+                    <div class="col">
+                      <label for="quantity" class="form-label">Quantity</label>
+                      <input type="text" class="form-control" id="quantity" placeholder="Enter product quantity">
+                    </div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col">
+                      <label for="width" class="form-label">Width (in inches)*</label>
+                      <input type="text" class="form-control" id="width" placeholder="Enter width">
+                    </div>
+                    <div class="col">
+                      <label for="height" class="form-label">Height (in inches)*</label>
+                      <input type="text" class="form-control" id="height" placeholder="Enter height">
+                    </div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col">
+                      <label for="material" class="form-label">Material</label>
+                      <select class="form-select" id="material" aria-label="Select material dropdown">
+                        <option selected>Select a material</option>
+                        <option value="1">White Polyester, 2 mil</option>
+                        <option value="2">Black Polyester, 2 mil</option>
+                        <option value="3">Blue Polyester, 2 mil</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col">
+                      <label for="overlaminate" class="form-label">Overlaminate</label>
+                      <select class="form-select" id="overlaminate" aria-label="Select Overlaminate">
+                        <option selected>Select overlaminate</option>
+                        <option value="1">Gloss Polyester, 1 mil</option>
+                        <option value="2">Matte Polyester, 1 mil</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col">
+                      <label for="formFactor" class="form-label">Form Factor</label>
+                      <select class="form-select" id="formFactor" aria-label="Select Form Factor">
+                        <option selected>Select Form Factor</option>
+                        <option value="1">Rolls</option>
+                        <option value="2">Sheets</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col">
+                      <label for="cutouts" class="form-label">Number of cutouts</label>
+                      <input type="password" class="form-control" id="cutouts" placeholder="Add number of cutouts">
+                    </div>
+                  </div>
+                  <div class="row mt-5">
+                    <div class="col-8">
+                      <div class="text-dark-gray">Colors</div>
+                      <ul class="row list-unstyled mt-2">
+                        <li class="col-6 d-flex align-items-center">
+                          <input type="checkbox" name="black" value="" id="color">
+                          <div class="color-swatch mx-2" style="width: 2rem; height: 2rem; border-radius: 1rem; background-color: #000;"></div>
+                          <label for="color" class="form-label m-0">Black</label>
+                        </li>
+                        <li class="col-6 d-flex align-items-center">
+                          <input type="checkbox" name="green" value="" id="color">
+                          <div class="color-swatch mx-2" style="width: 2rem; height: 2rem; border-radius: 1rem; background-color: #095E47;"></div>
+                          <label for="color" class="form-label m-0">Green</label>
+                        </li>
+                        <li class="col-6 d-flex align-items-center mt-3">
+                          <input type="checkbox" name="red" value="" id="color">
+                          <div class="color-swatch mx-2" style="width: 2rem; height: 2rem; border-radius: 1rem; background-color: #B90721;"></div>
+                          <label for="color" class="form-label m-0">Red</label>
+                        </li>
+                        <li class="col-6 d-flex align-items-center mt-3">
+                          <input type="checkbox" name="blue" value="" id="color">
+                          <div class="color-swatch mx-2" style="width: 2rem; height: 2rem; border-radius: 1rem; background-color: #042384;"></div>
+                          <label for="color" class="form-label m-0">Blue</label>
+                        </li>
+                        <li class="col-6 d-flex align-items-center mt-3">
+                          <input type="checkbox" name="orange" value="" id="color">
+                          <div class="color-swatch mx-2" style="width: 2rem; height: 2rem; border-radius: 1rem; background-color: #F55C1E;"></div>
+                          <label for="color" class="form-label m-0">Orange</label>
+                        </li>
+                        <li class="col-6 d-flex align-items-center mt-3">
+                          <input type="checkbox" name="purple" value="" id="color">
+                          <div class="color-swatch mx-2" style="width: 2rem; height: 2rem; border-radius: 1rem; background-color: #47397C;"></div>
+                          <label for="color" class="form-label m-0">Purple</label>
+                        </li>
+                        <li class="col-6 d-flex align-items-center mt-3">
+                          <input type="checkbox" name="yellow" value="" id="color">
+                          <div class="color-swatch mx-2" style="width: 2rem; height: 2rem; border-radius: 1rem; background-color: #FECE2F;"></div>
+                          <label for="color" class="form-label m-0">Yellow</label>
+                        </li>
+                        <li class="col-6 d-flex align-items-center mt-3">
+                          <input type="checkbox" name="eco-green" value="" id="color">
+                          <div class="color-swatch mx-2" style="width: 2rem; height: 2rem; border-radius: 1rem; background-color: #A5D93B;"></div>
+                          <label for="color" class="form-label m-0">Eco Green</label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row mt-5">
+                    <div class="col-8">
+                      <div class="text-dark-gray">PMS Colors</div>
+                      <ul class="list-unstyled mt-2">
+                        <li class="d-flex">
+                          <input type="text" class="form-control w-50" id="pms-color" placeholder="Enter PMS color">
+                        </li>
+                        <li class="d-flex mt-2 align-items-center">
+                          <input type="text" class="form-control w-50" id="pms-color" placeholder="Enter PMS color">
+                          <a class="link-underline ms-4" href="javascript:alert('Added PMS color');">+ Add more</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row mt-5">
+                    <div class="col text-center d-flex">
+                      <button type="button" class="btn btn-dark-blue flex-grow-1">Continue</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item mt-6">
+            <h2 class="accordion-header" id="fileUpload">
+              <button class="accordion-button collapsed display-2 text-uppercase text-dark-gray" type="button" data-bs-toggle="collapse" data-bs-target="#fileUploadCollapse" aria-expanded="false" aria-controls="fileUploadCollapse">
+                File Upload
+              </button>
+            </h2>
+            <div id="fileUploadCollapse" class="accordion-collapse collapse" aria-labelledby="fileUpload" data-bs-parent="#productInfo">
+              <div class="accordion-body pt-0 pb-4">
+                <div>File Upload</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-lg-5">
+        <div class="row bg-light-purple rounded-1">
+          <div class="col p-5">
+            <ul class="list-unstyled line-height-4 p-0 m-0">
+              <li><strong>Quantity:</strong> 31,200</li>
+              <li><strong>Size:</strong> 4.5” x 3.5”</li>
+              <li><strong>Material:</strong> White Polyester, 2 mil</li>
+              <li><strong>Overlaminate:</strong> Gloss Polyester, 1 mil</li>
+              <li><strong>Color(s):</strong> Red, Orange</li>
+              <li><strong>PMS:</strong> PMS1785</li>
+              <li><strong>Artwork Uploaded:</strong> No</li>
+              <li><strong>Proof Options:</strong> Yes Proof</li>
+              <li><strong>Part Number:</strong> 300</li>
+              <li><strong>Production Time:</strong> Standard</li>
+              <li><strong>Notes:</strong> No</li>
+              <li class="border-top mt-3 pt-3 line-height-5 d-flex justify-content-between align-content-center">
+                <strong>Product Price</strong>
+                <div class="display-4 text-purple">$145.00</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col p-0 d-flex">
+            <button type="button" class="btn btn-disabled flex-grow-1" disabled>Add To Cart</button>
+          </div>
+        </div>
+
+        <div class="row border mt-6">
+          <div class="col p-5">
+            <h3 class="display-4 fw-normal font-sans-serif">Volume discount</h3>
+            <table class="table table-borderless">
+              <thead>
+                <tr>
+                  <th scope="col">Quantity</th>
+                  <th class="text-center" scope="col">Price per piece</th>
+                  <th class="text-end" scope="col">Total</th>
+                </tr>
+              </thead>
+              <tbody class="border-top">
+                <tr>
+                  <td>10,000</td>
+                  <td class="text-center">$2.10</td>
+                  <td class="text-end">$210,000.00</td>
+                </tr>
+                <tr>
+                  <td>250,000</td>
+                  <td class="text-center">$1.56</td>
+                  <td class="text-end">$390,000.00</td>
+                </tr>
+                <tr>
+                  <td>500,000</td>
+                  <td class="text-center">$1.15</td>
+                  <td class="text-end">$575,000.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<partial src="footer.html"></partial>

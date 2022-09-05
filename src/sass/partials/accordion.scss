@@ -1,0 +1,11 @@
+.accordion-item {
+  border-radius: $accordion-border-radius;
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+}
+
+.accordion-item:not(:first-of-type) .accordion-button {
+  border-top: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
+}
