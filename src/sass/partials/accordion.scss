@@ -1,5 +1,11 @@
 .accordion-item {
+  color: $color-dark-blue;
   border-radius: $accordion-border-radius;
+}
+
+.accordion-button {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .accordion-button:not(.collapsed) {
