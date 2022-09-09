@@ -53,6 +53,21 @@ $display-font-sizes: (
     6: 0.75rem
 );
 
+// Breakpoints
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px
+);
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px
+);
+
 $spacer: 1rem;
 $spacers: (
     0: 0,
@@ -68,7 +83,6 @@ $spacers: (
 $display-font-family: $font-family-heading;
 $display-font-style:  null;
 $display-font-weight: 600;
-$display-line-height: 2.75rem;
 $headings-color: $color-purple;
 
 // Links
@@ -76,7 +90,7 @@ $link-color: $color-dark-blue;
 
 // Buttons
 $btn-border-radius: 0.25rem;
-$btn-font-weight: 600;
+$btn-font-weight: 500;
 $btn-font-family: $font-family-sans-serif;
 $btn-padding-y: 1rem;
 $btn-padding-x: 2.75rem;
@@ -92,6 +106,10 @@ $input-placeholder-color: $color-base-gray;
 $form-label-color: $color-dark-gray;
 $input-padding-x: 0.625rem;
 $input-padding-y: 0.625rem;
+
+$form-check-input-checked-color: $color-light;
+$form-check-input-checked-bg-color: $color-dark;
+$form-check-input-checked-border-color: $color-dark;
 
 // Navbar
 $navbar-dark-color: $color-dark;

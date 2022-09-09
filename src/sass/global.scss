@@ -2,11 +2,8 @@
 a {
   font-family: $font-family-sans-serif;
   font-style: normal;
-  font-weight: 600;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
   text-decoration: none;
 
   &:hover {
@@ -31,11 +28,32 @@ a.link-capitalize {
   text-transform: capitalize;
 }
 
+a.link-uppercase {
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+a.link-normal {
+  font-size: 1rem;
+}
+
+// Navigation
+.navbar {
+  text-transform: uppercase;
+}
+
 // Buttons
 .btn {
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
 .btn:disabled {
   color: $color-light;
+}
+
+// Images
+.img-fluid {
+  width: 100%;
 }
