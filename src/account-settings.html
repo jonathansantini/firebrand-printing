@@ -1,0 +1,92 @@
+<partial src="header.html" title="Account Settings"></partial>
+
+<main class="site-main">
+
+  <section class="container mt-7">
+    <div class="row">
+      <div class="col">
+        <h1 class="display-2">My Account</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="container my-4 py-4">
+    <div class="row">
+      <div class="col">
+        <ul class="nav nav-tabs nav-fill product-info-tabs" id="productInfo" role="tablist">
+          <li class="nav-item col-4" role="presentation">
+            <button class="nav-link text-uppercase active" id="order-tab" data-bs-toggle="tab" data-bs-target="#order-tab-pane" type="button" role="tab" aria-controls="order-tab-pane" aria-selected="false">Order History &amp; Tracking</button>
+          </li>
+          <li class="nav-item col-4" role="presentation">
+            <button class="nav-link text-uppercase" id="address-tab" data-bs-toggle="tab" data-bs-target="#address-tab-pane" type="button" role="tab" aria-controls="address-tab-pane" aria-selected="false">Address Book</button>
+          </li>
+          <li class="nav-item col-4" role="presentation">
+            <button class="nav-link text-uppercase" id="setting-tab" data-bs-toggle="tab" data-bs-target="#setting-tab-pane" type="button" role="tab" aria-controls="setting-tab-pane" aria-selected="true">Settings</button>
+          </li>
+        </ul>
+        <div class="tab-content mt-4 pt-4" id="productInfoContent">
+          <div class="tab-pane fade show active" id="order-tab-pane" role="tabpanel" aria-labelledby="detail-tab" tabindex="0">
+            <div class="row">
+              <div class="col-6 position-relative">
+                <label for="search" class="form-label visually-hidden">Search by part number or PO</label>
+                <input type="password" class="form-control" id="search" placeholder="Search by part number or PO">
+                <img class="position-absolute top-50 end-0 translate-middle pe-2" src="./icons/icon-magnifying-glass.svg" alt="">
+              </div>
+            </div>
+            <div class="row mt-6">
+              <div class="col">
+                <h2 class="display-4 text-dark-gray text-uppercase">Orders In Progress (1)</h2>
+                <partial src="./account/order-in-progress.html"></partial>
+              </div>
+            </div>
+            <div class="row mt-6">
+              <div class="col">
+                <h2 class="display-4 text-dark-gray text-uppercase">Past Orders</h2>
+                <partial src="./account/order-complete.html"></partial>
+                <partial src="./account/order-complete.html"></partial>
+                <partial src="./account/order-cancelled.html"></partial>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade show" id="address-tab-pane" role="tabpanel" aria-labelledby="address-tab" tabindex="0">
+            <div class="row">
+              <div class="col d-flex justify-content-between align-content-center">
+                <h2 class="display-4 m-0 text-dark-gray text-uppercase line-height-4">Saved Addresses</h2>
+                <button type="button" class="btn btn-sm btn-dark-blue">Add A New Address</button>
+              </div>
+            </div>
+            <div class="row mt-4 row-cols-1 row-cols-lg-3">
+              <partial src="./account/address-card-with-tag.html" tag="Default Shipping"></partial>
+              <partial src="./account/address-card-with-tag.html" tag="Default Billing"></partial>
+              <partial src="./account/address-card.html"></partial>
+            </div>
+          </div>
+          <div class="tab-pane fade show" id="setting-tab-pane" role="tabpanel" aria-labelledby="setting-tab" tabindex="0">
+            <ul class="row list-unstyled list-inline">
+              <li class="col">
+                <h2 class="display-4 text-dark-gray text-uppercase">Name</h2>
+                <div>Jennifer Weston</div>
+                <div>FIREBRAND, LLC</div>
+              </li>
+              <li class="col">
+                <h2 class="display-4 text-dark-gray text-uppercase">Contact</h2>
+                <div>jenweston@gmail.com</div>
+                <div>(123)456-7891</div>
+              </li>
+              <li class="col">
+                <h2 class="display-4 text-dark-gray text-uppercase">Password</h2>
+                <div>•••••••••••••</div>
+              </li>
+              <li class="col d-grid">
+                <button type="button" class="btn btn-sm btn-dark-blue">Edit Details</button>
+                <button type="button" class="btn btn-sm btn-outline-dark-blue mt-2">Change Password</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<partial src="footer.html"></partial>

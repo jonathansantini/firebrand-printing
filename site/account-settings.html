@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="icon" href="./img/icon.png" />
+        <title>Account Settings</title>
+    </head>
+    
+    <body>
+        <header class="site-header border-bottom border-purple">
+            <section class="promo-banner container-fluid">
+                <div class="promo-banner__message"> <a href="./" class="promo-banner__link link-light">SAVE UP TO 20% ON ALL LABELS BY USING THE CODE SUMMERPRINT20</a>
+
+                </div>
+            </section>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+
+                    </button> <a class="navbar-brand" href="./"><img src="./img/logo-firebrand.svg" alt="Firebrand"></a>
+
+                    <div
+                    class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                            <li class="nav-item mx-3"> <a class="nav-link link-dark active" aria-current="page" href="about.html">About</a>
+
+                            </li>
+                            <li class="nav-item mx-3 dropdown"> <a class="nav-link link-dark dropdown-toggle" href="./" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Products
+          </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="./">Action</a>
+
+                                    </li>
+                                    <li><a class="dropdown-item" href="./">Another action</a>
+
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="./">Something else here</a>
+
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mx-4"> <a class="nav-link link-dark" href="./contact.html">Contact</a>
+
+                            </li>
+                            <li class="nav-item mx-2"> <a class="nav-link link-dark" href="./account.html"><img src="./icons/icon-account.svg" alt="Account"></a>
+
+                            </li>
+                            <li class="nav-item mx-2 cart"> <a class="nav-link link-dark cart-link" href="./cart.html">
+            <span class="cart-total text-dark-orange">3</span>
+            <img src="./icons/icon-cart.svg" alt="Cart">
+          </a>
+
+                            </li>
+                        </ul>
+                </div>
+                </div>
+            </nav>
+        </header>
+        <main class="site-main">
+            <section class="container mt-7">
+                <div class="row">
+                    <div class="col">
+                         <h1 class="display-2">My Account</h1>
+
+                    </div>
+                </div>
+            </section>
+            <section class="container my-4 py-4">
+                <div class="row">
+                    <div class="col">
+                        <ul class="nav nav-tabs nav-fill product-info-tabs" id="productInfo" role="tablist">
+                            <li class="nav-item col-4" role="presentation">
+                                <button class="nav-link text-uppercase active" id="order-tab" data-bs-toggle="tab"
+                                data-bs-target="#order-tab-pane" type="button" role="tab" aria-controls="order-tab-pane"
+                                aria-selected="false">Order History &amp; Tracking</button>
+                            </li>
+                            <li class="nav-item col-4" role="presentation">
+                                <button class="nav-link text-uppercase" id="address-tab" data-bs-toggle="tab"
+                                data-bs-target="#address-tab-pane" type="button" role="tab" aria-controls="address-tab-pane"
+                                aria-selected="false">Address Book</button>
+                            </li>
+                            <li class="nav-item col-4" role="presentation">
+                                <button class="nav-link text-uppercase" id="setting-tab" data-bs-toggle="tab"
+                                data-bs-target="#setting-tab-pane" type="button" role="tab" aria-controls="setting-tab-pane"
+                                aria-selected="true">Settings</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content mt-4 pt-4" id="productInfoContent">
+                            <div class="tab-pane fade show active" id="order-tab-pane" role="tabpanel"
+                            aria-labelledby="detail-tab" tabindex="0">
+                                <div class="row">
+                                    <div class="col-6 position-relative">
+                                        <label for="search" class="form-label visually-hidden">Search by part number or PO</label>
+                                        <input type="password" class="form-control"
+                                        id="search" placeholder="Search by part number or PO">
+                                        <img class="position-absolute top-50 end-0 translate-middle pe-2" src="./icons/icon-magnifying-glass.svg"
+                                        alt="">
+                                    </div>
+                                </div>
+                                <div class="row mt-6">
+                                    <div class="col">
+                                         <h2 class="display-4 text-dark-gray text-uppercase">Orders In Progress (1)</h2>
+
+                                        <div class="row justify-content-between pt-5 pb-4 px-4 mt-4 border rounded-2">
+                                            <div class="col-8 d-flex flex-column justify-content-center align-content-center">
+                                                <div class="order-info">
+                                                    <ul class="list-unstyled list-inline">
+                                                        <li class="list-inline-item"> <span class="fw-bold">Order Date:</span> April 27, 2022</li>
+                                                        <li class="list-inline-item"> <span class="fw-bold">Order Number:</span> 128537</li>
+                                                        <li class="list-inline-item"> <span class="fw-bold">PO Number:</span> 5512</li>
+                                                        <li class="list-inline-item"> <span class="fw-bold">Total:</span> $230.50</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="order-thumbs">
+                                                    <ul class="list-unstyled list-inline m-0">
+                                                        <li class="list-inline-item mb-3">
+                                                            <img width="128" height="88" src="./img/placeholder-small.png" alt="">
+                                                        </li>
+                                                        <li class="list-inline-item mb-3">
+                                                            <img width="128" height="88" src="./img/placeholder-small.png" alt="">
+                                                        </li>
+                                                        <li class="list-inline-item mb-3">
+                                                            <img width="128" height="88" src="./img/placeholder-small.png" alt="">
+                                                        </li>
+                                                        <li class="list-inline-item mb-3">
+                                                            <img width="128" height="88" src="./img/placeholder-small.png" alt="">
+                                                        </li>
+                                                        <li class="list-inline-item mb-3 position-relative">
+                                                            <img width="128" height="88" src="./img/placeholder-small.png" alt=""> <span class="position-absolute top-50 start-50 translate-middle display-2 text-orange">+2</span>
+
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="display-3 text-end text-blue">Pending Approval</div>
+                                                <button type="button" class="btn btn-sm btn-dark-blue w-100 mt-3">View Order Details</button>
+                                                <button type="button" class="btn btn-sm btn-outline-dark-blue w-100 mt-2">Contact Support</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-6">
+                                    <div class="col">
+                                         <h2 class="display-4 text-dark-gray text-uppercase">Past Orders</h2>
+
+                                        <div class="row justify-content-between pt-5 pb-4 px-4 mt-4 border rounded-2 position-relative">
+                                            <div class="col-8 d-flex flex-column justify-content-center align-content-center">
+                                                <div class="position-absolute top-0 fs-7 p-1 text-uppercase bg-light-green text-success">Complete</div>
+                                                <div class="order-info">
+                                                    <ul class="list-unstyled list-inline">
+                                                        <li class="list-inline-item"> <span class="fw-bold">Order Date:</span> April 27, 2022</li>
+                                                        <li class="list-inline-item"> <span class="fw-bold">Order Number:</span> 128537</li>
+                                                        <li class="list-inline-item"> <span class="fw-bold">PO Number:</span> 4338</li>
+                                                        <li class="list-inline-item"> <span class="fw-bold">Total:</span> $230.50</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="order-thumbs">
+                                                    <ul class="list-unstyled list-inline m-0">
+                                                        <li class="list-inline-item mb-3">
+                                                            <img width="86" height="60" src="./img/placeholder-small.png" alt="">
+                                                        </li>
+                                                        <li class="list-inline-item mb-3">
+                                                            <img width="86" height="60" src="./img/placeholder-small.png" alt="">
+                                                        </li>
+                                                        <li class="list-inline-item mb-3">
+                                                            <img width="86" height="60" src="./img/placeholder-small.png" alt="">
+                                                        </li>
+                                                        <li class="list-inline-item mb-3">
+                                                            <img width="86" height="60" src="./img/placeholder-small.png" alt="">
+                                                        </li>
+                                                        <li class="list-inline-item mb-3 position-relative">
+                                                            <img width="86" height="60" src="./img/placeholder-small.png" alt=""> <span class="position-absolute top-50 start-50 translate-middle display-2 text-orange">+2</span>
+
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-3 d-flex flex-column justify-content-center">
+                                                <button type="button" class="btn btn-sm btn-dark-blue w-100">View Order Details</button>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-between pt-5 pb-4 px-4 mt-4 border rounded-2 position-relative">
+                                            <div class="col-8 d-flex flex-column justify-content-center align-content-center">
+                                                <div class="position-absolute top-0 fs-7 p-1 text-uppercase bg-light-green text-success">Complete</div>
+                                                <div class="order-info">
+                                                    <ul class="list-unstyled list-inline">
+                                                        <li class="list-inline-item"> <span class="fw-bold">Order Date:</span> April 27, 2022</li>
+                                                        <li class="list-inline-item"> <span class="fw-bold">Order Number:</span> 128537</li>
+                                                        <li class="list-inline-item"> <span class="fw-bold">PO Number:</span> 4338</li>
+                                                        <li class="list-inline-item"> <span class="fw-bold">Total:</span> $230.50</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="order-thumbs">
+                                                    <ul class="list-unstyled list-inline m-0">
+                                                        <li class="list-inline-item mb-3">
+                                                            <img width="86" height="60" src="./img/placeholder-small.png" alt="">
+                                                        </li>
+                                                        <li class="list-inline-item mb-3">
+                                                            <img width="86" height="60" src="./img/placeholder-small.png" alt="">
+                                                        </li>
+                                                        <li class="list-inline-item mb-3">
+                                                            <img width="86" height="60" src="./img/placeholder-small.png" alt="">
+                                                        </li>
+                                                        <li class="list-inline-item mb-3">
+                                                            <img width="86" height="60" src="./img/placeholder-small.png" alt="">
+                                                        </li>
+                                                        <li class="list-inline-item mb-3 position-relative">
+                                                            <img width="86" height="60" src="./img/placeholder-small.png" alt=""> <span class="position-absolute top-50 start-50 translate-middle display-2 text-orange">+2</span>
+
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-3 d-flex flex-column justify-content-center">
+                                                <button type="button" class="btn btn-sm btn-dark-blue w-100">View Order Details</button>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-between pt-5 pb-4 px-4 mt-4 border rounded-2 position-relative">
+                                            <div class="col-8 d-flex flex-column justify-content-center align-content-center">
+                                                <div class="position-absolute top-0 fs-7 p-1 text-uppercase bg-light-orange text-dark-orange">Cancelled</div>
+                                                <div class="order-info">
+                                                    <ul class="list-unstyled list-inline">
+                                                        <li class="list-inline-item"> <span class="fw-bold">Order Date:</span> April 27, 2022</li>
+                                                        <li class="list-inline-item"> <span class="fw-bold">Order Number:</span> 128537</li>
+                                                        <li class="list-inline-item"> <span class="fw-bold">PO Number:</span> 4338</li>
+                                                        <li class="list-inline-item"> <span class="fw-bold">Total:</span> $230.50</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="order-thumbs">
+                                                    <ul class="list-unstyled list-inline m-0">
+                                                        <li class="list-inline-item mb-3">
+                                                            <img width="86" height="60" src="./img/placeholder-small.png" alt="">
+                                                        </li>
+                                                        <li class="list-inline-item mb-3">
+                                                            <img width="86" height="60" src="./img/placeholder-small.png" alt="">
+                                                        </li>
+                                                        <li class="list-inline-item mb-3">
+                                                            <img width="86" height="60" src="./img/placeholder-small.png" alt="">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-3 d-flex flex-column justify-content-center">
+                                                <button type="button" class="btn btn-sm btn-dark-blue w-100">View Order Details</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade show" id="address-tab-pane" role="tabpanel"
+                            aria-labelledby="address-tab" tabindex="0">
+                                <div class="row">
+                                    <div class="col d-flex justify-content-between align-content-center">
+                                         <h2 class="display-4 m-0 text-dark-gray text-uppercase line-height-4">Saved Addresses</h2>
+
+                                        <button type="button" class="btn btn-sm btn-dark-blue">Add A New Address</button>
+                                    </div>
+                                </div>
+                                <div class="row mt-4 row-cols-1 row-cols-lg-3">
+                                    <div class="position-relative col px-4 py-2">
+                                        <div class="row border rounded-3 px-4 py-5">
+                                            <div class="col-9">
+                                                <div class="position-absolute top-0 mt-2 p-1 border-top fs-7 text-uppercase bg-light-orange text-dark-orange">Default Shipping</div>
+                                                <div class="fw-bold">Jennifer Weston</div>
+                                                <div>FIREBRAND, LLC</div>
+                                                <div>1234 N Main Road</div>
+                                                <div>Seattle, WA 98122</div>
+                                                <div>(123) 456-7891</div>
+                                            </div>
+                                            <div class="col-3 text-end">
+                                                <div> <a class="link-underline fw-bolder fs-6" href="#">Edit</a>
+
+                                                </div>
+                                                <div> <a class="link-underline fw-bolder fs-6" href="#">Remove</a>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="position-relative col px-4 py-2">
+                                        <div class="row border rounded-3 px-4 py-5">
+                                            <div class="col-9">
+                                                <div class="position-absolute top-0 mt-2 p-1 border-top fs-7 text-uppercase bg-light-orange text-dark-orange">Default Billing</div>
+                                                <div class="fw-bold">Jennifer Weston</div>
+                                                <div>FIREBRAND, LLC</div>
+                                                <div>1234 N Main Road</div>
+                                                <div>Seattle, WA 98122</div>
+                                                <div>(123) 456-7891</div>
+                                            </div>
+                                            <div class="col-3 text-end">
+                                                <div> <a class="link-underline fw-bolder fs-6" href="#">Edit</a>
+
+                                                </div>
+                                                <div> <a class="link-underline fw-bolder fs-6" href="#">Remove</a>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col px-4 py-2">
+                                        <div class="row border rounded-3 px-4 py-5">
+                                            <div class="col-9">
+                                                <div class="fw-bold">Jennifer Weston</div>
+                                                <div>FIREBRAND, LLC</div>
+                                                <div>1234 N Main Road</div>
+                                                <div>Seattle, WA 98122</div>
+                                                <div>(123) 456-7891</div>
+                                            </div>
+                                            <div class="col-3 text-end">
+                                                <div> <a class="link-underline fw-bolder fs-6" href="#">Edit</a>
+
+                                                </div>
+                                                <div> <a class="link-underline fw-bolder fs-6" href="#">Remove</a>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade show" id="setting-tab-pane" role="tabpanel"
+                            aria-labelledby="setting-tab" tabindex="0">
+                                <ul class="row list-unstyled list-inline">
+                                    <li class="col">
+                                         <h2 class="display-4 text-dark-gray text-uppercase">Name</h2>
+
+                                        <div>Jennifer Weston</div>
+                                        <div>FIREBRAND, LLC</div>
+                                    </li>
+                                    <li class="col">
+                                         <h2 class="display-4 text-dark-gray text-uppercase">Contact</h2>
+
+                                        <div>jenweston@gmail.com</div>
+                                        <div>(123)456-7891</div>
+                                    </li>
+                                    <li class="col">
+                                         <h2 class="display-4 text-dark-gray text-uppercase">Password</h2>
+
+                                        <div>•••••••••••••</div>
+                                    </li>
+                                    <li class="col d-grid">
+                                        <button type="button" class="btn btn-sm btn-dark-blue">Edit Details</button>
+                                        <button type="button" class="btn btn-sm btn-outline-dark-blue mt-2">Change Password</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="container-fluid bg-dark-blue">
+            <div class="container py-6 text-light">
+                <div class="row py-4 my-4 g-0">
+                    <div class="col mb-3"> <a href="./" class="d-flex align-items-center mb-3 link-light text-decoration-none">
+                    <img src="./img/logo-firebrand-light.svg" alt="Firebrand">
+                </a>
+
+                        <div class="my-4">916A 14th Ave
+                            <br>Seattle, WA 98122</div>
+                        <div> <a href="tel:18666653473" class="link-light">+1 (866) 665-3473</a>
+ <a href="mailto:support@firebrandprinting.com"
+                            class="link-light">support@firebrandprinting.com</a>
+
+                        </div>
+                    </div>
+                    <div class="col mb-3"></div>
+                    <div class="col mb-3">
+                         <h5 class="text-light">Section</h5>
+
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="./" class="nav-link p-0 text-light">Company</a>
+
+                            </li>
+                            <li class="nav-item mb-2"><a href="./" class="nav-link p-0 text-light">About</a>
+
+                            </li>
+                            <li class="nav-item mb-2"><a href="./" class="nav-link p-0 text-light">Contact</a>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col mb-3">
+                         <h5 class="text-light">Section</h5>
+
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="./" class="nav-link p-0 text-light">Products</a>
+
+                            </li>
+                            <li class="nav-item mb-2"><a href="./" class="nav-link p-0 text-light">UL Labels</a>
+
+                            </li>
+                            <li class="nav-item mb-2"><a href="./" class="nav-link p-0 text-light">QL Labels</a>
+
+                            </li>
+                            <li class="nav-item mb-2"><a href="./" class="nav-link p-0 text-light">View All</a>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col mb-3">
+                         <h5 class="text-light">Section</h5>
+
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="./" class="nav-link p-0 text-light">Quicklinks</a>
+
+                            </li>
+                            <li class="nav-item mb-2"><a href="./" class="nav-link p-0 text-light">Get A Quote</a>
+
+                            </li>
+                            <li class="nav-item mb-2"><a href="./" class="nav-link p-0 text-light">My Account</a>
+
+                            </li>
+                            <li class="nav-item mb-2"><a href="./" class="nav-link p-0 text-light">Order History</a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row justify-content-between g-0 pt-4 mt-4 border-top">
+                    <div class="col mb-3">
+                        <ul class="nav">
+                            <li class="nav-item"><a href="./" class="p-0 text-light text-capitalize display-6">Terms of Service</a>
+
+                            </li>
+                            <li class="nav-item"><a href="./" class="px-3 text-light text-capitalize display-6">Privacy Policy</a>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col text-center display-6">©2022 Firebrand, Inc. All rights reserved.</div>
+                    <div class="col">
+                        <ul class="nav justify-content-end">
+                            <li class="nav-item"><a href="./" class="nav-link p-1 text-light"><img src="./icons/icon-linkedin.svg" alt="LinkedIn"></a>
+
+                            </li>
+                            <li class="nav-item"><a href="./" class="nav-link p-1 text-light"><img src="./icons/icon-facebook.svg" alt="Facebook"></a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./js/all.js"></script>
+    </body>
+
+</html>
