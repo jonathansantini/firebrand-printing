@@ -15,3 +15,37 @@
 .accordion-item:not(:first-of-type) .accordion-button {
   border-top: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
 }
+
+/* Single Item Accordion */
+.accordion-small .accordion-item {
+  border: none;
+}
+
+.accordion-small .accordion-button {
+  padding: 0;
+  margin: 0;
+}
+
+.accordion-small .accordion-button::after {
+  padding: 0;
+  margin: 0;
+}
+
+.accordion-small .accordion-button:not(.collapsed)::after {
+  background-image: url("/icons/icon-arrow-thin.svg");
+  width: 1.5rem;
+  height: 5.25px;
+  transform: rotate(0deg) translateX(4px);
+}
+
+.accordion-small .accordion-button::after {
+  background-image: url("/icons/icon-arrow-thin.svg");
+  width: 1.5rem;
+  height: 5.25px;
+  transform: rotate(180deg);
+}
+
+.accordion-small .accordion-body {
+  padding: 0;
+  margin: 0;
+}
