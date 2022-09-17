@@ -1,0 +1,64 @@
+<div class="row gx-5 @@classes">
+  <div class="col">
+    <div class="row">
+      <div class="col-2 ps-0">
+        <img width="126" height="88" src="./img/placeholder-small.png" alt="">
+      </div>
+      <div class="col-7">
+        <h3 class="display-4">@@title</h3>
+        <div>
+          <span class="fw-bolder">Quantity:</span> 150
+        </div>
+        <div>
+          <span class="fw-bolder">Size:</span> 4" x 4"
+        </div>
+        <div>
+          <span class="fw-bolder">Material:</span> White Polyester, 2 mil
+        </div>
+      </div>
+      <div class="col-3 text-end d-flex flex-column justify-content-between">
+        <div class="fs-5 fw-bold text-blue">$145.00</div>
+        <div>
+          <div class="mt-2 d-inline-block p-1 border-top fs-7 text-uppercase bg-light-orange text-dark-orange">Split Shipping</div>
+        </div>
+        <button type="button" class="btn btn-sm btn-dark-blue w-100 mt-3">Reorder</button>
+      </div>
+    </div>
+
+    <div class="row justify-content-end">
+      <div class="col-10">
+        <div class="accordion accordion-small mt-3" id="@@accordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="@@heading">
+              <button class="accordion-button fs-7 text-dark-blue collapsed" type="button" data-bs-toggle="collapse" data-bs-target="@@orderTarget" aria-expanded="false" aria-controls="@@orderAria">
+                View More Details
+              </button>
+            </h2>
+            <div id="@@accordionBody" class="accordion-collapse collapse" aria-labelledby="@@accordionLabelby" data-bs-parent="@@accordionBodyTarget">
+              <div class="accordion-body line-height-4">
+                <div>
+                  <span class="fw-bolder">Part Number:</span> 123
+                </div>
+                <div>
+                  <span class="fw-bolder">Overlaminate:</span> Gloss Polyester, 1 mil
+                </div>
+                <div>
+                  <span class="fw-bolder">Color(s):</span> Blue
+                </div>
+                <div>
+                  <span class="fw-bolder">Form Factor:</span> Rolls
+                </div>
+                <div>
+                  <span class="fw-bolder">Production Time:</span> Standard
+                </div>
+                <partial src="./account/split-shipping-item.html"></partial>
+                <partial src="./account/split-shipping-item.html"></partial>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
