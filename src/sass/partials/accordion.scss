@@ -32,14 +32,14 @@
 }
 
 .accordion-small .accordion-button:not(.collapsed)::after {
-  background-image: url("/icons/icon-arrow-thin.svg");
+  background-image: url("../icons/icon-arrow-thin.svg");
   width: 1.5rem;
   height: 5.25px;
   transform: rotate(0deg) translateX(4px);
 }
 
 .accordion-small .accordion-button::after {
-  background-image: url("/icons/icon-arrow-thin.svg");
+  background-image: url("../icons/icon-arrow-thin.svg");
   width: 1.5rem;
   height: 5.25px;
   transform: rotate(180deg);
