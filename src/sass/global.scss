@@ -53,6 +53,20 @@ a.link-normal {
   color: $color-light;
 }
 
+.btn-success {
+  color: $color-light;
+  display: flex;
+  justify-content: center;
+
+  &:hover {
+    color: $color-light;
+  }
+}
+
+.btn-success img {
+  margin-right: 0.5rem;
+}
+
 // Images
 .img-fluid {
   width: 100%;

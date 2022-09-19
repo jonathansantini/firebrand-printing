@@ -2,24 +2,7 @@
 
 <main class="site-main">
 
-  <section class="container mt-7">
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="./">Home</a>
-        </li>
-        <li class="breadcrumb-item">
-          <a href="./">Account</a>
-        </li>
-        <li class="breadcrumb-item">
-          <a href="./">Order History</a>
-        </li>
-        <li class="breadcrumb-item active" aria-current="page">
-          Order 128537
-        </li>
-      </ol>
-    </nav>
-  </section>
+  <partial src="./account/breadcrumbs.html"></partial>
 
   <section class="container mt-4">
     <div class="row">
@@ -137,9 +120,9 @@
         </div>
         <div class="row mt-2 pt-5 px-5 border rounded-2">
           <div class="col">
-            <partial src="./account/order-summary.html" title="UL Labels" accordion="order1Accordion" heading="order1Heading" orderTarget="#order1" orderAria="order1" accordionBody="order1" accordionLabelby="order1Heading" accordionBodyTarget="#order1" classes="pb-5 mb-5 border-bottom"></partial>
-            <partial src="./account/order-summary.html" title="Parking Permits" accordion="order2Accordion" heading="order2Heading" orderTarget="#order2" orderAria="order2" accordionBody="order2" accordionLabelby="order2Heading" accordionBodyTarget="#order2" classes="pb-5 mb-5 border-bottom"></partial>
-            <partial src="./account/order-summary-split.html" title="Parking Permits" accordion="order3Accordion" heading="order3Heading" orderTarget="#order3" orderAria="order3" accordionBody="order3" accordionLabelby="order3Heading" accordionBodyTarget="#order3" classes="pb-5"></partial>
+            <partial src="./order/order-summary.html" title="UL Labels" accordion="order1Accordion" heading="order1Heading" orderTarget="#order1" orderAria="order1" accordionBody="order1" accordionLabelby="order1Heading" accordionBodyTarget="#order1" classes="pb-5 mb-5 border-bottom"></partial>
+            <partial src="./order/order-summary.html" title="Parking Permits" accordion="order2Accordion" heading="order2Heading" orderTarget="#order2" orderAria="order2" accordionBody="order2" accordionLabelby="order2Heading" accordionBodyTarget="#order2" classes="pb-5 mb-5 border-bottom"></partial>
+            <partial src="./order/order-summary-split.html" title="Parking Permits" accordion="order3Accordion" heading="order3Heading" orderTarget="#order3" orderAria="order3" accordionBody="order3" accordionLabelby="order3Heading" accordionBodyTarget="#order3" classes="pb-5"></partial>
           </div>
         </div>
       </div>
