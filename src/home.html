@@ -1,4 +1,9 @@
-<partial src="header.html" title="Homepage"></partial>
+@@include('./partials/head_start.html', {
+"title": "Homepage"
+})
+@@include('./partials/head_end.html')
+
+@@include('./partials/header.html')
 
 <main class="site-main">
   <section class="container">
@@ -90,7 +95,8 @@
     </div>
   </section>
 
-  <partial src="banner-contact.html"></partial>
+  @@include('./partials/banner-contact.html')
 </main>
 
-<partial src="footer.html"></partial>
+@@include('./partials/footer_start.html')
+@@include('./partials/footer_end.html')

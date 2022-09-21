@@ -1,4 +1,9 @@
-<partial src="header.html" title="PLP"></partial>
+@@include('./partials/head_start.html', {
+  "title": "PLP"
+})
+@@include('./partials/head_end.html')
+
+@@include('./partials/header.html')
 
 <main class="site-main">
   <section class="container my-5 py-5">
@@ -10,9 +15,25 @@
     </div>
   </section>
 
-  <partial src="product-row.html" blockTitle="Customizing" title1="UL Labels" alt1="UL Labels" alt2="Machine Labels" title2="Machine Labels" alt3="Control Panels" title3="Control Panels"></partial>
+  @@include('./partials/product-row.html', {
+    "blockTitle": "Customizing",
+    "title1": "UL Labels",
+    "alt1": "UL Labels",
+    "title2": "Machine Labels",
+    "alt2": "Machine Labels",
+    "title3": "Control Panels",
+    "alt3": "Control Panels"
+  })
 
-  <partial src="product-row.html" blockTitle="Organizing" title1="Asset Tags" alt1="Asset Tags" alt2="Parking Permits" title2="Parking Permits" alt3="GearBadge" title3="GearBadge"></partial>
+  @@include('./partials/product-row.html', {
+    "blockTitle": "Organizing",
+    "title1": "Asset Tags",
+    "alt1": "Asset Tags",
+    "title2": "Parking Permits",
+    "alt2": "Parking Permits",
+    "title3": "GearBadge",
+    "alt3": "GearBadge"
+  })
 
   <section class="container py-5">
     <div class="mx-sm-6 mx-lg-0 px-sm-6 px-lg-0">
@@ -80,4 +101,5 @@
   </section>
 </main>
 
-<partial src="footer.html"></partial>
+@@include('./partials/footer_start.html')
+@@include('./partials/footer_end.html')

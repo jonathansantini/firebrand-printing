@@ -1,8 +1,13 @@
-<partial src="header.html" title="Account Settings"></partial>
+@@include('./partials/head_start.html', {
+"title": "Account Settings"
+})
+@@include('./partials/head_end.html')
+
+@@include('./partials/header.html')
 
 <main class="site-main">
 
-  <partial src="./account/breadcrumbs.html"></partial>
+  @@include('./partials/account/breadcrumbs.html')
 
   <section class="container mt-4">
     <div class="row">
@@ -120,9 +125,39 @@
         </div>
         <div class="row mt-2 pt-5 px-5 border rounded-2">
           <div class="col">
-            <partial src="./order/order-summary.html" title="UL Labels" accordion="order1Accordion" heading="order1Heading" orderTarget="#order1" orderAria="order1" accordionBody="order1" accordionLabelby="order1Heading" accordionBodyTarget="#order1" classes="pb-5 mb-5 border-bottom"></partial>
-            <partial src="./order/order-summary.html" title="Parking Permits" accordion="order2Accordion" heading="order2Heading" orderTarget="#order2" orderAria="order2" accordionBody="order2" accordionLabelby="order2Heading" accordionBodyTarget="#order2" classes="pb-5 mb-5 border-bottom"></partial>
-            <partial src="./order/order-summary-split.html" title="Parking Permits" accordion="order3Accordion" heading="order3Heading" orderTarget="#order3" orderAria="order3" accordionBody="order3" accordionLabelby="order3Heading" accordionBodyTarget="#order3" classes="pb-5"></partial>
+            @@include('./partials/order/order-summary.html', {
+              "title": "UL Labels",
+              "accordion": "order1Accordion",
+              "heading": "order1Heading",
+              "orderTarget": "#order1",
+              "orderAria": "order1",
+              "accordionBody": "order1",
+              "accordionLabelby": "order1Heading",
+              "accordionBodyTarget": "#order1",
+              "classes": "pb-5 mb-5 border-bottom"
+            })
+            @@include('./partials/order/order-summary.html', {
+              "title": "Parking Permits",
+              "accordion": "order2Accordion",
+              "heading": "order2Heading",
+              "orderTarget": "#order2",
+              "orderAria": "order2",
+              "accordionBody": "order2",
+              "accordionLabelby": "order2Heading",
+              "accordionBodyTarget": "#order2",
+              "classes": "pb-5 mb-5 border-bottom"
+            })
+            @@include('./partials/order/order-summary-split.html', {
+              "title": "Parking Permits",
+              "accordion": "order3Accordion",
+              "heading": "order3Heading",
+              "orderTarget": "#order3",
+              "orderAria": "order3",
+              "accordionBody": "order3",
+              "accordionLabelby": "order3Heading",
+              "accordionBodyTarget": "#order3",
+              "classes": "pb-5"
+            })
           </div>
         </div>
       </div>
@@ -131,4 +166,5 @@
 
 </main>
 
-<partial src="footer.html"></partial>
+@@include('./partials/footer_start.html')
+@@include('./partials/footer_end.html')

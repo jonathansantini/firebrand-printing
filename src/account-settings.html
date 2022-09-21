@@ -1,4 +1,9 @@
-<partial src="header.html" title="Account Settings"></partial>
+@@include('./partials/head_start.html', {
+  "title": "Account Settings"
+})
+@@include('./partials/head_end.html')
+
+@@include('./partials/header.html')
 
 <main class="site-main">
 
@@ -36,15 +41,15 @@
             <div class="row mt-6">
               <div class="col">
                 <h2 class="display-4 text-dark-gray text-uppercase">Orders In Progress (1)</h2>
-                <partial src="./account/order-in-progress.html"></partial>
+                @@include('./partials/account/order-in-progress.html')
               </div>
             </div>
             <div class="row mt-6">
               <div class="col">
                 <h2 class="display-4 text-dark-gray text-uppercase">Past Orders</h2>
-                <partial src="./account/order-complete.html"></partial>
-                <partial src="./account/order-complete.html"></partial>
-                <partial src="./account/order-cancelled.html"></partial>
+                @@include('./partials/account/order-complete.html')
+                @@include('./partials/account/order-complete.html')
+                @@include('./partials/account/order-cancelled.html')
               </div>
             </div>
           </div>
@@ -56,9 +61,13 @@
               </div>
             </div>
             <div class="row mt-4 row-cols-1 row-cols-lg-3">
-              <partial src="./account/address-card-with-tag.html" tag="Default Shipping"></partial>
-              <partial src="./account/address-card-with-tag.html" tag="Default Billing"></partial>
-              <partial src="./account/address-card.html"></partial>
+              @@include('./partials/account/address-card-with-tag.html', {
+                "tag": "Default Shipping"
+              })
+              @@include('./partials/account/address-card-with-tag.html', {
+                "tag": "Default Billing"
+              })
+              @@include('./partials/account/address-card.html')
             </div>
           </div>
           <div class="tab-pane fade show" id="setting-tab-pane" role="tabpanel" aria-labelledby="setting-tab" tabindex="0">
@@ -89,4 +98,5 @@
   </section>
 </main>
 
-<partial src="footer.html"></partial>
+@@include('./partials/footer_start.html')
+@@include('./partials/footer_end.html')

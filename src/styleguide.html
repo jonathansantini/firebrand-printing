@@ -1,4 +1,9 @@
-<partial src="header.html" title="Styleguide"></partial>
+@@include('./partials/head_start.html', {
+  "title": "Styleguide"
+})
+@@include('./partials/head_end.html')
+
+@@include('./partials/header.html')
 
 <main class="site-main styleguide">
   <section class="container styleguide__section colors">
@@ -112,3 +117,6 @@
     </div>
   </section>
 </main>
+
+@@include('./partials/footer_start.html')
+@@include('./partials/footer_end.html')

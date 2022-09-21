@@ -1,13 +1,20 @@
-<partial src="header.html" title="PDP/Quoter"></partial>
+@@include('./partials/head_start.html', {
+"title": "PDP / Quoter"
+})
+@@include('./partials/head_end.html')
+
+@@include('./partials/header.html')
 
 <main class="site-main">
 
-  <partial src="quoter/breadcrumbs.html" title="UL Labels"></partial>
+  @@include('./partials/quoter/breadcrumbs.html', {
+    "title": "UL Labels"
+  })
 
   <section class="container mt-4">
     <div class="row g-6">
 
-      <partial src="quoter/carousel.html"></partial>
+      @@include('./partials/quoter/carousel.html')
 
       <div class="col-sm-12 col-lg-6">
         <h1 class="display-2">UL Labels</h1>
@@ -40,11 +47,20 @@
     </div>
   </section>
 
-  <partial src="quoter/product-details.html"></partial>
+  @@include('./partials/quoter/product-details.html')
 
-  <partial src="product-row.html" blockTitle="Related Products" title1="Container Labels" alt1="Container Labels" alt2="Bumper Stickers" title2="Bumper Stickers" alt3="Promotional Stickers" title3="Promotional Stickers"></partial>
+  @@include('./partials/product-row.html', {
+    "blockTitle": "Related Products",
+    "title1": "Container Labels",
+    "alt1": "Container Labels",
+    "title2": "Bumper Stickers",
+    "alt2": "Bumper Stickers",
+    "title3": "Promotional Stickers",
+    "alt3": "Promotional Stickers"
+  })
 
-  <partial src="banner-contact.html"></partial>
+  @@include('./partials/banner-contact.html')
 </main>
 
-<partial src="footer.html"></partial>
+@@include('./partials/footer_start.html')
+@@include('./partials/footer_end.html')

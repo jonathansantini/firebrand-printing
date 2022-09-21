@@ -1,4 +1,9 @@
-<partial src="header.html" title="Login"></partial>
+@@include('./partials/head_start.html', {
+"title": "Login"
+})
+@@include('./partials/head_end.html')
+
+@@include('./partials/header.html')
 
 <main class="site-main">
   <section class="container-sm my-6 py-6">
@@ -37,4 +42,5 @@
   </section>
 </main>
 
-<partial src="footer.html"></partial>
+@@include('./partials/footer_start.html')
+@@include('./partials/footer_end.html')

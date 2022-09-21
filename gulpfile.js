@@ -8,7 +8,7 @@ const uglify = require('gulp-uglify');
 const concat = require('gulp-concat');
 const jsImport = require('gulp-js-import');
 const sourcemaps = require('gulp-sourcemaps');
-const htmlPartial = require('gulp-html-partial');
+const fileinclude = require('gulp-file-include');
 const clean = require('gulp-clean');
 const isProd = process.env.NODE_ENV === 'prod';
 
@@ -17,14 +17,12 @@ const htmlFile = [
 ]
 
 function html() {
-    return gulp.src(htmlFile)
-        .pipe(htmlPartial({
-            basePath: 'src/partials/'
-        }))
-        .pipe(gulpIf(isProd, htmlmin({
-            collapseWhitespace: true
-        })))
-        .pipe(gulp.dest('site'));
+    return gulp.src(['src/*'])
+      .pipe(fileinclude({
+          prefix: '@@',
+          basepath: '@file'
+      }))
+      .pipe(gulp.dest('site'));
 }
 
 function css() {

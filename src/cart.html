@@ -1,4 +1,9 @@
-<partial src="header.html" title="Account Settings"></partial>
+@@include('./partials/head_start.html', {
+  "title": "Cart"
+})
+@@include('./partials/head_end.html')
+
+@@include('./partials/header.html')
 
 <main class="site-main">
 
@@ -69,4 +74,5 @@
 
 </main>
 
-<partial src="footer.html"></partial>
+@@include('./partials/footer_start.html')
+@@include('./partials/footer_end.html')

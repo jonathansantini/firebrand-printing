@@ -1,8 +1,13 @@
-<partial src="header.html" title="PDP/Quoter"></partial>
+@@include('./partials/head_start.html', {
+"title": "PDP/Quoter"
+})
+@@include('./partials/head_end.html')
+
+@@include('./partials/header.html')
 
 <main class="site-main">
 
-  <partial src="./account/breadcrumbs.html"></partial>
+  @@include('./partials/account/breadcrumbs.html')
 
   <section class="container mt-4 mb-7">
     <div class="row">
@@ -27,12 +32,12 @@
     <div class="row mt-4 mb-6 gx-6">
       <div class="col-sm-12 col-lg-7">
         <div class="accordion" id="orderInfo">
-          <partial src="./order/order-accordion-quantity.html"></partial>
-          <partial src="./order/order-accordion-upload.html"></partial>
-          <partial src="./order/order-accordion-proof.html"></partial>
-          <partial src="./order/order-accordion-part.html"></partial>
-          <partial src="./order/order-accordion-production-time.html"></partial>
-          <partial src="./order/order-accordion-notes.html"></partial>
+          @@include('./partials/order/order-accordion-quantity.html')
+          @@include('./partials/order/order-accordion-upload.html')
+          @@include('./partials/order/order-accordion-proof.html')
+          @@include('./partials/order/order-accordion-part.html')
+          @@include('./partials/order/order-accordion-production-time.html')
+          @@include('./partials/order/order-accordion-notes.html')
         </div>
       </div>
 
@@ -79,4 +84,5 @@
 
 </main>
 
-<partial src="footer.html"></partial>
+@@include('./partials/footer_start.html')
+@@include('./partials/footer_end.html')
