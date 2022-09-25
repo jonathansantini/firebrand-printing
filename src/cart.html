@@ -17,9 +17,39 @@
       <div class="col-8">
         <div class="row pt-4 px-4 border rounded-2">
           <div class="col">
-            <partial src="./order/order-edit.html" title="UL Labels" accordion="order1Accordion" heading="order1Heading" orderTarget="#order1" orderAria="order1" accordionBody="order1" accordionLabelby="order1Heading" accordionBodyTarget="#order1" classes="pb-5 mb-5 border-bottom"></partial>
-            <partial src="./order/order-edit.html" title="Parking Permits" accordion="order2Accordion" heading="order2Heading" orderTarget="#order2" orderAria="order2" accordionBody="order2" accordionLabelby="order2Heading" accordionBodyTarget="#order2" classes="pb-5 mb-5 border-bottom"></partial>
-            <partial src="./order/order-edit.html" title="Machine Labels" accordion="order3Accordion" heading="order3Heading" orderTarget="#order3" orderAria="order3" accordionBody="order3" accordionLabelby="order3Heading" accordionBodyTarget="#order3" classes="pb-5"></partial>
+            @@include('./partials/order/order-edit.html', {
+              "title": "UL Labels",
+              "accordion": "order1Accordion",
+              "heading": "order1Heading",
+              "orderTarget": "#order1",
+              "orderAria": "order1",
+              "accordionBody": "order1",
+              "accordionLabelby": "order1Heading",
+              "accordionBodyTarget": "#order1",
+              "classes": "pb-5 mb-5 border-bottom"
+            })
+            @@include('./partials/order/order-edit.html', {
+              "title": "Parking Permits",
+              "accordion": "order2Accordion",
+              "heading": "order2Heading",
+              "orderTarget": "#order2",
+              "orderAria": "order2",
+              "accordionBody": "order2",
+              "accordionLabelby": "order2Heading",
+              "accordionBodyTarget": "#order2",
+              "classes": "pb-5 mb-5 border-bottom"
+            })
+            @@include('./partials/order/order-edit.html', {
+              "title": "Machine Labels",
+              "accordion": "order3Accordion",
+              "heading": "order3Heading",
+              "orderTarget": "#order3",
+              "orderAria": "order3",
+              "accordionBody": "order3",
+              "accordionLabelby": "order3Heading",
+              "accordionBodyTarget": "#order3",
+              "classes": "pb-5"
+            })
           </div>
         </div>
       </div>
@@ -68,7 +98,15 @@
 
   <section class="container my-6">
     <div class="row">
-      <partial src="product-row.html" blockTitle="Recommended for you" title1="Container Labels" alt1="Container Labels" title2="Bumper Stickers" alt2="Bumper Stickers" title3="Promotional Stickers" alt3="Promotional Stickers"></partial>
+      @@include('./partials/product-row.html', {
+        "blockTitle": "Recommended for you",
+        "title1": "Container Labels",
+        "alt1": "Container Labels",
+        "title2": "Bumper Stickers",
+        "alt2": "Bumper Stickers",
+        "title3": "Promotional Stickers",
+        "alt3": "Promotional Stickers"
+      })
     </div>
   </section>
 
