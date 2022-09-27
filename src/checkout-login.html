@@ -1,0 +1,93 @@
+@@include('./partials/head_start.html', {
+  "title": "Checkout"
+})
+@@include('./partials/head_end.html')
+
+@@include('./partials/checkout/header-checkout.html')
+
+<main class="site-main">
+
+  @@include('./partials/checkout/checkout-nav.html', {
+    "tab1-active": "active",
+    "tab2-active": "",
+    "tab3-active": "",
+    "tab4-active": ""
+  })
+
+  <section class="container mt-6">
+    <div class="row">
+      <div class="col">
+        <h1 class="display-2">Hi, Jennifer</h1>
+      </div>
+    </div>
+    <div class="row flex-nowrap mt-4 gap-4">
+      <div class="col-8">
+        <form action="" class="w-75">
+          <div class="row mt-3">
+            <div class="col">
+              <label for="email" class="form-label">Email Address*</label>
+              <input type="email" class="form-control" id="email" value="jenweston@gmail.com" placeholder="Enter your email address" required>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="promotion" id="promotion" checked>
+                <label class="form-check-label ms-2" for="promotion">
+                  I want to receive promotional emails.
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-6">
+            <div class="col">
+              <input class="btn btn-dark-blue" type="submit" value="Continue">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-4">
+        <div class="row border rounded-2">
+          <div class="col p-4">
+            <table class="table table-borderless m-0">
+              <tbody>
+              <tr>
+                <td class="fw-bold">Subtotal</td>
+                <td class="text-end">$490.00</td>
+              </tr>
+              <tr>
+                <td class="fw-bold">Discounts</td>
+                <td class="text-end">-$10.00</td>
+              </tr>
+              <tr>
+                <td class="fw-bold">Shipping</td>
+                <td class="text-end">-</td>
+              </tr>
+              <tr>
+                <td class="fw-bold">Taxes</td>
+                <td class="text-end">-</td>
+              </tr>
+              <tr class="table-group-divider border-base-gray">
+                <td class="fw-bold pt-3">Order Total</td>
+                <td class="text-end pt-3">$534.00</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row mt-4 border rounded-2">
+          <div class="col p-4">
+            <label for="promo-code" class="form-label">Have a promo code?</label>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control border-end-0" id="promo-code" placeholder="Enter a promo code" aria-label="Enter a promo code" aria-describedby="promo-apply">
+              <button class="btn btn-sm btn-outline-secondary border-base-gray border-start-0" type="button" id="promo-apply">Apply</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+@@include('./partials/checkout/footer-checkout_start.html')
+@@include('./partials/footer_end.html')
