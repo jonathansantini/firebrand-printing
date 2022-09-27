@@ -1,0 +1,126 @@
+@@include('./partials/head_start.html', {
+  "title": "Checkout"
+})
+@@include('./partials/head_end.html')
+
+@@include('./partials/header-checkout.html')
+
+<main class="site-main">
+
+  <section class="container my-4 py-4">
+    <div class="row">
+      <div class="col">
+        <ul class="nav nav-fill checkout-tabs" id="checkoutTabs" role="tablist">
+          <li class="nav-item py-3 pe-3 col-3 text-uppercase active" role="tab">
+            <span class="tab-number">1</span>
+            Customer Information
+          </li>
+          <li class="nav-item py-3 pe-3 col-3 text-uppercase" role="tab">
+            <span class="tab-number">2</span>
+            Shipping &amp; Delivery
+          </li>
+          <li class="nav-item py-3 pe-3 col-3 text-uppercase" role="tab">
+            <span class="tab-number">3</span>
+            Payment
+          </li>
+          <li class="nav-item py-3 pe-3 col-3 text-uppercase" role="tab">
+            <span class="tab-number">4</span>
+            Review Order
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mt-6">
+    <div class="row">
+      <div class="col">
+        <h1 class="display-2">Customer Information</h1>
+      </div>
+    </div>
+    <div class="row flex-nowrap mt-4 gap-4">
+      <div class="col-8">
+        <div class="row pt-4 px-4 border rounded-2">
+          <div class="col">
+            @@include('./partials/order/order-edit.html', {
+            "title": "UL Labels",
+            "accordion": "order1Accordion",
+            "heading": "order1Heading",
+            "orderTarget": "#order1",
+            "orderAria": "order1",
+            "accordionBody": "order1",
+            "accordionLabelby": "order1Heading",
+            "accordionBodyTarget": "#order1",
+            "classes": "pb-5 mb-5 border-bottom"
+            })
+            @@include('./partials/order/order-edit.html', {
+            "title": "Parking Permits",
+            "accordion": "order2Accordion",
+            "heading": "order2Heading",
+            "orderTarget": "#order2",
+            "orderAria": "order2",
+            "accordionBody": "order2",
+            "accordionLabelby": "order2Heading",
+            "accordionBodyTarget": "#order2",
+            "classes": "pb-5 mb-5 border-bottom"
+            })
+            @@include('./partials/order/order-edit.html', {
+            "title": "Machine Labels",
+            "accordion": "order3Accordion",
+            "heading": "order3Heading",
+            "orderTarget": "#order3",
+            "orderAria": "order3",
+            "accordionBody": "order3",
+            "accordionLabelby": "order3Heading",
+            "accordionBodyTarget": "#order3",
+            "classes": "pb-5"
+            })
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="row border rounded-2">
+          <div class="col p-4">
+            <table class="table table-borderless m-0">
+              <tbody>
+              <tr>
+                <td class="fw-bold">Subtotal</td>
+                <td class="text-end">$490.00</td>
+              </tr>
+              <tr>
+                <td class="fw-bold">Discounts</td>
+                <td class="text-end">-$10.00</td>
+              </tr>
+              <tr>
+                <td class="fw-bold">Taxes</td>
+                <td class="text-end">Calculated in checkout</td>
+              </tr>
+              <tr class="table-group-divider border-base-gray">
+                <td class="fw-bold pt-3">Estimated Total</td>
+                <td class="text-end pt-3">$534.00</td>
+              </tr>
+              <tr>
+                <td class="fw-bold pt-3" colspan="2">
+                  <button type="button" class="btn btn-dark-blue w-100">Back To My Orders</button>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row mt-4 border rounded-2">
+          <div class="col p-4">
+            <label for="promo-code" class="form-label">Have a promo code?</label>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control border-end-0" id="promo-code" placeholder="Enter a promo code" aria-label="Enter a promo code" aria-describedby="promo-apply">
+              <button class="btn btn-sm btn-outline-secondary border-base-gray border-start-0" type="button" id="promo-apply">Apply</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+@@include('./partials/footer-checkout_start.html')
+@@include('./partials/footer_end.html')
