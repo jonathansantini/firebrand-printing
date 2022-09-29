@@ -3,7 +3,7 @@
     <input class="form-check-input my-3" type="radio" name="payment-method" id="payment-method" @@checked>
   </div>
   <div class="col p-0">
-    <label class="form-check-label col-9 ms-2" for="@@id">
+    <label class="form-check-label col-9 ms-2" for="payment-method">
       <div class="fw-bold">Credit Card</div>
       <div>American Express, VISA, or MasterCard</div>
     </label>
@@ -33,6 +33,10 @@
         </div>
       </div>
     </div>
+    @@include('./address-form.html', {
+      "title": "Enter a billing address",
+      "classes": "mt-5"
+    })
     <div class="row mt-3">
       <div class="col">
         <label for="customer-reference" class="form-label">Customer reference number</label>

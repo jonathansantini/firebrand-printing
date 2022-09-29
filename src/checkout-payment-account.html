@@ -9,62 +9,34 @@
 
   @@include('./partials/checkout/checkout-nav.html', {
     "tab1-active": "",
-    "tab2-active": "active",
-    "tab3-active": "",
+    "tab2-active": "",
+    "tab3-active": "active",
     "tab4-active": ""
   })
 
-  <section class="container mt-6 mb-7">
+  <section class="container mt-6">
     <div class="row">
-      <div class="col">
-        <h1 class="display-2">Shipping Address</h1>
+      <div class="col d-flex align-items-center">
+        <h1 class="display-2 m-0">Payment</h1>
+        <span class="ms-5">
+          <img class="me-2" src="./icons/icon-lock.svg" alt="secure checkout">
+          Secure Checkout
+        </span>
       </div>
     </div>
     <div class="row flex-nowrap mt-4 gap-4 justify-content-around">
       <div class="col-7">
-        <span>Want a faster checkout and advanced shipping options? <a class="link-underline fs-6 fw-bold" href="account-login.html">Sign in</a> to your account.</span>
-        <form class="mt-6" action="">
-          @@include('./partials/checkout/address-form.html', {
-            "title": "Enter a shipping address",
-            "classes": "mt-3"
+        <form action="">
+          @@include('./partials/checkout/payment-credit-card.html', {
+            "checked": "checked",
+            "billingChecked": "checked"
           })
-          <div class="row mt-7">
-            <div class="col">
-              <h1 class="display-2">Delivery Options</h1>
-            </div>
-          </div>
-          <div class="row mt-4">
-            <div class="col">
-              <div class="form-group mt-3 d-flex flex-column gap-2">
-                @@include('./partials/checkout/shipping-option.html', {
-                  "name": "delivery-option",
-                  "id": "delivery-option1",
-                  "checked": "checked",
-                  "title": "FREE Standard Shipping",
-                  "arrival": "Estimated arrival: July 20, 2022",
-                  "price": "$0.00"
-                })
-                @@include('./partials/checkout/shipping-option.html', {
-                  "name": "delivery-option",
-                  "id": "delivery-option2",
-                  "checked": "",
-                  "title": "Expedited Shipping",
-                  "arrival": "Estimated arrival: July 7, 2022",
-                  "price": "$20.00"
-                })
-                @@include('./partials/checkout/shipping-option-custom.html', {
-                  "name": "delivery-option",
-                  "id": "delivery-option3",
-                  "checked": "",
-                  "title": "I have my own shipping number",
-                  "price": "$40.00"
-                })
-              </div>
-            </div>
-          </div>
+          @@include('./partials/checkout/payment-purchase-order.html', {
+            "checked": ""
+          })
           <div class="row mt-6">
             <div class="col">
-              <button type="button" class="btn btn-dark-blue">Continue</button>
+              <input class="btn btn-dark-blue" type="submit" value="Continue">
             </div>
           </div>
         </form>
@@ -80,15 +52,15 @@
               </tr>
               <tr>
                 <td class="fw-bold">Discounts</td>
-                <td class="text-end">$0.00</td>
+                <td class="text-end">-$10.00</td>
               </tr>
               <tr>
                 <td class="fw-bold">Shipping</td>
-                <td class="text-end">$0.00</td>
+                <td class="text-end">-</td>
               </tr>
               <tr>
                 <td class="fw-bold">Taxes</td>
-                <td class="text-end">$32.00</td>
+                <td class="text-end">-</td>
               </tr>
               <tr class="table-group-divider border-base-gray">
                 <td class="fw-bold pt-3">Order Total</td>
