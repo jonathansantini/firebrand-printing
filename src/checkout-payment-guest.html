@@ -8,38 +8,29 @@
 <main class="site-main">
 
   @@include('./partials/checkout/checkout-nav.html', {
-    "tab1-active": "active",
+    "tab1-active": "",
     "tab2-active": "",
-    "tab3-active": "",
+    "tab3-active": "active",
     "tab4-active": ""
   })
 
   <section class="container mt-6">
     <div class="row">
-      <div class="col">
-        <h1 class="display-2">Customer Information</h1>
+      <div class="col d-flex align-items-center">
+        <h1 class="display-2 m-0">Payment</h1>
+        <span class="ms-5">
+          <img class="me-2" src="./icons/icon-lock.svg" alt="secure checkout">
+          Secure Checkout
+        </span>
       </div>
     </div>
     <div class="row flex-nowrap mt-4 gap-4 justify-content-around">
-      <div class="col-7 p-0">
-        <span>Want a faster checkout and advanced shipping options? <a class="link-underline fs-6 fw-bold" href="account-login.html">Sign in</a> to your account.</span>
-        <form action="" class="w-75">
-          <div class="row mt-3">
-            <div class="col">
-              <label for="email" class="form-label">Email Address*</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
-            </div>
-          </div>
-          <div class="row mt-4">
-            <div class="col">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="promotion" id="promotion">
-                <label class="form-check-label ms-2" for="promotion">
-                  I want to receive promotional emails.
-                </label>
-              </div>
-            </div>
-          </div>
+      <div class="col-7">
+        <form action="">
+          @@include('./partials/checkout/payment-credit-card.html', {
+            "checked": "checked",
+            "billingChecked": "checked"
+          })
           <div class="row mt-6">
             <div class="col">
               <input class="btn btn-dark-blue" type="submit" value="Continue">
