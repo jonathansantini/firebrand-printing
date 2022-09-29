@@ -1,0 +1,164 @@
+@@include('./partials/head_start.html', {
+  "title": "Checkout"
+})
+@@include('./partials/head_end.html')
+
+@@include('./partials/checkout/header-checkout.html')
+
+<main class="site-main">
+
+  @@include('./partials/checkout/checkout-nav.html', {
+    "tab1-active": "",
+    "tab2-active": "",
+    "tab3-active": "",
+    "tab4-active": "active"
+  })
+
+  <section class="container mt-6">
+    <div class="row">
+      <div class="col">
+        <h1 class="display-2">Review Order Details</h1>
+      </div>
+    </div>
+    <div class="row justify-content-between mt-4">
+      <div class="col-8 pe-5">
+        <div class="row">
+          <div class="col">
+            <h2 class="display-4 text-uppercase text-dark-blue">Customer Information</h2>
+          </div>
+          <div class="col text-end align-items-center">
+            <a class="link-underline fw-bold fs-6" href="#">Edit Information</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            jenweston@gmail.com
+          </div>
+        </div>
+        <div class="row g-5 mt-2">
+          <div class="col-lg-4">
+            <h2 class="display-4 text-uppercase text-dark-blue">Primary Shipping Address</h2>
+            <div class="">
+              <div class="fw-bold">Jennifer Weston</div>
+              <div>FIREBRAND, LLC</div>
+              <div>1234 N Main Road</div>
+              <div>Seattle, WA 98122</div>
+              <div>(123) 456-7891</div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <h2 class="display-4 text-uppercase text-dark-blue">Primary Shipping Method</h2>
+            <div class="">
+              <div class="fw-bold">Standard</div>
+              <div>5-6 Business days</div>
+            </div>
+          </div>
+          <div class="col-lg-4 text-end align-items-center">
+            <a class="link-underline fw-bold fs-6" href="#">Edit Shipping</a>
+          </div>
+          <div class="col-lg-4">
+            <h2 class="display-4 text-uppercase text-dark-blue">Billing Address</h2>
+            <div class="">
+              <div class="fw-bold">Jennifer Weston</div>
+              <div>FIREBRAND, LLC</div>
+              <div>1234 N Main Road</div>
+              <div>Seattle, WA 98122</div>
+              <div>(123) 456-7891</div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <h2 class="display-4 text-uppercase text-dark-blue">Payment Method</h2>
+            <div class="">
+              <div class="fw-bold">Credit Card</div>
+              <div>FIREBRAND, LLC</div>
+              <div class="fw-bold mt-2">Customer reference number</div>
+              <div>12345678</div>
+            </div>
+          </div>
+          <div class="col-lg-4 text-end align-items-center">
+            <a class="link-underline fw-bold fs-6" href="#">Edit Payment</a>
+          </div>
+        </div>
+        <div class="row mt-6">
+          <div class="col">
+            <div class="row">
+              <div class="col">
+                <h3 class="display-3 text-dark-gray">Order Summary</h3>
+              </div>
+            </div>
+            <div class="row mt-2 pt-5 px-5 border rounded-2">
+              <div class="col">
+                @@include('./partials/order/order-summary.html', {
+                  "title": "UL Labels",
+                  "accordion": "order1Accordion",
+                  "heading": "order1Heading",
+                  "orderTarget": "#order1",
+                  "orderAria": "order1",
+                  "accordionBody": "order1",
+                  "accordionLabelby": "order1Heading",
+                  "accordionBodyTarget": "#order1",
+                  "classes": "pb-5 mb-5 border-bottom"
+                })
+                @@include('./partials/order/order-summary.html', {
+                  "title": "Parking Permits",
+                  "accordion": "order2Accordion",
+                  "heading": "order2Heading",
+                  "orderTarget": "#order2",
+                  "orderAria": "order2",
+                  "accordionBody": "order2",
+                  "accordionLabelby": "order2Heading",
+                  "accordionBodyTarget": "#order2",
+                  "classes": "pb-5 mb-5 border-bottom"
+                })
+                @@include('./partials/order/order-summary-split.html', {
+                  "title": "Parking Permits",
+                  "accordion": "order3Accordion",
+                  "heading": "order3Heading",
+                  "orderTarget": "#order3",
+                  "orderAria": "order3",
+                  "accordionBody": "order3",
+                  "accordionLabelby": "order3Heading",
+                  "accordionBodyTarget": "#order3",
+                  "classes": "pb-5"
+                })
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="row border">
+          <div class="col p-4">
+            <table class="table table-borderless m-0">
+              <tbody>
+              <tr>
+                <td class="fw-bold">Subtotal</td>
+                <td class="text-end">$490.00</td>
+              </tr>
+              <tr>
+                <td class="fw-bold">Discounts</td>
+                <td class="text-end">$0.00</td>
+              </tr>
+              <tr>
+                <td class="fw-bold">Shipping</td>
+                <td class="text-end">$12.00</td>
+              </tr>
+              <tr>
+                <td class="fw-bold pb-3">Taxes</td>
+                <td class="text-end pb-3">$32.00</td>
+              </tr>
+              <tr class="table-group-divider border-base-gray">
+                <td class="fw-bold pt-3">Order Total</td>
+                <td class="text-end pt-3">$534.00</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+@@include('./partials/checkout/footer-checkout_start.html')
+@@include('./partials/footer_end.html')
