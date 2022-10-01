@@ -1,0 +1,34 @@
+<div class="row mt-6">
+  <div class="col">
+    <@@headingLevel class="@@headingClasses">Delivery Options</@@headingLevel>
+  </div>
+</div>
+<div class="row mt-4">
+  <div class="col">
+    <div class="form-group mt-3 d-flex flex-column gap-2">
+      @@include('../checkout/shipping-option.html', {
+        "name": "delivery-option",
+        "id": "delivery-option1",
+        "checked": "checked",
+        "title": "FREE Standard Shipping",
+        "arrival": "Estimated arrival: July 20, 2022",
+        "price": "$0.00"
+      })
+      @@include('../checkout/shipping-option.html', {
+        "name": "delivery-option",
+        "id": "delivery-option2",
+        "checked": "",
+        "title": "Expedited Shipping",
+        "arrival": "Estimated arrival: July 7, 2022",
+        "price": "$20.00"
+      })
+      @@include('../checkout/shipping-option-custom.html', {
+        "name": "delivery-option",
+        "id": "delivery-option3",
+        "checked": "",
+        "title": "I have my own shipping number",
+        "price": "$40.00"
+      })
+    </div>
+  </div>
+</div>

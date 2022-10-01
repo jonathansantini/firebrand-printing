@@ -22,21 +22,30 @@
     </div>
     <div class="row flex-nowrap mt-4 gap-4 justify-content-around">
       <div class="col-7 p-0">
-        <span>Want a faster checkout and advanced shipping options? <a class="link-underline fs-6 fw-bold" href="account-login.html">Sign in</a> to your account.</span>
-        <form class="mt-6" action="">
-          @@include('./partials/checkout/address-form.html', {
-            "title": "Enter a shipping address",
-            "classes": "mt-3"
-          })
-          @@include('./partials/order/order-delivery-options.html', {
-            "headingLevel": "h2",
-            "headingClasses": "display-2"
-          })
-          <div class="row mt-6">
+        <form action="">
+          <div class="row mt-3">
             <div class="col">
-              <button type="button" class="btn btn-dark-blue">Continue</button>
+              <span>Need part of your order shipping to a different location?</span>
+              <div class="form-group input-group mt-3">
+                <span class="form-check">
+                  <input class="form-check-input" type="radio" name="different-address" id="different-address1" checked>
+                  <label class="form-check-label ms-2" for="different-address1">
+                    No
+                  </label>
+                </span>
+                <span class="form-check ms-4">
+                  <input class="form-check-input" type="radio" name="different-address" id="different-address2">
+                  <label class="form-check-label ms-2" for="different-address2">
+                    Yes
+                  </label>
+                </span>
+              </div>
             </div>
           </div>
+          @@include('./partials/order/order-choose-shipping-address.html', {
+            "headingLevel": "h2",
+            "headingClasses": "display-4 text-uppercase text-dark-blue"
+          })
         </form>
       </div>
       <div class="col-4">
@@ -50,15 +59,15 @@
               </tr>
               <tr>
                 <td class="fw-bold">Discounts</td>
-                <td class="text-end">$0.00</td>
+                <td class="text-end">-$10.00</td>
               </tr>
               <tr>
                 <td class="fw-bold">Shipping</td>
-                <td class="text-end">$0.00</td>
+                <td class="text-end">-</td>
               </tr>
               <tr>
                 <td class="fw-bold">Taxes</td>
-                <td class="text-end">$32.00</td>
+                <td class="text-end">-</td>
               </tr>
               <tr class="table-group-divider border-base-gray">
                 <td class="fw-bold pt-3">Order Total</td>
@@ -75,6 +84,34 @@
               <input type="text" class="form-control border-end-0" id="promo-code" placeholder="Enter a promo code" aria-label="Enter a promo code" aria-describedby="promo-apply">
               <button class="btn btn-sm btn-outline-secondary border-base-gray border-start-0" type="button" id="promo-apply">Apply</button>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col">
+        <div class="row mt-2 pt-5 px-5 border rounded-2">
+          <div class="col">
+            @@include('./partials/order/order-split-shipment-edit.html', {
+              "title": "Asset Tags",
+              "quantity": "150",
+              "classes": "pb-6 mb-6 border-bottom"
+            })
+            @@include('./partials/order/order-split-shipment.html', {
+              "title": "QR Labels",
+              "quantity": "700",
+              "classes": "pb-6 mb-6 border-bottom"
+            })
+            @@include('./partials/order/order-split-shipment.html', {
+              "title": "Parking Stickers",
+              "quantity": "1,275",
+              "classes": "pb-6"
+            })
+          </div>
+        </div>
+        <div class="row mt-6">
+          <div class="col">
+            <button type="button" class="btn btn-dark-blue">Continue</button>
           </div>
         </div>
       </div>
