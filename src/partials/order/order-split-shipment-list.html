@@ -1,0 +1,26 @@
+<div class="row gx-3 @@classes">
+  <div class="col">
+    <div class="row justify-content-between">
+      <div class="col-3 ps-0">
+        <img width="126" height="88" src="./img/placeholder-small.png" alt="">
+        <h3 class="h5 text-uppercase mt-4">@@title</h3>
+        <div class="mt-4">
+          <strong>Quantity:</strong> @@quantity
+        </div>
+      </div>
+      <div class="col-9">
+        @@include('./order-split-shipment-list-item.html', {
+          "qty": "60"
+        })
+        @@include('./order-split-shipment-list-item.html', {
+          "qty": "70"
+        })
+        <div class="row mt-4">
+          <div class="col">
+            <a class="link fs-6" href="javascript: alert('cancel');"><span class="pe-2 fs-5">+</span> Add Shipment</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
