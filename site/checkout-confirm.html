@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="icon" href="./img/icon.png" />
+  <title>Checkout</title>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light border-0">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="./"><img src="./img/logo-firebrand.svg" alt="Firebrand"></a>
+    <h1 class="h3 m-0">Checkout</h1>
+  </div>
+</nav>
+</header>
+
+<main class="site-main">
+
+  <section class="container my-4 py-4">
+  <div class="row">
+    <div class="col">
+      <ul class="nav nav-fill checkout-tabs" id="checkoutTabs" role="tablist">
+        <li class="nav-item py-3 pe-3 col-3 text-uppercase " role="tab">
+          <span class="tab-number">1</span>
+          Customer Information
+        </li>
+        <li class="nav-item py-3 pe-3 col-3 text-uppercase " role="tab">
+          <span class="tab-number">2</span>
+          Shipping &amp; Delivery
+        </li>
+        <li class="nav-item py-3 pe-3 col-3 text-uppercase " role="tab">
+          <span class="tab-number">3</span>
+          Payment
+        </li>
+        <li class="nav-item py-3 pe-3 col-3 text-uppercase active" role="tab">
+          <span class="tab-number">4</span>
+          Review Order
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+  <section class="container mt-6">
+    <div class="row">
+      <div class="col">
+        <h1 class="display-2">Thank you for your order!</h1>
+        <div class="row mt-3">
+          <div class="col">
+            A confirmation email has been sent to <span class="fw-bold">jenweston@gmail.com</span>.<br>
+            It will arrive within the next two minutes.
+          </div>
+          <div class="col">
+            <ul class="list-unstyled list-inline text-end">
+              <li class="list-inline-item">
+                <a href="javascript:alert('PRINT');"><img src="./icons/icon-printer.svg" alt="Print Page"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-between mt-2">
+      <div class="col-7">
+        <div class="row mt-4">
+          <div class="col">
+            <span class="fw-bold">Order Date:</span> April 27, 2022
+            <span class="fw-bold ms-4">Order Number:</span> 128537
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col">
+            <span class="fw-bold">Purchase Order:</span> 55781
+            <span class="fw-bold ms-4">Total:</span> $230.50
+          </div>
+        </div>
+        <div class="row g-5 mt-2">
+          <div class="col-lg-5">
+            <h2 class="display-4 text-uppercase text-dark-blue">Shipping Address</h2>
+            <div class="">
+              <div class="fw-bold">Jennifer Weston</div>
+              <div>FIREBRAND, LLC</div>
+              <div>1234 N Main Road</div>
+              <div>Seattle, WA 98122</div>
+              <div>(123) 456-7891</div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <h2 class="display-4 text-uppercase text-dark-blue">Shipping Method</h2>
+            <div class="">
+              <div class="fw-bold">Standard</div>
+              <div>5-6 Business days</div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <h2 class="display-4 text-uppercase text-dark-blue">Billing Address</h2>
+            <div class="">
+              <div class="fw-bold">Jennifer Weston</div>
+              <div>FIREBRAND, LLC</div>
+              <div>1234 N Main Road</div>
+              <div>Seattle, WA 98122</div>
+              <div>(123) 456-7891</div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <h2 class="display-4 text-uppercase text-dark-blue">Payment Method</h2>
+            <div class="">
+              <div class="fw-bold">Credit Card</div>
+              <div>VISA ************1234</div>
+              <div class="fw-bold mt-2">Customer reference number</div>
+              <div>12345678</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-5" id="sticky-sidebar">
+        <div class="row bg-light-purple rounded-1">
+          <div class="col p-5 sticky-top">
+            <h2 class="display-3 text-blue">Create an account</h2>
+            <div>Set up your Firebrand account to save designs, track your orders, and check out faster!</div>
+            <div class="row mt-3">
+              <div class="col">
+                <label for="password" class="form-label">Password*</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                <div class="mt-1 fs-7 text-base-gray">
+                  <div>Please make sure your password meets the following requirements:</div>
+                  <ul class="list-unstyled">
+                    <li>8-16 characters, 1 special character, and 1 number</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label for="confirm-password" class="form-label">Confirm Password*</label>
+                <input type="password" class="form-control" id="confirm-password" placeholder="Re-type your password">
+              </div>
+            </div>
+            <div class="row mt-5">
+              <div class="col">
+                <input class="btn btn-disabled" type="submit" value="Create Account" disabled>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-6">
+      <div class="col">
+        <h3 class="display-3 text-dark-gray">Order Summary</h3>
+      </div>
+    </div>
+    <div class="row flex-nowrap justify-content-between mt-4 gx-6">
+      <div class="col-8">
+        <div class="row border rounded-2">
+          <div class="col pt-5 px-5">
+            <div class="row gx-3 pb-5 mb-5 border-bottom">
+  <div class="col">
+    <div class="row">
+      <div class="col-2 ps-0">
+        <img class="w-100" width="126" height="88" src="./img/placeholder-small.png" alt="">
+      </div>
+      <div class="col-7">
+        <h3 class="display-4">UL Labels</h3>
+        <div>
+          <span class="fw-bolder">Quantity:</span> 150
+        </div>
+        <div>
+          <span class="fw-bolder">Size:</span> 4" x 4"
+        </div>
+        <div>
+          <span class="fw-bolder">Material:</span> White Polyester, 2 mil
+        </div>
+        <div class="accordion accordion-small mt-3" id="order1Accordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="order1Heading">
+              <button class="accordion-button fs-7 text-dark-blue collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#order1" aria-expanded="false" aria-controls="order1">
+                View More Details
+              </button>
+            </h2>
+            <div id="order1" class="accordion-collapse collapse" aria-labelledby="order1Heading" data-bs-parent="#order1">
+              <div class="accordion-body">
+                <div>
+                  <span class="fw-bolder">Part Number:</span> 123
+                </div>
+                <div>
+                  <span class="fw-bolder">Overlaminate:</span> Gloss Polyester, 1 mil
+                </div>
+                <div>
+                  <span class="fw-bolder">Color(s):</span> Blue
+                </div>
+                <div>
+                  <span class="fw-bolder">Form Factor:</span> Rolls
+                </div>
+                <div>
+                  <span class="fw-bolder">Production Time:</span> Standard
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 text-end d-flex flex-column justify-content-between">
+        <div class="fs-5 fw-bold text-blue">$145.00</div>
+        <button type="button" class="btn btn-sm btn-dark-blue w-100">View Proofs</button>
+      </div>
+    </div>
+  </div>
+</div>
+            <div class="row gx-3 pb-5 mb-5 border-bottom">
+  <div class="col">
+    <div class="row">
+      <div class="col-2 ps-0">
+        <img class="w-100" width="126" height="88" src="./img/placeholder-small.png" alt="">
+      </div>
+      <div class="col-7">
+        <h3 class="display-4">Parking Permits</h3>
+        <div>
+          <span class="fw-bolder">Quantity:</span> 150
+        </div>
+        <div>
+          <span class="fw-bolder">Size:</span> 4" x 4"
+        </div>
+        <div>
+          <span class="fw-bolder">Material:</span> White Polyester, 2 mil
+        </div>
+        <div class="accordion accordion-small mt-3" id="order2Accordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="order2Heading">
+              <button class="accordion-button fs-7 text-dark-blue collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#order2" aria-expanded="false" aria-controls="order2">
+                View More Details
+              </button>
+            </h2>
+            <div id="order2" class="accordion-collapse collapse" aria-labelledby="order2Heading" data-bs-parent="#order2">
+              <div class="accordion-body">
+                <div>
+                  <span class="fw-bolder">Part Number:</span> 123
+                </div>
+                <div>
+                  <span class="fw-bolder">Overlaminate:</span> Gloss Polyester, 1 mil
+                </div>
+                <div>
+                  <span class="fw-bolder">Color(s):</span> Blue
+                </div>
+                <div>
+                  <span class="fw-bolder">Form Factor:</span> Rolls
+                </div>
+                <div>
+                  <span class="fw-bolder">Production Time:</span> Standard
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 text-end d-flex flex-column justify-content-between">
+        <div class="fs-5 fw-bold text-blue">$145.00</div>
+        <button type="button" class="btn btn-sm btn-dark-blue w-100">View Proofs</button>
+      </div>
+    </div>
+  </div>
+</div>
+            <div class="row gx-3 pb-5">
+  <div class="col">
+    <div class="row">
+      <div class="col-2 ps-0">
+        <img class="w-100" width="126" height="88" src="./img/placeholder-small.png" alt="">
+      </div>
+      <div class="col-7">
+        <h3 class="display-4">Parking Permits</h3>
+        <div>
+          <span class="fw-bolder">Quantity:</span> 150
+        </div>
+        <div>
+          <span class="fw-bolder">Size:</span> 4" x 4"
+        </div>
+        <div>
+          <span class="fw-bolder">Material:</span> White Polyester, 2 mil
+        </div>
+      </div>
+      <div class="col-3 text-end d-flex flex-column justify-content-between">
+        <div class="fs-5 fw-bold text-blue">$145.00</div>
+        <div>
+          <div class="mt-2 d-inline-block p-1 border-top fs-7 text-uppercase bg-light-orange text-dark-orange">Split Shipping</div>
+        </div>
+        <button type="button" class="btn btn-sm btn-dark-blue w-100 mt-3">Reorder</button>
+      </div>
+    </div>
+
+    <div class="row justify-content-end">
+      <div class="col-10">
+        <div class="accordion accordion-small mt-3" id="order3Accordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="order3Heading">
+              <button class="accordion-button fs-7 text-dark-blue collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#order3" aria-expanded="false" aria-controls="order3">
+                View More Details
+              </button>
+            </h2>
+            <div id="order3" class="accordion-collapse collapse" aria-labelledby="order3Heading" data-bs-parent="#order3">
+              <div class="accordion-body line-height-4">
+                <div>
+                  <span class="fw-bolder">Part Number:</span> 123
+                </div>
+                <div>
+                  <span class="fw-bolder">Overlaminate:</span> Gloss Polyester, 1 mil
+                </div>
+                <div>
+                  <span class="fw-bolder">Color(s):</span> Blue
+                </div>
+                <div>
+                  <span class="fw-bolder">Form Factor:</span> Rolls
+                </div>
+                <div>
+                  <span class="fw-bolder">Production Time:</span> Standard
+                </div>
+                <div class="row border-top mt-4 py-4">
+  <div class="col-8">
+    <div>
+      <span class="fw-bolder">Shipping Quantity:</span> 60
+    </div>
+    <div>
+      <span class="fw-bolder">Shipping Method:</span> Standard shipping, 5-7 days
+    </div>
+    <div class="mt-4">
+      <a href="javascript: alert('tracking');" class="fw-bold fs-5 link-underline">Tracking: 1Z999999999999999999</a>
+    </div>
+  </div>
+  <div class="col-4 line-height-3">
+    <h3 class="display-5 text-uppercase text-dark-blue">Shipping Address</h3>
+    <div class="">
+      <div class="fw-bold">Jennifer Weston</div>
+      <div>FIREBRAND, LLC</div>
+      <div>1234 N Main Road</div>
+      <div>Seattle, WA 98122</div>
+      <div>(123) 456-7891</div>
+    </div>
+  </div>
+</div>
+                <div class="row border-top mt-4 py-4">
+  <div class="col-8">
+    <div>
+      <span class="fw-bolder">Shipping Quantity:</span> 60
+    </div>
+    <div>
+      <span class="fw-bolder">Shipping Method:</span> Standard shipping, 5-7 days
+    </div>
+    <div class="mt-4">
+      <a href="javascript: alert('tracking');" class="fw-bold fs-5 link-underline">Tracking: 1Z999999999999999999</a>
+    </div>
+  </div>
+  <div class="col-4 line-height-3">
+    <h3 class="display-5 text-uppercase text-dark-blue">Shipping Address</h3>
+    <div class="">
+      <div class="fw-bold">Jennifer Weston</div>
+      <div>FIREBRAND, LLC</div>
+      <div>1234 N Main Road</div>
+      <div>Seattle, WA 98122</div>
+      <div>(123) 456-7891</div>
+    </div>
+  </div>
+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="row border rounded-2">
+          <div class="col p-4">
+            <table class="table table-borderless m-0">
+              <tbody>
+              <tr>
+                <td class="fw-bold">Subtotal</td>
+                <td class="text-end">$490.00</td>
+              </tr>
+              <tr>
+                <td class="fw-bold">Discounts</td>
+                <td class="text-end">$0.00</td>
+              </tr>
+              <tr>
+                <td class="fw-bold">Shipping</td>
+                <td class="text-end">$12.00</td>
+              </tr>
+              <tr>
+                <td class="fw-bold pb-3">Taxes</td>
+                <td class="text-end pb-3">$32.00</td>
+              </tr>
+              <tr class="table-group-divider border-base-gray">
+                <td class="fw-bold pt-3">Order Total</td>
+                <td class="text-end pt-3">$534.00</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="container py-6 mt-6 border-top">
+  <div class="row">
+    <div class="col">
+      <a class="link me-3" href="#" target="_blank">Terms of Service</a>
+      <a class="link" href="#" target="_blank">Privacy Policy</a>
+    </div>
+    <div class="col fs-7 text-center">
+      &copy;2022 Firebrand, Inc. All rights reserved.
+    </div>
+    <div class="col fs-7 text-end">
+      <strong>Need help?</strong> <a href="tel:18666653473">Call us +1 (866) 665-3473</a>
+    </div>
+  </div>
+</footer>
+<script src="./js/all.js"></script>
+</body>
+</html>
