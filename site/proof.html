@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="icon" href="./img/icon.png" />
-  <title>PDP / Quoter</title>
+  <title>PDP - No Quoter</title>
 </head>
 <body>
 
@@ -68,7 +68,7 @@
         <a href="/products-plp.html">Products</a>
       </li>
       <li class="breadcrumb-item active" aria-current="page">
-        UL Labels
+        Product Name
       </li>
     </ol>
   </nav>
@@ -78,70 +78,60 @@
     <div class="row g-6">
 
       <div class="col-sm-12 col-lg-6">
-        <div id="productImages" class="carousel slide carousel-fade" data-bs-ride="false">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="./img/placeholder-product.png" class="d-block w-100" alt="Image 1">
-    </div>
-    <div class="carousel-item">
-      <img style="filter: invert(100%)" src="./img/placeholder-product.png" class="d-block w-100" alt="Image 2">
-    </div>
-    <div class="carousel-item">
-      <img style="filter: hue-rotate(180deg);" src="./img/placeholder-product.png" class="d-block w-100" alt="Image 3">
-    </div>
-    <div class="carousel-item">
-      <img style="filter: hue-rotate(90deg);" src="./img/placeholder-product.png" class="d-block w-100" alt="Image 3">
-    </div>
-  </div>
-  <div class="row row-cols-5 mt-4">
-    <div class="col">
-      <a href="./" data-bs-target="#productImages" data-bs-slide-to="0" class="active border-disabled" aria-current="true" aria-label="Slide 1">
+  <div id="productImages" class="carousel slide carousel-fade" data-bs-ride="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
         <img src="./img/placeholder-product.png" class="d-block w-100" alt="Image 1">
-      </a>
-    </div>
-    <div class="col">
-      <a href="./" data-bs-target="#productImages" data-bs-slide-to="1" aria-label="Slide 2">
+      </div>
+      <div class="carousel-item">
         <img style="filter: invert(100%)" src="./img/placeholder-product.png" class="d-block w-100" alt="Image 2">
-      </a>
-    </div>
-    <div class="col">
-      <a href="./" data-bs-target="#productImages" data-bs-slide-to="2" aria-label="Slide 3">
+      </div>
+      <div class="carousel-item">
         <img style="filter: hue-rotate(180deg);" src="./img/placeholder-product.png" class="d-block w-100" alt="Image 3">
-      </a>
-    </div>
-    <div class="col">
-      <a href="./" type="button" data-bs-target="#productImages" data-bs-slide-to="3" aria-label="Slide 4">
+      </div>
+      <div class="carousel-item">
         <img style="filter: hue-rotate(90deg);" src="./img/placeholder-product.png" class="d-block w-100" alt="Image 3">
-      </a>
+      </div>
+    </div>
+    <div class="row row-cols-5 mt-4">
+      <div class="col">
+        <a href="./" data-bs-target="#productImages" data-bs-slide-to="0" class="active border-disabled" aria-current="true" aria-label="Slide 1">
+          <img src="./img/placeholder-product.png" class="d-block w-100" alt="Image 1">
+        </a>
+      </div>
+      <div class="col">
+        <a href="./" data-bs-target="#productImages" data-bs-slide-to="1" aria-label="Slide 2">
+          <img style="filter: invert(100%)" src="./img/placeholder-product.png" class="d-block w-100" alt="Image 2">
+        </a>
+      </div>
+      <div class="col">
+        <a href="./" data-bs-target="#productImages" data-bs-slide-to="2" aria-label="Slide 3">
+          <img style="filter: hue-rotate(180deg);" src="./img/placeholder-product.png" class="d-block w-100" alt="Image 3">
+        </a>
+      </div>
+      <div class="col">
+        <a href="./" type="button" data-bs-target="#productImages" data-bs-slide-to="3" aria-label="Slide 4">
+          <img style="filter: hue-rotate(90deg);" src="./img/placeholder-product.png" class="d-block w-100" alt="Image 3">
+        </a>
+      </div>
     </div>
   </div>
 </div>
-      </div>
 
       <div class="col-sm-12 col-lg-6">
-        <h1 class="display-2">UL Labels</h1>
-        <div>Custom UL-certified labels for products intended for the US and Canadian markets.</div>
-        <div class="mt-4"><strong>Price out your labels below!</strong></div>
+        <h1 class="display-2">Product Name</h1>
+        <div>Product description. Quisque id ultrices dolor. Nam tincidunt nunc in ante porttitor mollis.</div>
+        <div class="mt-4"><strong>Call to action</strong></div>
         <form action="/">
           <div class="row mt-4">
             <div class="col">
-              <label for="quantity" class="form-label">Quantity</label>
-              <input type="text" class="form-control" id="quantity" placeholder="Enter quantity">
-            </div>
-          </div>
-          <div class="row mt-4">
-            <div class="col">
-              <label for="width" class="form-label">Width (in inches)*</label>
-              <input type="text" class="form-control" id="width" placeholder="Enter width">
-            </div>
-            <div class="col">
-              <label for="height" class="form-label">Height (in inches)*</label>
-              <input type="text" class="form-control" id="height" placeholder="Enter height">
+              <label for="request" class="form-label">Quote request</label>
+              <textarea rows="8" style="height: 90%;" type="text" class="form-control" id="request" placeholder="Describe your request in detail"></textarea>
             </div>
           </div>
           <div class="row mt-5">
             <div class="col d-grid">
-              <input class="btn btn-dark-blue" type="submit" value="Continue">
+              <input class="btn btn-dark-blue" type="submit" value="Request A Quote">
             </div>
           </div>
         </form>

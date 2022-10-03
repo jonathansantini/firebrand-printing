@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="icon" href="./img/icon.png" />
-  <title>PDP / Quoter</title>
+  <title>PDP - No Quoter</title>
 </head>
 <body>
 
@@ -65,19 +65,47 @@
         <a href="./">Home</a>
       </li>
       <li class="breadcrumb-item">
-        <a href="/products-plp.html">Products</a>
+        <a href="/account-settings.html">Account</a>
       </li>
-      <li class="breadcrumb-item active" aria-current="page">
-        UL Labels
+      <li class="breadcrumb-item">
+        <a href="/products-plp-quoter.html">Order History</a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="/products-plp-quoter.html">Order 128537</a>
+      </li>
+      <li class="breadcrumb-item active fs-7" aria-current="page">
+        UL Labels Proof Review
       </li>
     </ol>
   </nav>
 </section>
 
   <section class="container mt-4">
+    <div class="row">
+      <div class="col">
+        <h1 class="display-2">UL Label Proof Review</h1>
+        <div class="row mt-3">
+          <div class="col">
+            <span class="fw-bold">Order Date:</span> April 27, 2022
+            <span class="fw-bold ms-4">Order Number:</span> 128537
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col">
+            <span class="fw-bold">Purchase Order:</span> 55781
+            <span class="fw-bold ms-4">Total:</span> $230.50
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="container my-6">
     <div class="row g-6">
 
       <div class="col-sm-12 col-lg-6">
+
         <div id="productImages" class="carousel slide carousel-fade" data-bs-ride="false">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -116,124 +144,80 @@
     </div>
   </div>
 </div>
+
+        <div class="row mt-5">
+          <div class="col">
+            <ul class="list-unstyled line-height-4 p-0 m-0">
+              <li><strong>Quantity:</strong> 31,200</li>
+              <li><strong>Size:</strong> 4.5” x 3.5”</li>
+              <li><strong>Material:</strong> White Polyester, 2 mil</li>
+              <li><strong>Overlaminate:</strong> Gloss Polyester, 1 mil</li>
+              <li><strong>Color(s):</strong> Red, Orange</li>
+              <li><strong>PMS:</strong> PMS1785</li>
+              <li><strong>Artwork Uploaded:</strong> No</li>
+              <li><strong>Proof Options:</strong> Yes Proof</li>
+              <li><strong>Part Number:</strong> 300</li>
+              <li><strong>Production Time:</strong> Standard</li>
+            </ul>
+          </div>
+        </div>
       </div>
 
       <div class="col-sm-12 col-lg-6">
-        <h1 class="display-2">UL Labels</h1>
-        <div>Custom UL-certified labels for products intended for the US and Canadian markets.</div>
-        <div class="mt-4"><strong>Price out your labels below!</strong></div>
+        <div>Please approve your proof by July 19, 2022 in order to meet your July 24, 2022 delivery.</div>
+        <div class="mt-4"><strong>Need to make some changes? Let us know below.</strong></div>
         <form action="/">
           <div class="row mt-4">
             <div class="col">
-              <label for="quantity" class="form-label">Quantity</label>
-              <input type="text" class="form-control" id="quantity" placeholder="Enter quantity">
-            </div>
-          </div>
-          <div class="row mt-4">
-            <div class="col">
-              <label for="width" class="form-label">Width (in inches)*</label>
-              <input type="text" class="form-control" id="width" placeholder="Enter width">
-            </div>
-            <div class="col">
-              <label for="height" class="form-label">Height (in inches)*</label>
-              <input type="text" class="form-control" id="height" placeholder="Enter height">
+              <label for="request" class="form-label">Notes</label>
+              <textarea rows="8" style="height: 90%;" type="text" class="form-control" id="request" placeholder="Type in your note here"></textarea>
             </div>
           </div>
           <div class="row mt-5">
             <div class="col d-grid">
-              <input class="btn btn-dark-blue" type="submit" value="Continue">
+              <input class="btn btn-dark-blue" type="submit" value="Approve Proof">
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col d-grid">
+              <input class="btn btn-outline-dark-blue" type="submit" value="Reject Proof">
             </div>
           </div>
         </form>
+        <div class="row mt-6">
+          <div class="col">
+            <h3 class="display-4 text-dark-blue text-uppercase pb-3">Color Key</h3>
+            <table>
+              <tr>
+                <td class="align-top pe-3">
+                  <div class="bg-pink" style="width: 24px; height: 24px;"></div>
+                </td>
+                <td class="align-top pe-3">
+                  <strong>= artwork bleed;</strong> extends beyond the edge of your design that allows for your design to print to the very edge of the card without gaps
+                </td>
+              </tr>
+              <tr>
+                <td class="pt-3 align-top">
+                  <div class="bg-teal" style="width: 24px; height: 24px;"></div>
+                </td>
+                <td class="pt-3 align-top pe-3">
+                  <strong>= trim;</strong> where your artwork will be cut
+                </td>
+              </tr>
+              <tr>
+                <td class="pt-3 align-top">
+                  <div class="bg-base-gray" style="width: 24px; height: 24px;"></div>
+                </td>
+                <td class="pt-3 align-top pe-3">
+                  <strong>= safe area;</strong>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-
-  <section class="container mt-6 pt-6">
-  <div class="row">
-    <div class="col">
-      <ul class="nav nav-tabs nav-fill nav-info-tabs" id="productInfo" role="tablist">
-        <li class="nav-item w-50" role="presentation">
-          <button class="nav-link text-uppercase active" id="detail-tab" data-bs-toggle="tab" data-bs-target="#detail-tab-pane" type="button" role="tab" aria-controls="detail-tab-pane" aria-selected="true">Detail</button>
-        </li>
-        <li class="nav-item w-50" role="presentation">
-          <button class="nav-link text-uppercase" id="consider-tab" data-bs-toggle="tab" data-bs-target="#consider-tab-pane" type="button" role="tab" aria-controls="consider-tab-pane" aria-selected="false">What to consider</button>
-        </li>
-      </ul>
-      <div class="tab-content mt-4 pt-4" id="productInfoContent">
-        <div class="tab-pane fade show active" id="detail-tab-pane" role="tabpanel" aria-labelledby="detail-tab" tabindex="0">
-          <ul>
-            <li>What material should it be printed on? We offer clear, white, and several metallic options to complement the overall design of your product. All of our materials feature excellent adhesives that meet UL specifications.</li>
-            <li class="mt-4">How much protection does your label need? Adding an overlaminate provides surface protection for the printing on your label. For maximum scratch and impact protection, choose polycarbonate; for excellent scratch protection, a gloss overlaminate will suffice. Labels without laminates are still durable and somewhat scratch resistant but a laminate can also add a more sophisticated appearance and texture in addition to protection from damage.</li>
-          </ul>
-        </div>
-        <div class="tab-pane fade" id="consider-tab-pane" role="tabpanel" aria-labelledby="consider-tab" tabindex="0">
-          <ul>
-            <li>Consider adding your branding to your label. Unlike many UL label providers, we offer a wide spectrum of printing colors to get just the right look – turn a boring regulatory label into a branding opportunity!</li>
-            <li class="mt-4">How much protection does your label need? Adding an overlaminate provides surface protection for the printing on your label. For maximum scratch and impact protection, choose polycarbonate; for excellent scratch protection, a gloss overlaminate will suffice. Labels without laminates are still durable and somewhat scratch resistant but a laminate can also add a more sophisticated appearance and texture in addition to protection from damage.</li>
-            <li class="mt-4">What material should it be printed on? We offer clear, white, and several metallic options to complement the overall design of your product. All of our materials feature excellent adhesives that meet UL specifications.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-  <section class="container pt-6">
-  <div class="mx-sm-6 mx-lg-0 px-sm-6 px-lg-0">
-    <h2 class="display-3 text-dark-gray">Related Products</h2>
-    <div class="row row-cols-1 row-cols-lg-3">
-      <div class="feature col">
-        <div class="row p-2">
-          <div class="col border rounded-2 p-3">
-            <a href="./">
-              <div class="mb-3 text-center">
-                <img class="img-fluid" src="./img/placeholder-medium.png" alt="Container Labels">
-              </div>
-              <h2 class="display-5 text-blue text-capitalize line-height-2">Container Labels</h2>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="feature col">
-        <div class="row p-2">
-          <div class="col border rounded-2 p-3">
-            <a href="./">
-              <div class="mb-3 text-center">
-                <img class="img-fluid" src="./img/placeholder-medium.png" alt="Bumper Stickers">
-              </div>
-              <h2 class="display-5 text-blue text-capitalize line-height-2">Bumper Stickers</h2>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="feature col">
-        <div class="row p-2">
-          <div class="col border rounded-2 p-3">
-            <a href="./">
-              <div class="mb-3 text-center">
-                <img class="img-fluid" src="./img/placeholder-medium.png" alt="Promotional Stickers">
-              </div>
-              <h2 class="display-5 text-blue text-capitalize line-height-2">Promotional Stickers</h2>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-  <section class="container py-6 my-7">
-  <div class="row justify-content-center">
-    <div class="col-8 p-6 text-center bg-light-orange">
-      <h3 class="display-3 line-height-4 mb-4 text-secondary">Not sure where to start?<br>Good news: we’re only a call away!</h3>
-      <a class="link-uppercase link-dark-blue" href="./">
-        Contact Our Sales Team
-        <img src="./icons/icon-arrow.svg" alt="link">
-      </a>
-    </div>
-  </div>
-</section>
 </main>
 
 <footer class="container-fluid bg-dark-blue">

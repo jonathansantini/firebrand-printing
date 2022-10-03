@@ -17,6 +17,8 @@ $color-dark-gray: #333;
 $color-orange: #FF9751;
 $color-light-orange: #F7ECE2;
 $color-dark-orange: #C2500F;
+$color-pink: #de18a7;
+$color-teal: #18c6de;
 
 $color-light: $color-white;
 $color-dark: $color-black;
@@ -43,6 +45,8 @@ $custom-colors: (
     "dark-orange": $color-dark-orange,
     "purple": $color-purple,
     "light-purple": $color-light-purple,
+    "pink": $color-pink,
+    "teal": $color-teal,
     "disabled": $color-gray
 );
 
