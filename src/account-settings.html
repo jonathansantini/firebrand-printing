@@ -7,7 +7,7 @@
 
 <main class="site-main">
 
-  <section class="container mt-7">
+  <section class="container mt-5 mt-lg-7">
     <div class="row">
       <div class="col">
         <h1 class="display-2">My Account</h1>
@@ -15,10 +15,15 @@
     </div>
   </section>
 
-  <section class="container mt-4 pt-4 mb-7 pb-7">
+  <section class="container pt-4 mb-7 pb-7">
     <div class="row">
       <div class="col">
-        <ul class="nav nav-tabs nav-fill nav-info-tabs" id="productInfo" role="tablist">
+        <select class="form-select d-lg-none" id="state" aria-label="Select your state">
+          <option value="history">Order History &amp; Tracking</option>
+          <option value="address">Address Book</option>
+          <option value="settings">Settings</option>
+        </select>
+        <ul class="nav nav-tabs nav-fill nav-info-tabs d-none d-lg-flex" id="productInfo" role="tablist">
           <li class="nav-item col-4" role="presentation">
             <button class="nav-link text-uppercase active" id="order-tab" data-bs-toggle="tab" data-bs-target="#order-tab-pane" type="button" role="tab" aria-controls="order-tab-pane" aria-selected="false">Order History &amp; Tracking</button>
           </li>
@@ -29,23 +34,23 @@
             <button class="nav-link text-uppercase" id="setting-tab" data-bs-toggle="tab" data-bs-target="#setting-tab-pane" type="button" role="tab" aria-controls="setting-tab-pane" aria-selected="true">Settings</button>
           </li>
         </ul>
-        <div class="tab-content mt-5 pt-5" id="productInfoContent">
+        <div class="tab-content mt-3 mt-lg-5 pt-lg-5" id="productInfoContent">
           <div class="tab-pane fade show active" id="order-tab-pane" role="tabpanel" aria-labelledby="detail-tab" tabindex="0">
             <div class="row">
-              <div class="col-6 position-relative">
+              <div class="col-12 col-lg-6 position-relative">
                 <label for="search" class="form-label visually-hidden">Search by part number or PO</label>
                 <input type="password" class="form-control" id="search" placeholder="Search by part number or PO">
                 <img class="position-absolute top-50 end-0 translate-middle pe-2" src="./icons/icon-magnifying-glass.svg" alt="">
               </div>
             </div>
             <div class="row mt-6">
-              <div class="col">
+              <div class="col gx-6">
                 <h2 class="display-4 text-dark-gray text-uppercase">Orders In Progress (1)</h2>
                 @@include('./partials/account/order-in-progress.html')
               </div>
             </div>
             <div class="row mt-6">
-              <div class="col">
+              <div class="col gx-6">
                 <h2 class="display-4 text-dark-gray text-uppercase">Past Orders</h2>
                 @@include('./partials/account/order-complete.html')
                 @@include('./partials/account/order-complete.html')

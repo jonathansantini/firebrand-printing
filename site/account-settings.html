@@ -58,7 +58,7 @@
 
 <main class="site-main">
 
-  <section class="container mt-7">
+  <section class="container mt-5 mt-lg-7">
     <div class="row">
       <div class="col">
         <h1 class="display-2">My Account</h1>
@@ -66,10 +66,15 @@
     </div>
   </section>
 
-  <section class="container mt-4 pt-4 mb-7 pb-7">
+  <section class="container pt-4 mb-7 pb-7">
     <div class="row">
       <div class="col">
-        <ul class="nav nav-tabs nav-fill nav-info-tabs" id="productInfo" role="tablist">
+        <select class="form-select d-lg-none" id="state" aria-label="Select your state">
+          <option value="history">Order History &amp; Tracking</option>
+          <option value="address">Address Book</option>
+          <option value="settings">Settings</option>
+        </select>
+        <ul class="nav nav-tabs nav-fill nav-info-tabs d-none d-lg-flex" id="productInfo" role="tablist">
           <li class="nav-item col-4" role="presentation">
             <button class="nav-link text-uppercase active" id="order-tab" data-bs-toggle="tab" data-bs-target="#order-tab-pane" type="button" role="tab" aria-controls="order-tab-pane" aria-selected="false">Order History &amp; Tracking</button>
           </li>
@@ -80,41 +85,39 @@
             <button class="nav-link text-uppercase" id="setting-tab" data-bs-toggle="tab" data-bs-target="#setting-tab-pane" type="button" role="tab" aria-controls="setting-tab-pane" aria-selected="true">Settings</button>
           </li>
         </ul>
-        <div class="tab-content mt-5 pt-5" id="productInfoContent">
+        <div class="tab-content mt-3 mt-lg-5 pt-lg-5" id="productInfoContent">
           <div class="tab-pane fade show active" id="order-tab-pane" role="tabpanel" aria-labelledby="detail-tab" tabindex="0">
             <div class="row">
-              <div class="col-6 position-relative">
+              <div class="col-12 col-lg-6 position-relative">
                 <label for="search" class="form-label visually-hidden">Search by part number or PO</label>
                 <input type="password" class="form-control" id="search" placeholder="Search by part number or PO">
                 <img class="position-absolute top-50 end-0 translate-middle pe-2" src="./icons/icon-magnifying-glass.svg" alt="">
               </div>
             </div>
             <div class="row mt-6">
-              <div class="col">
+              <div class="col gx-6">
                 <h2 class="display-4 text-dark-gray text-uppercase">Orders In Progress (1)</h2>
-                <div class="row justify-content-between pt-5 pb-4 px-4 mt-4 border rounded-2">
-  <div class="col-8 d-flex flex-column justify-content-center align-content-center">
+                <div class="row justify-content-between pt-5 pb-5 px-4 mt-4 border rounded-2">
+  <div class="col-12 col-lg-8 d-flex flex-column justify-content-center align-content-center">
     <div class="order-info">
+      <div class="display-3 mb-3 text-blue ">Pending Approval</div>
       <ul class="list-unstyled list-inline">
-        <li class="list-inline-item">
+        <li class="d-block d-lg-inline-block">
           <span class="fw-bold">Order Date:</span> April 27, 2022
         </li>
-        <li class="list-inline-item">
+        <li class="d-block d-lg-inline-block ms-lg-3">
           <span class="fw-bold">Order Number:</span> 128537
         </li>
-        <li class="list-inline-item">
+        <li class="d-block d-lg-inline-block ms-lg-3">
           <span class="fw-bold">PO Number:</span> 5512
         </li>
-        <li class="list-inline-item">
+        <li class="d-block d-lg-inline-block ms-lg-3">
           <span class="fw-bold">Total:</span> $230.50
         </li>
       </ul>
     </div>
     <div class="order-thumbs">
       <ul class="list-unstyled list-inline m-0">
-        <li class="list-inline-item mb-3">
-          <img width="128" height="88" src="./img/placeholder-small.png" alt="">
-        </li>
         <li class="list-inline-item mb-3">
           <img width="128" height="88" src="./img/placeholder-small.png" alt="">
         </li>
@@ -131,8 +134,7 @@
       </ul>
     </div>
   </div>
-  <div class="col-3">
-    <div class="display-3 text-end text-blue">Pending Approval</div>
+  <div class="col-12 col-lg-3">
     <button type="button" class="btn btn-sm btn-dark-blue w-100 mt-3">View Order Details</button>
     <button type="button" class="btn btn-sm btn-outline-dark-blue w-100 mt-2">Contact Support</button>
   </div>
@@ -140,23 +142,23 @@
               </div>
             </div>
             <div class="row mt-6">
-              <div class="col">
+              <div class="col gx-6">
                 <h2 class="display-4 text-dark-gray text-uppercase">Past Orders</h2>
                 <div class="row justify-content-between pt-5 pb-4 px-4 mt-4 border rounded-2 position-relative">
-  <div class="col-8 d-flex flex-column justify-content-center align-content-center">
+  <div class="col-12 col-lg-8 d-flex flex-column justify-content-center align-content-center">
     <div class="position-absolute top-0 fs-7 p-1 text-uppercase bg-light-green text-success">Complete</div>
     <div class="order-info">
       <ul class="list-unstyled list-inline">
-        <li class="list-inline-item">
+        <li class="d-block d-lg-inline-block">
           <span class="fw-bold">Order Date:</span> April 27, 2022
         </li>
-        <li class="list-inline-item">
+        <li class="d-block d-lg-inline-block ms-lg-3">
           <span class="fw-bold">Order Number:</span> 128537
         </li>
-        <li class="list-inline-item">
+        <li class="d-block d-lg-inline-block ms-lg-3">
           <span class="fw-bold">PO Number:</span> 4338
         </li>
-        <li class="list-inline-item">
+        <li class="d-block d-lg-inline-block ms-lg-3">
           <span class="fw-bold">Total:</span> $230.50
         </li>
       </ul>
@@ -182,25 +184,25 @@
       </ul>
     </div>
   </div>
-  <div class="col-3 d-flex flex-column justify-content-center">
+  <div class="col-12 col-lg-3 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
     <button type="button" class="btn btn-sm btn-dark-blue w-100">View Order Details</button>
   </div>
 </div>
                 <div class="row justify-content-between pt-5 pb-4 px-4 mt-4 border rounded-2 position-relative">
-  <div class="col-8 d-flex flex-column justify-content-center align-content-center">
+  <div class="col-12 col-lg-8 d-flex flex-column justify-content-center align-content-center">
     <div class="position-absolute top-0 fs-7 p-1 text-uppercase bg-light-green text-success">Complete</div>
     <div class="order-info">
       <ul class="list-unstyled list-inline">
-        <li class="list-inline-item">
+        <li class="d-block d-lg-inline-block">
           <span class="fw-bold">Order Date:</span> April 27, 2022
         </li>
-        <li class="list-inline-item">
+        <li class="d-block d-lg-inline-block ms-lg-3">
           <span class="fw-bold">Order Number:</span> 128537
         </li>
-        <li class="list-inline-item">
+        <li class="d-block d-lg-inline-block ms-lg-3">
           <span class="fw-bold">PO Number:</span> 4338
         </li>
-        <li class="list-inline-item">
+        <li class="d-block d-lg-inline-block ms-lg-3">
           <span class="fw-bold">Total:</span> $230.50
         </li>
       </ul>
@@ -226,25 +228,25 @@
       </ul>
     </div>
   </div>
-  <div class="col-3 d-flex flex-column justify-content-center">
+  <div class="col-12 col-lg-3 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
     <button type="button" class="btn btn-sm btn-dark-blue w-100">View Order Details</button>
   </div>
 </div>
                 <div class="row justify-content-between pt-5 pb-4 px-4 mt-4 border rounded-2 position-relative">
-  <div class="col-8 d-flex flex-column justify-content-center align-content-center">
+  <div class="col-12 col-lg-8 d-flex flex-column justify-content-center align-content-center">
     <div class="position-absolute top-0 fs-7 p-1 text-uppercase bg-light-orange text-dark-orange">Cancelled</div>
     <div class="order-info">
       <ul class="list-unstyled list-inline">
-        <li class="list-inline-item">
+        <li class="d-block d-lg-inline-block">
           <span class="fw-bold">Order Date:</span> April 27, 2022
         </li>
-        <li class="list-inline-item">
+        <li class="d-block d-lg-inline-block ms-lg-3">
           <span class="fw-bold">Order Number:</span> 128537
         </li>
-        <li class="list-inline-item">
+        <li class="d-block d-lg-inline-block ms-lg-3">
           <span class="fw-bold">PO Number:</span> 4338
         </li>
-        <li class="list-inline-item">
+        <li class="d-block d-lg-inline-block ms-lg-3">
           <span class="fw-bold">Total:</span> $230.50
         </li>
       </ul>
@@ -263,7 +265,7 @@
       </ul>
     </div>
   </div>
-  <div class="col-3 d-flex flex-column justify-content-center">
+  <div class="col-12 col-lg-3 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
     <button type="button" class="btn btn-sm btn-dark-blue w-100">View Order Details</button>
   </div>
 </div>

@@ -14,12 +14,12 @@
 
   <section class="container mt-4 mb-7">
     <div class="row">
-      <div class="col">
+      <div class="col-12 col-lg-6 px-3">
         <h1 class="display-1">UL Labels Pricing</h1>
         <div>Custom UL-certified labels for products intended for the US and Canadian markets.</div>
       </div>
-      <div class="col">
-        <ul class="list-unstyled list-inline text-end">
+      <div class="col-12 col-lg-6 pt-3 pt-lg-0">
+        <ul class="list-unstyled list-inline text-lg-end">
           <li class="list-inline-item">
             <a href="javascript:alert('PRINT');"><img src="./icons/icon-printer.svg" alt="Print Page"></a>
           </li>
@@ -32,8 +32,8 @@
       </div>
     </div>
 
-    <div class="row mt-4 mb-6 gx-6">
-      <div class="col-sm-12 col-lg-7">
+    <div class="row mt-4 mb-6 gx-lg-6">
+      <div class="col-12 col-lg-7 px-3">
         <div class="accordion" id="orderInfo">
           @@include('./partials/order/order-accordion-details.html')
           @@include('./partials/order/order-accordion-upload.html')
@@ -44,9 +44,38 @@
         </div>
       </div>
 
-      <div class="col-sm-12 col-lg-5 " id="sticky-sidebar">
-        <div class="row bg-light-purple rounded-1">
-          <div class="col p-5 sticky-top">
+      <div class="col-12 col-lg-5" id="sticky-sidebar">
+        <div class="row flex-column px-3 px-lg-0 sticky-lg-top">
+          <div class="col border rounded-1 p-5 mt-6 order-lg-last">
+            <h3 class="display-4 fw-normal font-sans-serif">Volume discount</h3>
+            <table class="table table-borderless">
+              <thead>
+              <tr>
+                <th scope="col">Quantity</th>
+                <th class="text-center" scope="col">Price per piece</th>
+                <th class="text-end" scope="col">Total</th>
+              </tr>
+              </thead>
+              <tbody class="border-top">
+              <tr>
+                <td>10,000</td>
+                <td class="text-center">$2.10</td>
+                <td class="text-end">$210,000.00</td>
+              </tr>
+              <tr>
+                <td>250,000</td>
+                <td class="text-center">$1.56</td>
+                <td class="text-end">$390,000.00</td>
+              </tr>
+              <tr>
+                <td>500,000</td>
+                <td class="text-center">$1.15</td>
+                <td class="text-end">$575,000.00</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col bg-light-purple rounded-1 mt-5 mt-lg-0 p-5">
             <ul class="list-unstyled line-height-4 p-0 m-0">
               <li><strong>Quantity:</strong> 31,200</li>
               <li><strong>Size:</strong> 4.5” x 3.5”</li>
@@ -65,43 +94,8 @@
               </li>
             </ul>
           </div>
-        </div>
-
-        <div class="row mt-5">
-          <div class="col p-0 d-flex">
+          <div class="col mt-5 p-0 d-flex">
             <button type="button" class="btn btn-disabled flex-grow-1" disabled>Add To Cart</button>
-          </div>
-        </div>
-
-        <div class="row border mt-6">
-          <div class="col p-5">
-            <h3 class="display-4 fw-normal font-sans-serif">Volume discount</h3>
-            <table class="table table-borderless">
-              <thead>
-                <tr>
-                  <th scope="col">Quantity</th>
-                  <th class="text-center" scope="col">Price per piece</th>
-                  <th class="text-end" scope="col">Total</th>
-                </tr>
-              </thead>
-              <tbody class="border-top">
-                <tr>
-                  <td>10,000</td>
-                  <td class="text-center">$2.10</td>
-                  <td class="text-end">$210,000.00</td>
-                </tr>
-                <tr>
-                  <td>250,000</td>
-                  <td class="text-center">$1.56</td>
-                  <td class="text-end">$390,000.00</td>
-                </tr>
-                <tr>
-                  <td>500,000</td>
-                  <td class="text-center">$1.15</td>
-                  <td class="text-end">$575,000.00</td>
-                </tr>
-              </tbody>
-            </table>
           </div>
         </div>
       </div>
