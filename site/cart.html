@@ -58,71 +58,85 @@
 
 <main class="site-main">
 
-  <section class="container mt-7">
+  <section class="container mt-6 mt-lg-7">
     <div class="row">
       <div class="col">
         <h1 class="display-2">Your cart</h1>
       </div>
     </div>
-    <div class="row flex-nowrap mt-4 gap-4">
-      <div class="col-8">
+    <div class="row flex-lg-nowrap mt-4 gap-4">
+      <div class="col-12 col-lg-8 gx-6">
         <div class="row pt-4 px-4 border rounded-2">
           <div class="col">
             <div class="row gx-3 pb-5 mb-5 border-bottom">
   <div class="col">
     <div class="row">
-      <div class="col-2 ps-0">
+      <div class="col-4 col-lg-2 ps-0">
         <img class="w-100" width="126" height="88" src="./img/placeholder-small.png" alt="">
       </div>
-      <div class="col-7">
-        <h3 class="display-4">UL Labels</h3>
-        <div class="mt-3">
-          <span class="fw-bolder">Quantity:</span> 150
+      <div class="col-8 col-lg-10">
+        <div class="row">
+          <div class="col-12 col-lg-8">
+            <h3 class="display-4">UL Labels</h3>
+          </div>
+          <div class="col-12 col-lg-4 text-lg-end">
+            <div class="fs-5 fw-bold text-purple">$145.00</div>
+          </div>
         </div>
-        <div class="mt-1">
-          <span class="fw-bolder">Size:</span> 4" x 4"
+        <div class="row mt-3 mt-lg-2">
+          <div class="col-12 col-lg-8 order-last order-lg-first">
+            <div>
+              <span class="fw-bolder">Quantity:</span> 150
+            </div>
+            <div class="mt-1">
+              <span class="fw-bolder">Size:</span> 4" x 4"
+            </div>
+            <div class="mt-1">
+              <span class="fw-bolder">Material:</span> White Polyester, 2 mil
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 order-first order-lg-last">
+            <div class="d-flex flex-column align-items-lg-end">
+              <label for="quantity" class="form-label">Quantity</label>
+              <input type="text" class="form-control w-50 text-end" id="quantity" value="150">
+            </div>
+          </div>
         </div>
-        <div class="mt-1">
-          <span class="fw-bolder">Material:</span> White Polyester, 2 mil
-        </div>
-        <div class="accordion accordion-small mt-3" id="order1Accordion">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="order1Heading">
-              <button class="accordion-button fs-7 text-dark-blue collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#order1" aria-expanded="false" aria-controls="order1">
-                View More Details
-              </button>
-            </h2>
-            <div id="order1" class="accordion-collapse collapse" aria-labelledby="order1Heading" data-bs-parent="#order1">
-              <div class="accordion-body">
-                <div>
-                  <span class="fw-bolder">Part Number:</span> 123
-                </div>
-                <div class="mt-1">
-                  <span class="fw-bolder">Overlaminate:</span> Gloss Polyester, 1 mil
-                </div>
-                <div class="mt-1">
-                  <span class="fw-bolder">Color(s):</span> Blue
-                </div>
-                <div class="mt-1">
-                  <span class="fw-bolder">Form Factor:</span> Rolls
-                </div>
-                <div class="mt-1">
-                  <span class="fw-bolder">Production Time:</span> Standard
+        <div class="row mt-lg-3">
+          <div class="col-12 col-lg-8">
+            <div class="accordion accordion-small" id="order1Accordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="order1Heading">
+                  <button class="accordion-button fs-7 text-dark-blue collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#order1" aria-expanded="false" aria-controls="order1">
+                    View More Details
+                  </button>
+                </h2>
+                <div id="order1" class="accordion-collapse collapse" aria-labelledby="order1Heading" data-bs-parent="#order1">
+                  <div class="accordion-body">
+                    <div>
+                      <span class="fw-bolder">Part Number:</span> 123
+                    </div>
+                    <div class="mt-1">
+                      <span class="fw-bolder">Overlaminate:</span> Gloss Polyester, 1 mil
+                    </div>
+                    <div class="mt-1">
+                      <span class="fw-bolder">Color(s):</span> Blue
+                    </div>
+                    <div class="mt-1">
+                      <span class="fw-bolder">Form Factor:</span> Rolls
+                    </div>
+                    <div class="mt-1">
+                      <span class="fw-bolder">Production Time:</span> Standard
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="col-3 text-end d-flex flex-column justify-content-between">
-        <div class="fs-5 fw-bold text-purple">$145.00</div>
-        <div class="d-flex flex-column align-items-end">
-          <label for="quantity" class="form-label">Quantity</label>
-          <input type="text" class="form-control w-50 text-end" id="quantity" value="150">
-        </div>
-        <div>
-          <a class="link-underline fs-6 fw-bold me-3" href="javascript: alert('edit');">Edit</a>
-          <a class="link-underline fs-6 fw-bold" href="javascript: alert('remove');">Remove</a>
+          <div class="col-12 col-lg-4 text-end d-flex flex-row mt-4 mt-lg-0 justify-content-lg-end">
+            <a class="link-underline fs-6 fw-bold me-3" href="javascript: alert('edit');">Edit</a>
+            <a class="link-underline fs-6 fw-bold" href="javascript: alert('remove');">Remove</a>
+          </div>
         </div>
       </div>
     </div>
@@ -131,58 +145,72 @@
             <div class="row gx-3 pb-5 mb-5 border-bottom">
   <div class="col">
     <div class="row">
-      <div class="col-2 ps-0">
+      <div class="col-4 col-lg-2 ps-0">
         <img class="w-100" width="126" height="88" src="./img/placeholder-small.png" alt="">
       </div>
-      <div class="col-7">
-        <h3 class="display-4">Parking Permits</h3>
-        <div class="mt-3">
-          <span class="fw-bolder">Quantity:</span> 150
+      <div class="col-8 col-lg-10">
+        <div class="row">
+          <div class="col-12 col-lg-8">
+            <h3 class="display-4">Parking Permits</h3>
+          </div>
+          <div class="col-12 col-lg-4 text-lg-end">
+            <div class="fs-5 fw-bold text-purple">$145.00</div>
+          </div>
         </div>
-        <div class="mt-1">
-          <span class="fw-bolder">Size:</span> 4" x 4"
+        <div class="row mt-3 mt-lg-2">
+          <div class="col-12 col-lg-8 order-last order-lg-first">
+            <div>
+              <span class="fw-bolder">Quantity:</span> 150
+            </div>
+            <div class="mt-1">
+              <span class="fw-bolder">Size:</span> 4" x 4"
+            </div>
+            <div class="mt-1">
+              <span class="fw-bolder">Material:</span> White Polyester, 2 mil
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 order-first order-lg-last">
+            <div class="d-flex flex-column align-items-lg-end">
+              <label for="quantity" class="form-label">Quantity</label>
+              <input type="text" class="form-control w-50 text-end" id="quantity" value="150">
+            </div>
+          </div>
         </div>
-        <div class="mt-1">
-          <span class="fw-bolder">Material:</span> White Polyester, 2 mil
-        </div>
-        <div class="accordion accordion-small mt-3" id="order2Accordion">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="order2Heading">
-              <button class="accordion-button fs-7 text-dark-blue collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#order2" aria-expanded="false" aria-controls="order2">
-                View More Details
-              </button>
-            </h2>
-            <div id="order2" class="accordion-collapse collapse" aria-labelledby="order2Heading" data-bs-parent="#order2">
-              <div class="accordion-body">
-                <div>
-                  <span class="fw-bolder">Part Number:</span> 123
-                </div>
-                <div class="mt-1">
-                  <span class="fw-bolder">Overlaminate:</span> Gloss Polyester, 1 mil
-                </div>
-                <div class="mt-1">
-                  <span class="fw-bolder">Color(s):</span> Blue
-                </div>
-                <div class="mt-1">
-                  <span class="fw-bolder">Form Factor:</span> Rolls
-                </div>
-                <div class="mt-1">
-                  <span class="fw-bolder">Production Time:</span> Standard
+        <div class="row mt-lg-3">
+          <div class="col-12 col-lg-8">
+            <div class="accordion accordion-small" id="order2Accordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="order2Heading">
+                  <button class="accordion-button fs-7 text-dark-blue collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#order2" aria-expanded="false" aria-controls="order2">
+                    View More Details
+                  </button>
+                </h2>
+                <div id="order2" class="accordion-collapse collapse" aria-labelledby="order2Heading" data-bs-parent="#order2">
+                  <div class="accordion-body">
+                    <div>
+                      <span class="fw-bolder">Part Number:</span> 123
+                    </div>
+                    <div class="mt-1">
+                      <span class="fw-bolder">Overlaminate:</span> Gloss Polyester, 1 mil
+                    </div>
+                    <div class="mt-1">
+                      <span class="fw-bolder">Color(s):</span> Blue
+                    </div>
+                    <div class="mt-1">
+                      <span class="fw-bolder">Form Factor:</span> Rolls
+                    </div>
+                    <div class="mt-1">
+                      <span class="fw-bolder">Production Time:</span> Standard
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="col-3 text-end d-flex flex-column justify-content-between">
-        <div class="fs-5 fw-bold text-purple">$145.00</div>
-        <div class="d-flex flex-column align-items-end">
-          <label for="quantity" class="form-label">Quantity</label>
-          <input type="text" class="form-control w-50 text-end" id="quantity" value="150">
-        </div>
-        <div>
-          <a class="link-underline fs-6 fw-bold me-3" href="javascript: alert('edit');">Edit</a>
-          <a class="link-underline fs-6 fw-bold" href="javascript: alert('remove');">Remove</a>
+          <div class="col-12 col-lg-4 text-end d-flex flex-row mt-4 mt-lg-0 justify-content-lg-end">
+            <a class="link-underline fs-6 fw-bold me-3" href="javascript: alert('edit');">Edit</a>
+            <a class="link-underline fs-6 fw-bold" href="javascript: alert('remove');">Remove</a>
+          </div>
         </div>
       </div>
     </div>
@@ -191,58 +219,72 @@
             <div class="row gx-3 pb-5">
   <div class="col">
     <div class="row">
-      <div class="col-2 ps-0">
+      <div class="col-4 col-lg-2 ps-0">
         <img class="w-100" width="126" height="88" src="./img/placeholder-small.png" alt="">
       </div>
-      <div class="col-7">
-        <h3 class="display-4">Machine Labels</h3>
-        <div class="mt-3">
-          <span class="fw-bolder">Quantity:</span> 150
+      <div class="col-8 col-lg-10">
+        <div class="row">
+          <div class="col-12 col-lg-8">
+            <h3 class="display-4">Machine Labels</h3>
+          </div>
+          <div class="col-12 col-lg-4 text-lg-end">
+            <div class="fs-5 fw-bold text-purple">$145.00</div>
+          </div>
         </div>
-        <div class="mt-1">
-          <span class="fw-bolder">Size:</span> 4" x 4"
+        <div class="row mt-3 mt-lg-2">
+          <div class="col-12 col-lg-8 order-last order-lg-first">
+            <div>
+              <span class="fw-bolder">Quantity:</span> 150
+            </div>
+            <div class="mt-1">
+              <span class="fw-bolder">Size:</span> 4" x 4"
+            </div>
+            <div class="mt-1">
+              <span class="fw-bolder">Material:</span> White Polyester, 2 mil
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 order-first order-lg-last">
+            <div class="d-flex flex-column align-items-lg-end">
+              <label for="quantity" class="form-label">Quantity</label>
+              <input type="text" class="form-control w-50 text-end" id="quantity" value="150">
+            </div>
+          </div>
         </div>
-        <div class="mt-1">
-          <span class="fw-bolder">Material:</span> White Polyester, 2 mil
-        </div>
-        <div class="accordion accordion-small mt-3" id="order3Accordion">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="order3Heading">
-              <button class="accordion-button fs-7 text-dark-blue collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#order3" aria-expanded="false" aria-controls="order3">
-                View More Details
-              </button>
-            </h2>
-            <div id="order3" class="accordion-collapse collapse" aria-labelledby="order3Heading" data-bs-parent="#order3">
-              <div class="accordion-body">
-                <div>
-                  <span class="fw-bolder">Part Number:</span> 123
-                </div>
-                <div class="mt-1">
-                  <span class="fw-bolder">Overlaminate:</span> Gloss Polyester, 1 mil
-                </div>
-                <div class="mt-1">
-                  <span class="fw-bolder">Color(s):</span> Blue
-                </div>
-                <div class="mt-1">
-                  <span class="fw-bolder">Form Factor:</span> Rolls
-                </div>
-                <div class="mt-1">
-                  <span class="fw-bolder">Production Time:</span> Standard
+        <div class="row mt-lg-3">
+          <div class="col-12 col-lg-8">
+            <div class="accordion accordion-small" id="order3Accordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="order3Heading">
+                  <button class="accordion-button fs-7 text-dark-blue collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#order3" aria-expanded="false" aria-controls="order3">
+                    View More Details
+                  </button>
+                </h2>
+                <div id="order3" class="accordion-collapse collapse" aria-labelledby="order3Heading" data-bs-parent="#order3">
+                  <div class="accordion-body">
+                    <div>
+                      <span class="fw-bolder">Part Number:</span> 123
+                    </div>
+                    <div class="mt-1">
+                      <span class="fw-bolder">Overlaminate:</span> Gloss Polyester, 1 mil
+                    </div>
+                    <div class="mt-1">
+                      <span class="fw-bolder">Color(s):</span> Blue
+                    </div>
+                    <div class="mt-1">
+                      <span class="fw-bolder">Form Factor:</span> Rolls
+                    </div>
+                    <div class="mt-1">
+                      <span class="fw-bolder">Production Time:</span> Standard
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="col-3 text-end d-flex flex-column justify-content-between">
-        <div class="fs-5 fw-bold text-purple">$145.00</div>
-        <div class="d-flex flex-column align-items-end">
-          <label for="quantity" class="form-label">Quantity</label>
-          <input type="text" class="form-control w-50 text-end" id="quantity" value="150">
-        </div>
-        <div>
-          <a class="link-underline fs-6 fw-bold me-3" href="javascript: alert('edit');">Edit</a>
-          <a class="link-underline fs-6 fw-bold" href="javascript: alert('remove');">Remove</a>
+          <div class="col-12 col-lg-4 text-end d-flex flex-row mt-4 mt-lg-0 justify-content-lg-end">
+            <a class="link-underline fs-6 fw-bold me-3" href="javascript: alert('edit');">Edit</a>
+            <a class="link-underline fs-6 fw-bold" href="javascript: alert('remove');">Remove</a>
+          </div>
         </div>
       </div>
     </div>
@@ -251,7 +293,7 @@
           </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-12 col-lg-4 gx-6 mt-5 mt-lg-0">
         <div class="row border rounded-2">
           <div class="col p-4">
             <table class="table table-borderless m-0">
@@ -274,7 +316,7 @@
               </tr>
               <tr>
                 <td class="fw-bold pt-3" colspan="2">
-                  <button type="button" class="btn btn-dark-blue w-100">Back To My Orders</button>
+                  <button type="button" class="btn btn-dark-blue w-100">Continue to Checkout</button>
                 </td>
               </tr>
               </tbody>
@@ -294,7 +336,7 @@
     </div>
   </section>
 
-  <section class="container my-6">
+  <section class="container my-6 gx-5">
     <div class="row">
       <section class="container pt-6 g-sm-4">
   <div class="mx-sm-6 mx-lg-0 px-sm-6 px-lg-0">
@@ -342,6 +384,21 @@
     </div>
   </section>
 
+  <section class="sticky-bottom p-3 border-top bg-light d-lg-none">
+    <div class="row">
+      <div class="col">
+        <div class="fw-bold fs-5">Estimated Total</div>
+      </div>
+      <div class="col">
+        <div class="text-end">$534.00</div>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col">
+        <button type="button" class="btn btn-dark-blue w-100">Continue to Checkout</button>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer class="container-fluid bg-dark-blue">

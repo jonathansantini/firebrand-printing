@@ -7,14 +7,14 @@
 
 <main class="site-main">
 
-  <section class="container mt-7">
+  <section class="container mt-6 mt-lg-7">
     <div class="row">
       <div class="col">
         <h1 class="display-2">Your cart</h1>
       </div>
     </div>
-    <div class="row flex-nowrap mt-4 gap-4">
-      <div class="col-8">
+    <div class="row flex-lg-nowrap mt-4 gap-4">
+      <div class="col-12 col-lg-8 gx-6">
         <div class="row pt-4 px-4 border rounded-2">
           <div class="col">
             @@include('./partials/order/order-edit.html', {
@@ -53,7 +53,7 @@
           </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-12 col-lg-4 gx-6 mt-5 mt-lg-0">
         <div class="row border rounded-2">
           <div class="col p-4">
             <table class="table table-borderless m-0">
@@ -76,7 +76,7 @@
               </tr>
               <tr>
                 <td class="fw-bold pt-3" colspan="2">
-                  <button type="button" class="btn btn-dark-blue w-100">Back To My Orders</button>
+                  <button type="button" class="btn btn-dark-blue w-100">Continue to Checkout</button>
                 </td>
               </tr>
               </tbody>
@@ -96,7 +96,7 @@
     </div>
   </section>
 
-  <section class="container my-6">
+  <section class="container my-6 gx-5">
     <div class="row">
       @@include('./partials/product-row.html', {
         "blockTitle": "Recommended for you",
@@ -110,6 +110,21 @@
     </div>
   </section>
 
+  <section class="sticky-bottom p-3 border-top bg-light d-lg-none">
+    <div class="row">
+      <div class="col">
+        <div class="fw-bold fs-5">Estimated Total</div>
+      </div>
+      <div class="col">
+        <div class="text-end">$534.00</div>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col">
+        <button type="button" class="btn btn-dark-blue w-100">Continue to Checkout</button>
+      </div>
+    </div>
+  </section>
 </main>
 
 @@include('./partials/footer_start.html')
