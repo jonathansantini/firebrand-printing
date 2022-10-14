@@ -14,37 +14,41 @@
     "tab4-active": "active"
   })
 
-  <section class="container mt-6">
+  <section class="container mt-2 mt-lg-6">
+    <div class="row">
+      <div class="col-12 col-lg-8">
+        <h1 class="display-2">Thank you for your order!</h1>
+      </div>
+      <div class="col-12 col-lg-4 order-first order-lg-last">
+        <ul class="list-unstyled list-inline text-lg-end">
+          <li class="list-inline-item">
+            <a href="javascript:alert('PRINT');"><img src="./icons/icon-printer.svg" alt="Print Page"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <div class="row">
       <div class="col">
-        <h1 class="display-2">Thank you for your order!</h1>
-        <div class="row mt-3">
-          <div class="col">
-            A confirmation email has been sent to <span class="fw-bold">jenweston@gmail.com</span>.<br>
-            It will arrive within the next two minutes.
-          </div>
-          <div class="col">
-            <ul class="list-unstyled list-inline text-end">
-              <li class="list-inline-item">
-                <a href="javascript:alert('PRINT');"><img src="./icons/icon-printer.svg" alt="Print Page"></a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        A confirmation email has been sent to <span class="fw-bold">jenweston@gmail.com</span>.<br>
+        It will arrive within the next two minutes.
       </div>
     </div>
     <div class="row justify-content-between mt-2">
-      <div class="col-7">
+      <div class="col-12 col-lg-7">
         <div class="row mt-4">
-          <div class="col">
-            <span class="fw-bold">Order Date:</span> April 27, 2022
-            <span class="fw-bold ms-4">Order Number:</span> 128537
+          <div class="col col-lg-5">
+            <span class="fw-bold d-block d-lg-inline">Order Date:</span> April 27, 2022
+          </div>
+          <div class="col col-lg-5">
+            <span class="fw-bold d-block d-lg-inline">Order Number:</span> 128537
           </div>
         </div>
         <div class="row mt-2">
-          <div class="col">
-            <span class="fw-bold">Purchase Order:</span> 55781
-            <span class="fw-bold ms-4">Total:</span> $230.50
+          <div class="col col-lg-5">
+            <span class="fw-bold d-block d-lg-inline">Purchase Order:</span> 55781
+          </div>
+          <div class="col col-lg-5">
+            <span class="fw-bold d-block d-lg-inline">Total:</span> $230.50
           </div>
         </div>
         <div class="row g-5 mt-2">
@@ -86,9 +90,9 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-12 col-lg-5" id="sticky-sidebar">
+      <div class="col-sm-12 col-lg-5 gx-6 gx-lg-0 mt-5 mt-lg-0" id="sticky-sidebar">
         <div class="row bg-light-purple rounded-1">
-          <div class="col p-5 sticky-top">
+          <div class="col p-5 sticky-lg-top">
             <h2 class="display-3 text-blue">Create an account</h2>
             <div>Set up your Firebrand account to save designs, track your orders, and check out faster!</div>
             <div class="row mt-3">
@@ -123,10 +127,10 @@
         <h3 class="display-3 text-dark-gray">Order Summary</h3>
       </div>
     </div>
-    <div class="row flex-nowrap justify-content-between mt-4 gx-6">
-      <div class="col-8">
+    <div class="row flex-lg-nowrap justify-content-between mt-4 gx-lg-6">
+      <div class="col-12 col-lg-8 gx-6 gx-lg-0">
         <div class="row border rounded-2">
-          <div class="col pt-5 px-5">
+          <div class="col pt-5 px-4 px-lg-5">
             @@include('./partials/order/order-summary-no-button.html', {
               "title": "UL Labels",
               "accordion": "order1Accordion",
@@ -163,35 +167,8 @@
           </div>
         </div>
       </div>
-      <div class="col-4">
-        <div class="row border rounded-2">
-          <div class="col p-4">
-            <table class="table table-borderless m-0">
-              <tbody>
-              <tr>
-                <td class="fw-bold">Subtotal</td>
-                <td class="text-end">$490.00</td>
-              </tr>
-              <tr>
-                <td class="fw-bold">Discounts</td>
-                <td class="text-end">$0.00</td>
-              </tr>
-              <tr>
-                <td class="fw-bold">Shipping</td>
-                <td class="text-end">$12.00</td>
-              </tr>
-              <tr>
-                <td class="fw-bold pb-3">Taxes</td>
-                <td class="text-end pb-3">$32.00</td>
-              </tr>
-              <tr class="table-group-divider border-base-gray">
-                <td class="fw-bold pt-3">Order Total</td>
-                <td class="text-end pt-3">$534.00</td>
-              </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
+      <div class="col-12 col-lg-4 gx-6 gx-lg-0 mt-5 mt-lg-0">
+        @@include('./partials/checkout/subtotal-table.html')
       </div>
     </div>
   </section>

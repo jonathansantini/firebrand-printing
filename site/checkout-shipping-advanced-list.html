@@ -13,9 +13,6 @@
 <header class="site-header">
   <nav class="navbar navbar-expand-lg navbar-light bg-light border-0">
   <div class="container">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
     <a class="navbar-brand" href="./"><img src="./img/logo-firebrand.svg" alt="Firebrand"></a>
     <h1 class="h3 m-0">Checkout</h1>
   </div>
@@ -34,7 +31,7 @@
         </li>
         <li class="nav-item py-3 pe-3 col-3 text-uppercase active" role="tab">
           <span class="tab-number">2</span>
-          Shipping &amp; Delivery
+          Shipping <span class="d-none d-lg-block">&amp; Delivery</span>
         </li>
         <li class="nav-item py-3 pe-3 col-3 text-uppercase " role="tab">
           <span class="tab-number">3</span>
@@ -49,14 +46,14 @@
   </div>
 </section>
 
-  <section class="container mt-6 mb-7">
+  <section class="container mt-2 mt-lg-6 mb-7">
     <div class="row">
       <div class="col">
         <h1 class="display-2">Shipping Address</h1>
       </div>
     </div>
-    <div class="row flex-nowrap mt-4 gap-4 justify-content-around">
-      <div class="col-7 p-0">
+    <div class="row flex-lg-nowrap mt-4 gap-4 justify-content-around">
+      <div class="col-12 col-lg-7 p-lg-0">
         <form action="">
           <div class="row mt-3">
             <div class="col">
@@ -85,7 +82,7 @@
 <div class="row">
   <div class="col">
     <div class="form-group input-group mt-3">
-      <span class="form-check col-6 mb-4">
+      <span class="form-check col-12 col-lg-6 mb-4">
         <input class="form-check-input" type="radio" name="address" id="address1" checked>
         <label class="form-check-label" for="address1">
           <div class="fw-bold">Jennifer Weston</div>
@@ -95,7 +92,7 @@
           <div>(123) 456-7891</div>
         </label>
       </span>
-      <span class="form-check col-6 mb-4">
+      <span class="form-check col-12 col-lg-6 mb-4">
         <input class="form-check-input" type="radio" name="address" id="address2">
         <label class="form-check-label ms-2" for="address2">
           <div class="fw-bold">Jennifer Weston</div>
@@ -114,35 +111,35 @@
 </div>
         </form>
       </div>
-      <div class="col-4">
+      <div class="col-12 col-lg-4 gx-6 gx-lg-0">
         <div class="row border rounded-2">
-          <div class="col p-4">
-            <table class="table table-borderless m-0">
-              <tbody>
-              <tr>
-                <td class="fw-bold">Subtotal</td>
-                <td class="text-end">$490.00</td>
-              </tr>
-              <tr>
-                <td class="fw-bold">Discounts</td>
-                <td class="text-end">-$10.00</td>
-              </tr>
-              <tr>
-                <td class="fw-bold">Shipping</td>
-                <td class="text-end">-</td>
-              </tr>
-              <tr>
-                <td class="fw-bold">Taxes</td>
-                <td class="text-end">-</td>
-              </tr>
-              <tr class="table-group-divider border-base-gray">
-                <td class="fw-bold pt-3">Order Total</td>
-                <td class="text-end pt-3">$534.00</td>
-              </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
+  <div class="col p-4">
+    <table class="table table-borderless m-0">
+      <tbody>
+      <tr>
+        <td class="fw-bold">Subtotal</td>
+        <td class="text-end">$490.00</td>
+      </tr>
+      <tr>
+        <td class="fw-bold">Discounts</td>
+        <td class="text-end">$0.00</td>
+      </tr>
+      <tr>
+        <td class="fw-bold">Shipping</td>
+        <td class="text-end">$12.00</td>
+      </tr>
+      <tr>
+        <td class="fw-bold pb-3">Taxes</td>
+        <td class="text-end pb-3">$32.00</td>
+      </tr>
+      <tr class="table-group-divider border-base-gray">
+        <td class="fw-bold pt-3">Order Total</td>
+        <td class="text-end pt-3">$534.00</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
         <div class="row mt-4 border rounded-2">
           <div class="col p-4">
             <label for="promo-code" class="form-label">Have a promo code?</label>
@@ -155,25 +152,31 @@
       </div>
     </div>
     <div class="row mt-5">
-      <div class="col">
-        <div class="row mt-2 pt-5 px-5 border rounded-2">
+      <div class="col gx-6 gx-lg-0">
+        <div class="row mt-2 pt-5 px-3 px-lg-5 border rounded-2">
           <div class="col">
             <div class="row gx-3 pb-6 mb-6 border-bottom">
   <div class="col">
-    <div class="row justify-content-between">
-      <div class="col-3 ps-0">
-        <img width="126" height="88" src="./img/placeholder-small.png" alt="">
-        <h3 class="h5 text-uppercase mt-4">Asset Tags</h3>
-        <div class="mt-4">
-          <strong>Quantity:</strong> 130
+    <div class="row justify-content-end justify-content-lg-between">
+      <div class="col-12 col-lg-3 ps-0">
+        <div class="row">
+          <div class="col-4 col-lg-5">
+            <img class="img-fluid" width="126" height="88" src="./img/placeholder-small.png" alt="">
+          </div>
+          <div class="col-8 col-lg-12">
+            <h3 class="h5 text-uppercase mt-lg-4">Asset Tags</h3>
+            <div class="mt-4">
+              <strong>Quantity:</strong> 130
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-9">
+      <div class="col-10 col-lg-9 mt-6 mt-lg-0">
         <div class="row border rounded-2 mb-3">
   <div class="col px-5 py-6 position-relative">
     <a class="position-absolute top-50" style="left: -2rem;" href="javascript: alert('delete');"><img src="./icons/icon-trash.svg" alt="Delete Split Shipping Item"></a>
     <div class="row">
-      <div class="col-4">
+      <div class="col-12 col-lg-4">
         <h3 class="display-5 text-dark-gray fw-normal">Split Quantity</h3>
         <div class="col-8 d-flex align-items-center mt-3">
           <label for="split-qty" class="form-label visually-hidden">Email Address*</label>
@@ -181,7 +184,7 @@
           <span class="col-6">of 150</span>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-12 col-lg-4 mt-4 mt-lg-0">
         <h3 class="display-5 text-dark-blue fw-normal">Shipping Address</h3>
         <div class="">
           <div class="fw-bold">Jennifer Weston</div>
@@ -191,14 +194,14 @@
           <div>(123) 456-7891</div>
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-12 col-lg-4 mt-4 mt-lg-0">
         <h3 class="display-5 text-dark-blue fw-normal">Shipping Method</h3>
         <div class="">
           <div class="fw-bold">Standard</div>
           <div>5-6 Business days</div>
         </div>
       </div>
-      <div class="col-1 d-flex align-items-end">
+      <div class="col-1 d-flex align-items-end mt-4 mt-lg-0">
         <a class="link-underline fw-bold fs-6" href="javascript: alert('edit');">Edit</a>
       </div>
     </div>
@@ -208,7 +211,7 @@
   <div class="col px-5 py-6 position-relative">
     <a class="position-absolute top-50" style="left: -2rem;" href="javascript: alert('delete');"><img src="./icons/icon-trash.svg" alt="Delete Split Shipping Item"></a>
     <div class="row">
-      <div class="col-4">
+      <div class="col-12 col-lg-4">
         <h3 class="display-5 text-dark-gray fw-normal">Split Quantity</h3>
         <div class="col-8 d-flex align-items-center mt-3">
           <label for="split-qty" class="form-label visually-hidden">Email Address*</label>
@@ -216,7 +219,7 @@
           <span class="col-6">of 150</span>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-12 col-lg-4 mt-4 mt-lg-0">
         <h3 class="display-5 text-dark-blue fw-normal">Shipping Address</h3>
         <div class="">
           <div class="fw-bold">Jennifer Weston</div>
@@ -226,14 +229,14 @@
           <div>(123) 456-7891</div>
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-12 col-lg-4 mt-4 mt-lg-0">
         <h3 class="display-5 text-dark-blue fw-normal">Shipping Method</h3>
         <div class="">
           <div class="fw-bold">Standard</div>
           <div>5-6 Business days</div>
         </div>
       </div>
-      <div class="col-1 d-flex align-items-end">
+      <div class="col-1 d-flex align-items-end mt-4 mt-lg-0">
         <a class="link-underline fw-bold fs-6" href="javascript: alert('edit');">Edit</a>
       </div>
     </div>
@@ -250,15 +253,21 @@
 </div>
             <div class="row gx-3 pb-6 mb-6 border-bottom">
   <div class="col">
-    <div class="row justify-content-between">
-      <div class="col-3 ps-0">
-        <img width="126" height="88" src="./img/placeholder-small.png" alt="">
-        <h3 class="h5 text-uppercase mt-4">QR Labels</h3>
-        <div class="mt-4">
-          <strong>Quantity:</strong> 700
+    <div class="row justify-content-end justify-content-lg-between">
+      <div class="col-12 col-lg-3 ps-0">
+        <div class="row">
+          <div class="col-4 col-lg-5">
+            <img class="img-fluid" width="126" height="88" src="./img/placeholder-small.png" alt="">
+          </div>
+          <div class="col-8 col-lg-12">
+            <h3 class="h5 text-uppercase mt-lg-4">QR Labels</h3>
+            <div class="mt-4">
+              <strong>Quantity:</strong> 700
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-4 px-6">
+      <div class="col-8 col-lg-4 mt-4 mt-lg-0 px-0 px-lg-6">
         <div>Shipping Address</div>
         <div class="mt-3">
           <div class="fw-bold">Jennifer Weston</div>
@@ -268,14 +277,14 @@
           <div>(123) 456-7891</div>
         </div>
       </div>
-      <div class="col-3 px-6">
+      <div class="col-8 col-lg-3 mt-4 mt-lg-0 px-0 px-lg-6">
         <div>Shipping Method</div>
         <div class="mt-3">
           <div class="fw-bold">Standard</div>
           <div>5-6 Business days</div>
         </div>
       </div>
-      <div class="col-2 text-end d-flex flex-column justify-content-between">
+      <div class="col-8 col-lg-2 text-lg-end d-flex flex-column justify-content-between mt-4 mt-lg-0 px-0">
         <a class="link-underline fw-bold fs-6" href="javascript: alert('split shipment')">Split Shipment</a>
       </div>
     </div>
@@ -283,15 +292,21 @@
 </div>
             <div class="row gx-3 pb-6">
   <div class="col">
-    <div class="row justify-content-between">
-      <div class="col-3 ps-0">
-        <img width="126" height="88" src="./img/placeholder-small.png" alt="">
-        <h3 class="h5 text-uppercase mt-4">Parking Stickers</h3>
-        <div class="mt-4">
-          <strong>Quantity:</strong> 1,275
+    <div class="row justify-content-end justify-content-lg-between">
+      <div class="col-12 col-lg-3 ps-0">
+        <div class="row">
+          <div class="col-4 col-lg-5">
+            <img class="img-fluid" width="126" height="88" src="./img/placeholder-small.png" alt="">
+          </div>
+          <div class="col-8 col-lg-12">
+            <h3 class="h5 text-uppercase mt-lg-4">Parking Stickers</h3>
+            <div class="mt-4">
+              <strong>Quantity:</strong> 1,275
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-4 px-6">
+      <div class="col-8 col-lg-4 mt-4 mt-lg-0 px-0 px-lg-6">
         <div>Shipping Address</div>
         <div class="mt-3">
           <div class="fw-bold">Jennifer Weston</div>
@@ -301,14 +316,14 @@
           <div>(123) 456-7891</div>
         </div>
       </div>
-      <div class="col-3 px-6">
+      <div class="col-8 col-lg-3 mt-4 mt-lg-0 px-0 px-lg-6">
         <div>Shipping Method</div>
         <div class="mt-3">
           <div class="fw-bold">Standard</div>
           <div>5-6 Business days</div>
         </div>
       </div>
-      <div class="col-2 text-end d-flex flex-column justify-content-between">
+      <div class="col-8 col-lg-2 text-lg-end d-flex flex-column justify-content-between mt-4 mt-lg-0 px-0">
         <a class="link-underline fw-bold fs-6" href="javascript: alert('split shipment')">Split Shipment</a>
       </div>
     </div>
@@ -317,7 +332,7 @@
           </div>
         </div>
         <div class="row mt-6">
-          <div class="col">
+          <div class="col d-grid d-lg-block">
             <button type="button" class="btn btn-dark-blue">Continue</button>
           </div>
         </div>
@@ -328,14 +343,14 @@
 
 <footer class="container py-6 mt-6 border-top">
   <div class="row">
-    <div class="col">
+    <div class="col-12 col-lg-3">
       <a class="link me-3" href="#" target="_blank">Terms of Service</a>
       <a class="link" href="#" target="_blank">Privacy Policy</a>
     </div>
-    <div class="col fs-7 text-center">
+    <div class="col-12 col-lg-3 fs-lg-7 mt-5 mt-lg-0 text-lg-center">
       &copy;2022 Firebrand, Inc. All rights reserved.
     </div>
-    <div class="col fs-7 text-end">
+    <div class="col-12 col-lg-3 fs-lg-7 mt-5 mt-lg-0 text-lg-end">
       <strong>Need help?</strong> <a href="tel:18666653473">Call us +1 (866) 665-3473</a>
     </div>
   </div>

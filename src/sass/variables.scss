@@ -23,6 +23,11 @@ $color-teal: #18c6de;
 $color-light: $color-white;
 $color-dark: $color-black;
 
+$small: 540px;
+$medium: 720px;
+$large: 960px;
+$xlarge: 1140px;
+
 // Theme color map
 $theme-colors: (
     "primary": $color-purple,
@@ -96,10 +101,10 @@ $grid-breakpoints: (
 );
 
 $container-max-widths: (
-    sm: 540px,
-    md: 720px,
-    lg: 960px,
-    xl: 1140px
+    sm: $small,
+    md: $medium,
+    lg: $large,
+    xl: $xlarge
 );
 
 $spacer: 1rem;
