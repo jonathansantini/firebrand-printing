@@ -1,0 +1,11 @@
+.hero-plp {
+  background: url('../img/plp-hero__mobile.jpg') no-repeat;
+  background-size: cover;
+  background-position: bottom right;
+
+  @include breakpoint($medium) {
+    background: url('../img/plp-hero.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}

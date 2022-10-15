@@ -95,9 +95,9 @@ $display-font-sizes: (
 // Breakpoints
 $grid-breakpoints: (
     xs: 0,
-    sm: 576px,
-    md: 768px,
-    lg: 992px
+    sm: $small,
+    md: $medium,
+    lg: $large
 );
 
 $container-max-widths: (
