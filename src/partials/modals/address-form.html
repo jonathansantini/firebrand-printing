@@ -1,0 +1,31 @@
+<div class="offcanvas offcanvas-end" tabindex="-1" id="addressForm" aria-labelledby="addressFormLabel">
+  <div class="offcanvas-header border-bottom p-4 d-flex justify-content-end position-relative">
+    <h5 class="offcanvas-title display-3 position-absolute top-50 start-50 translate-middle" id="addressFormLabel">@@heading</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    @@include('../checkout/address-form.html')
+    <div class="form-check mt-4">
+      <input class="form-check-input" type="checkbox" name="default-shipping" id="default-shipping">
+      <label class="form-check-label ms-2" for="default-shipping">
+        Set as my default shipping address
+      </label>
+    </div>
+    <div class="form-check mt-2">
+      <input class="form-check-input" type="checkbox" name="default-billing" id="default-billing">
+      <label class="form-check-label ms-2" for="default-billing">
+        Set as my default billing address
+      </label>
+    </div>
+  </div>
+  <div class="offcanvas-bottom">
+    <div class="row border-top p-4">
+      <div class="col d-grid">
+        <input class="btn btn-dark-blue" type="submit" value="@@submit">
+      </div>
+      <div class="col d-grid">
+        <button class="btn btn-outline-dark-blue">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -18,20 +18,20 @@
   <section class="container pt-4 mb-7 pb-7">
     <div class="row">
       <div class="col">
-        <select class="form-select d-lg-none" id="state" aria-label="Select your state">
-          <option value="history">Order History &amp; Tracking</option>
-          <option value="address">Address Book</option>
-          <option value="settings">Settings</option>
+        <select class="nav nav-tabs form-select ps-2 d-lg-none" id="accountMenu" aria-label="Select your state">
+          <option value="history" data-bs-toggle="tab" data-bs-target="#order-tab-pane">Order History &amp; Tracking</option>
+          <option value="address" data-bs-toggle="tab" data-bs-target="#address-tab-pane">Address Book</option>
+          <option value="settings" data-bs-toggle="tab" data-bs-target="#settings-tab-pane">Settings</option>
         </select>
         <ul class="nav nav-tabs nav-fill nav-info-tabs d-none d-lg-flex" id="productInfo" role="tablist">
           <li class="nav-item col-4" role="presentation">
-            <button class="nav-link text-uppercase" id="order-tab" data-bs-toggle="tab" data-bs-target="#order-tab-pane" type="button" role="tab" aria-controls="order-tab-pane" aria-selected="false">Order History &amp; Tracking</button>
+            <button class="nav-link text-uppercase active" id="order-tab" data-bs-toggle="tab" data-bs-target="#order-tab-pane" type="button" role="tab" aria-controls="order-tab-pane" aria-selected="false">Order History &amp; Tracking</button>
           </li>
           <li class="nav-item col-4" role="presentation">
             <button class="nav-link text-uppercase" id="address-tab" data-bs-toggle="tab" data-bs-target="#address-tab-pane" type="button" role="tab" aria-controls="address-tab-pane" aria-selected="false">Address Book</button>
           </li>
           <li class="nav-item col-4" role="presentation">
-            <button class="nav-link text-uppercase active" id="setting-tab" data-bs-toggle="tab" data-bs-target="#setting-tab-pane" type="button" role="tab" aria-controls="setting-tab-pane" aria-selected="true">Settings</button>
+            <button class="nav-link text-uppercase" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings-tab-pane" type="button" role="tab" aria-controls="settings-tab-pane" aria-selected="true">Settings</button>
           </li>
         </ul>
         <div class="tab-content mt-3 mt-lg-5 pt-lg-5" id="productInfoContent">
@@ -43,7 +43,7 @@
                 <img class="position-absolute top-50 end-0 translate-middle pe-2" src="./icons/icon-magnifying-glass.svg" alt="">
               </div>
             </div>
-            <div class="row mt-6">
+            <div class="row mt-5">
               <div class="col gx-6">
                 <h2 class="display-4 text-dark-gray text-uppercase">Orders In Progress (1)</h2>
                 @@include('./partials/account/order-in-progress.html')
@@ -58,11 +58,11 @@
               </div>
             </div>
           </div>
-          <div class="tab-pane fade show " id="address-tab-pane" role="tabpanel" aria-labelledby="address-tab" tabindex="0">
-            <div class="row mt-4 mt-lg-0">
+          <div class="tab-pane fade show" id="address-tab-pane" role="tabpanel" aria-labelledby="address-tab" tabindex="0">
+            <div class="row mt-5 mt-lg-0">
               <div class="col d-flex justify-content-between align-content-center">
                 <h2 class="display-4 m-0 text-dark-gray text-uppercase line-height-4">Saved Addresses</h2>
-                <button type="button" class="btn btn-sm btn-dark-blue d-none d-lg-block">Add A New Address</button>
+                <button type="button" class="btn btn-sm btn-dark-blue d-none d-lg-block" data-bs-toggle="offcanvas" data-bs-target="#addressForm" aria-controls="addressForm">Add A New Address</button>
               </div>
             </div>
             <div class="row mt-2 mt-lg-4 row-cols-1 row-cols-lg-3">
@@ -76,13 +76,13 @@
             </div>
             <div class="row">
               <div class="col mt-4 d-grid d-block d-lg-none">
-                <button type="button" class="btn btn-sm btn-dark-blue">Add A New Address</button>
+                <button type="button" class="btn btn-sm btn-dark-blue" data-bs-toggle="offcanvas" data-bs-target="#addressForm" aria-controls="addressForm">Add A New Address</button>
               </div>
             </div>
           </div>
-          <div class="tab-pane fade show " id="setting-tab-pane" role="tabpanel" aria-labelledby="setting-tab" tabindex="0">
-            <ul class="row list-unstyled list-inline">
-              <li class="col-12 col-lg-3 mt-5 mt-lg-0">
+          <div class="tab-pane fade show" id="settings-tab-pane" role="tabpanel" aria-labelledby="settings-tab" tabindex="0">
+            <ul class="row list-unstyled list-inline mt-5 mt-lg-0">
+              <li class="col-12 col-lg-3">
                 <h2 class="display-4 text-dark-gray text-uppercase">Name</h2>
                 <div>Jennifer Weston</div>
                 <div>FIREBRAND, LLC</div>
@@ -97,7 +97,7 @@
                 <div>...............</div>
               </li>
               <li class="col-12 col-lg-3 mt-6 mt-lg-0 d-grid">
-                <button type="button" class="btn btn-sm btn-dark-blue">Edit Details</button>
+                <button type="button" class="btn btn-sm btn-dark-blue" data-bs-toggle="offcanvas" data-bs-target="#accountDetails" aria-controls="accountDetails">Edit Details</button>
                 <button type="button" class="btn btn-sm btn-outline-dark-blue mt-2">Change Password</button>
               </li>
             </ul>
@@ -108,5 +108,15 @@
   </section>
 </main>
 
+@@include('./partials/modals/account-form.html', {
+  "heading": "Edit Account Details"
+})
+
+@@include('./partials/modals/address-form.html', {
+  "heading": "Enter a new address",
+  "submit": "Save Address"
+})
+
 @@include('./partials/footer_start.html')
+<script src="./js/account.js" defer></script>
 @@include('./partials/footer_end.html')
