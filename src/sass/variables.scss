@@ -184,3 +184,12 @@ $accordion-icon-color: $color-dark-blue;
 $accordion-icon-active-color: $color-dark-blue;
 $accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'><path style='fill: #{$accordion-icon-active-color} fill-rule: evenodd;' d='M9,0c.41,0,.75,.34,.75,.75v7.5h7.5c.41,0,.75,.34,.75,.75s-.34,.75-.75,.75h-7.5v7.5c0,.41-.34,.75-.75,.75s-.75-.34-.75-.75v-7.5H.75c-.41,0-.75-.34-.75-.75s.34-.75,.75-.75h7.5V.75c0-.41,.34-.75,.75-.75Z'/></svg>");
 $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'><path style='fill: #{$accordion-icon-active-color} fill-rule: evenodd; transform: translateY(8px);' d='M0,.75C0,.34,.34,0,.75,0H17.25c.41,0,.75,.34,.75,.75s-.34,.75-.75,.75H.75c-.41,0-.75-.34-.75-.75Z'/></svg>");
+
+// Offcanvas / modal settings
+$offcanvas-bg-color: $color-light;
+$offcanvas-backdrop-bg: $color-light;
+$offcanvas-horizontal-width: 80%;
+$offcanvas-padding-x: 2rem;
+
+// Dropdowns
+$dropdown-link-hover-bg: transparent;

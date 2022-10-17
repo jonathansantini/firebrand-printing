@@ -1,0 +1,16 @@
+.dropdown-account .dropdown-menu {
+  border: none;
+  box-shadow: none;
+
+  @include breakpoint($large) {
+    border: 0.0625rem solid $color-base-gray;
+    transform: translateX(40%);
+  }
+}
+
+.dropdown-account .nav-link:after {
+
+  @include breakpoint($large) {
+    display: none;
+  }
+}

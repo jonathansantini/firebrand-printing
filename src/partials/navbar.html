@@ -1,32 +1,69 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
-    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler border-0" type="button">
+      <span class="navbar-toggler-icon"  data-bs-toggle="offcanvas" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></span>
     </button>
     <a class="navbar-brand m-0" href="./"><img src="./img/logo-firebrand.svg" alt="Firebrand"></a>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
-        <li class="nav-item mx-3">
-          <a class="nav-link link-dark active" aria-current="page" href="about.html">About</a>
-        </li>
-        <li class="nav-item mx-3 dropdown">
-          <a class="nav-link link-dark dropdown-toggle" href="./" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Products
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="./">Action</a></li>
-            <li><a class="dropdown-item" href="./">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="./">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item mx-4">
-          <a class="nav-link link-dark" href="./contact.html">Contact</a>
-        </li>
-        <li class="nav-item mx-2">
-          <a class="nav-link link-dark" href="./account.html"><img src="./icons/icon-account.svg" alt="Account"></a>
-        </li>
-      </ul>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarSupportedContent" aria-labelledby="navbarSupportedContent">
+      <div class="offcanvas-header justify-content-end">
+        <button type="button" class="btn-close fs-5 opacity-100" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column justify-content-between">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+          <li class="nav-item mx-lg-3">
+            <a class="nav-link link-dark active" aria-current="page" href="about.html">About</a>
+          </li>
+          <li class="nav-item mt-4 mt-lg-0 mx-lg-3 dropdown">
+            <a class="nav-link link-dark dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu px-lg-4 border-0" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item text-capitalize px-0" href="./">UL Labels</a></li>
+              <li><a class="dropdown-item text-capitalize mt-2 px-0" href="./">Machine Labels</a></li>
+              <li><a class="dropdown-item text-capitalize mt-2 px-0" href="./">Control Panels</a></li>
+            </ul>
+          </li>
+          <li class="nav-item mt-4 mt-lg-0 mx-lg-4 order-4 order-lg-3">
+            <a class="nav-link link-dark" href="./contact.html">Contact</a>
+          </li>
+          <li class="nav-item mt-4 mt-lg-0 mx-lg-2 dropdown dropdown-account order-3 order-lg-4">
+            <a class="nav-link link-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img class="d-none d-lg-block" src="./icons/icon-account.svg" alt="Account">
+              <span class="d-inline-block d-lg-none">Account</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg-end border-base-gray mt-lg-2 p-lg-4" aria-labelledby="navbarDropdown">
+              <div class="d-none d-lg-block">
+                <div class="display-4 text-capitalize text-center">Hi Jennifer!</div>
+                <a href="./" type="button" class="btn btn-outline-dark-blue d-lg-grid mt-3 text-center">Logout</a>
+                <div class="dropdown-divider mt-4"></div>
+              </div>
+              <ul class="dropdown-item list-unstyled p-0">
+                <li>
+                  <a class="text-capitalize mt-1 mt-lg-3 d-block d-lg-flex align-items-lg-center" href="./">
+                    <img class="me-2 d-none d-lg-block" width="12" height="12" src="./icons/icon-paper.svg" alt="Order History"> View Order History
+                  </a>
+                </li>
+                <li>
+                  <a class="text-capitalize mt-2 d-block d-lg-flex align-items-lg-center" href="./">
+                    <img  class="me-2 d-none d-lg-block" width="12" height="12" src="./icons/icon-account.svg" alt="Account"> Account
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <div class="row d-lg-none">
+          <div class="col">
+            <div class="fs-8 fw-bold">Looking for help?</div>
+            <div class="mt-1">
+              <a class="fs-8" href="tel:18666653473">Call us +1 (866) 665-3473</a>
+            </div>
+            <div class="mt-1">
+              <a class="fs-8" href="mailto:support@firebrandprinting.com">support@firebrandprinting.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="mx-2 cart">
       <a class="nav-link link-dark cart-link" href="./cart.html">
