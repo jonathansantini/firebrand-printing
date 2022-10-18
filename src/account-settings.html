@@ -109,14 +109,16 @@
 </main>
 
 @@include('./partials/modals/account-form.html', {
-  "heading": "Edit Account Details"
+  "heading": "Edit Account Details",
+  "submit": "Save changes",
+  "cancel": "Cancel"
 })
 
 @@include('./partials/modals/address-form.html', {
   "heading": "Enter a new address",
-  "submit": "Save Address"
+  "submit": "Save address",
+  "cancel": "Cancel"
 })
 
 @@include('./partials/footer_start.html')
-<script src="./js/account.js" defer></script>
 @@include('./partials/footer_end.html')

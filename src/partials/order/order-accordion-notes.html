@@ -6,12 +6,9 @@
   </h2>
   <div id="notesCollapse" class="accordion-collapse collapse" aria-labelledby="notes" data-bs-parent="#orderInfo">
     <div class="accordion-body pt-0 pb-4">
-      <div class="row">
-        <div class="col">
-          <label for="notes" class="form-label">Notes</label>
-          <textarea rows="6" style="height: 90%;" type="text" class="form-control" id="notes" placeholder="Type in your notes here"></textarea>
-        </div>
-      </div>
+      @@include('./order-form-notes.html', {
+        "classes": ""
+      })
       <div class="row mt-6">
         <div class="col d-grid">
           <input class="btn btn-dark-blue" type="submit" value="Continue">

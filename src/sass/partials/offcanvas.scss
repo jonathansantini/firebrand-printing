@@ -1,0 +1,10 @@
+.offcanvas-title {
+  z-index: -1;
+}
+
+.offcanvas.offcanvas-end {
+
+  @include breakpoint($medium) {
+    width: 50%;
+  }
+}

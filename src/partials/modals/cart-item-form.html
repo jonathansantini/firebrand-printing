@@ -1,0 +1,36 @@
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cartItemForm" aria-labelledby="cartItemFormLabel">
+  <div class="offcanvas-header border-bottom p-4 d-flex justify-content-end position-relative">
+    <h5 class="offcanvas-title display-3 position-absolute top-50 start-50 w-100 text-center translate-middle" id="cartItemFormLabel">@@heading</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    @@include('../order/order-form-details.html', {
+      "classes": "mt-3"
+    })
+    @@include('../order/order-form-upload.html', {
+      "classes": "mt-3"
+    })
+    @@include('../order/order-form-proof.html', {
+      "classes": "mt-3"
+    })
+    @@include('../order/order-form-part.html', {
+      "classes": "mt-3"
+    })
+    @@include('../order/order-form-production-time.html', {
+      "classes": "mt-3"
+    })
+    @@include('../order/order-form-notes.html', {
+      "classes": "mt-3"
+    })
+  </div>
+  <div class="offcanvas-bottom">
+    <div class="row border-top p-2 p-lg-4">
+      <div class="col-12 col-lg-6 d-grid">
+        <input class="btn btn-outline-dark-blue" type="submit" value="@@submit">
+      </div>
+      <div class="col-12 col-lg-6 mt-2 mt-lg-0 d-grid">
+        <button class="btn btn-dark-blue">@@cancel</button>
+      </div>
+    </div>
+  </div>
+</div>

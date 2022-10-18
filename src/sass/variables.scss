@@ -10,6 +10,7 @@ $color-light-purple: #EDEFF7;
 $color-blue: #1A148E;
 $color-dark-blue: #050542;
 $color-gray: #D9D9D9;
+$color-light-gray: #E5E5E5;
 $color-green: #039400;
 $color-light-green: #e5f4e5;
 $color-base-gray: #A2A2A2;
@@ -186,9 +187,9 @@ $accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/20
 $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'><path style='fill: #{$accordion-icon-active-color} fill-rule: evenodd; transform: translateY(8px);' d='M0,.75C0,.34,.34,0,.75,0H17.25c.41,0,.75,.34,.75,.75s-.34,.75-.75,.75H.75c-.41,0-.75-.34-.75-.75Z'/></svg>");
 
 // Offcanvas / modal settings
+$color-modal-background: $color-light-gray;
 $offcanvas-bg-color: $color-light;
-$offcanvas-backdrop-bg: $color-light;
-$offcanvas-horizontal-width: 80%;
+$offcanvas-backdrop-bg: $color-modal-background;
 $offcanvas-padding-x: 2rem;
 
 // Dropdowns

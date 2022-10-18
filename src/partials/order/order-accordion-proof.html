@@ -6,23 +6,9 @@
   </h2>
   <div id="proofOptionCollapse" class="accordion-collapse collapse" aria-labelledby="proofOption" data-bs-parent="#orderInfo">
     <div class="accordion-body pt-0 pb-4">
-      <div class="row">
-        <div class="col">
-          <div>Would you like to review a proof before we print?</div>
-          <div class="form-check mt-3">
-            <input class="form-check-input active" type="radio" name="proof" id="proof1" checked>
-            <label class="form-check-label ms-2" for="proof1">
-              Yes, send me a proof
-            </label>
-          </div>
-          <div class="form-check mt-3">
-            <input class="form-check-input" type="radio" name="proof" id="proof2">
-            <label class="form-check-label ms-2" for="proof2">
-              No, don’t send me a proof
-            </label>
-          </div>
-        </div>
-      </div>
+      @@include('./order-form-proof.html', {
+        "classes": ""
+      })
       <div class="row mt-6">
         <div class="col text-center d-flex">
           <button type="button" class="btn btn-dark-blue flex-grow-1">Continue</button>

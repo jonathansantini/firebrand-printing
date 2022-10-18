@@ -1,6 +1,8 @@
 <div class="row border rounded-2 mb-3">
   <div class="col px-5 py-6 position-relative">
-    <a class="position-absolute top-50" style="left: -2rem;" href="javascript: alert('delete');"><img src="./icons/icon-trash.svg" alt="Delete Split Shipping Item"></a>
+    <a class="position-absolute top-50 pointer-event" href="#" style="left: -2rem;">
+      <img src="./icons/icon-trash.svg" alt="Delete Split Shipping Item" data-bs-toggle="offcanvas" data-bs-target="#advancedShippingForm" aria-controls="advancedShippingForm">
+    </a>
     <div class="row">
       <div class="col-12 col-lg-4">
         <h3 class="display-5 text-dark-gray fw-normal">Split Quantity</h3>

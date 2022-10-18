@@ -1,7 +1,10 @@
-
-const accountMenu = document.getElementById('accountMenu')
-accountMenu.addEventListener("change", event => {
-  const option = event.target.options[event.target.selectedIndex];
-  const tabTrigger = new bootstrap.Tab(option);
-  tabTrigger.show();
-})
+document.addEventListener('DOMContentLoaded', function() {
+  const accountMenu = document.getElementById('accountMenu');
+  const tabContainer = document.getElementById('productInfo');
+  accountMenu.addEventListener("change", event => {
+    event.preventDefault();
+    const option = event.target.options[event.target.selectedIndex];
+    const tab = tabContainer.querySelector('button[data-bs-target="' + option.dataset.bsTarget + '"]')
+    tab.click();
+  })
+});

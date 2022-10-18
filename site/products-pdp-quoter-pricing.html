@@ -146,120 +146,120 @@
   <div id="productDetailsCollapse" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#orderInfo">
     <div class="accordion-body pt-0 pb-4">
       <form action="">
-        <div class="row">
-          <div class="col">
-            <label for="quantity" class="form-label">Quantity</label>
-            <input type="text" class="form-control" id="quantity" placeholder="Enter product quantity">
-          </div>
-        </div>
-        <div class="row mt-3">
-          <div class="col">
-            <label for="width" class="form-label">Width (in inches)*</label>
-            <input type="text" class="form-control" id="width" placeholder="Enter width">
-          </div>
-          <div class="col">
-            <label for="height" class="form-label">Height (in inches)*</label>
-            <input type="text" class="form-control" id="height" placeholder="Enter height">
-          </div>
-        </div>
-        <div class="row mt-3">
-          <div class="col">
-            <label for="material" class="form-label">Material</label>
-            <select class="form-select" id="material" aria-label="Select material dropdown">
-              <option selected>Select a material</option>
-              <option value="1">White Polyester, 2 mil</option>
-              <option value="2">Black Polyester, 2 mil</option>
-              <option value="3">Blue Polyester, 2 mil</option>
-            </select>
-          </div>
-        </div>
-        <div class="row mt-3">
-          <div class="col">
-            <label for="overlaminate" class="form-label">Overlaminate</label>
-            <select class="form-select" id="overlaminate" aria-label="Select Overlaminate">
-              <option selected>Select overlaminate</option>
-              <option value="1">Gloss Polyester, 1 mil</option>
-              <option value="2">Matte Polyester, 1 mil</option>
-            </select>
-          </div>
-        </div>
-        <div class="row mt-3">
-          <div class="col">
-            <label for="formFactor" class="form-label">Form Factor</label>
-            <select class="form-select" id="formFactor" aria-label="Select Form Factor">
-              <option selected>Select Form Factor</option>
-              <option value="1">Rolls</option>
-              <option value="2">Sheets</option>
-            </select>
-          </div>
-        </div>
-        <div class="row mt-3">
-          <div class="col">
-            <label for="cutouts" class="form-label">Number of cutouts</label>
-            <input type="password" class="form-control" id="cutouts" placeholder="Add number of cutouts">
-          </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col-8">
-            <div class="text-dark-gray">Colors</div>
-            <ul class="row list-unstyled mt-2 ms-0">
-              <li class="form-check col-6 d-flex align-items-center">
-                <input class="form-check-input" type="checkbox" name="color" value="" id="black">
-                <div class="color-swatch mx-2" style="width: 2rem; height: 2rem; border-radius: 1rem; background-color: #000;"></div>
-                <label for="black" class="form-label m-0">Black</label>
-              </li>
-              <li class="form-check col-6 d-flex align-items-center">
-                <input class="form-check-input" type="checkbox" name="color" value="" id="green">
-                <div class="color-swatch mx-2" style="width: 2rem; height: 2rem; border-radius: 1rem; background-color: #095E47;"></div>
-                <label for="green" class="form-label m-0">Green</label>
-              </li>
-              <li class="form-check col-6 d-flex align-items-center mt-3">
-                <input class="form-check-input" type="checkbox" name="color" value="" id="red">
-                <div class="color-swatch mx-2" style="width: 2rem; height: 2rem; border-radius: 1rem; background-color: #B90721;"></div>
-                <label for="red" class="form-label m-0">Red</label>
-              </li>
-              <li class="form-check col-6 d-flex align-items-center mt-3">
-                <input class="form-check-input" type="checkbox" name="color" value="" id="blue">
-                <div class="color-swatch mx-2" style="width: 2rem; height: 2rem; border-radius: 1rem; background-color: #042384;"></div>
-                <label for="blue" class="form-label m-0">Blue</label>
-              </li>
-              <li class="form-check col-6 d-flex align-items-center mt-3">
-                <input class="form-check-input" type="checkbox" name="color" value="" id="orange">
-                <div class="color-swatch mx-2" style="width: 2rem; height: 2rem; border-radius: 1rem; background-color: #F55C1E;"></div>
-                <label for="orange" class="form-label m-0">Orange</label>
-              </li>
-              <li class="form-check col-6 d-flex align-items-center mt-3">
-                <input class="form-check-input" type="checkbox" name="color" value="" id="purple">
-                <div class="color-swatch mx-2" style="width: 2rem; height: 2rem; border-radius: 1rem; background-color: #47397C;"></div>
-                <label for="purple" class="form-label m-0">Purple</label>
-              </li>
-              <li class="form-check col-6 d-flex align-items-center mt-3">
-                <input class="form-check-input" type="checkbox" name="color" value="" id="yellow">
-                <div class="color-swatch mx-2" style="width: 2rem; height: 2rem; border-radius: 1rem; background-color: #FECE2F;"></div>
-                <label for="yellow" class="form-label m-0">Yellow</label>
-              </li>
-              <li class="form-check col-6 d-flex align-items-center mt-3">
-                <input class="form-check-input" type="checkbox" name="color" value="" id="eco-green">
-                <div class="color-swatch mx-2" style="width: 2rem; height: 2rem; border-radius: 1rem; background-color: #A5D93B;"></div>
-                <label for="eco-green" class="form-label m-0">Eco Green</label>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col-8">
-            <div class="text-dark-gray">PMS Colors</div>
-            <ul class="list-unstyled mt-2">
-              <li class="d-flex">
-                <input type="text" class="form-control w-50" id="pms-color" placeholder="Enter PMS color">
-              </li>
-              <li class="d-flex mt-2 align-items-center">
-                <input type="text" class="form-control w-50" id="pms-color" placeholder="Enter PMS color">
-                <a class="link-underline ms-4" href="javascript:alert('Added PMS color');">+ Add more</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <div class="row ">
+  <div class="col">
+    <label for="quantity" class="form-label">Quantity</label>
+    <input type="text" class="form-control" id="quantity" placeholder="Enter product quantity">
+  </div>
+</div>
+<div class="row mt-3">
+  <div class="col">
+    <label for="width" class="form-label">Width (in inches)*</label>
+    <input type="text" class="form-control" id="width" placeholder="Enter width">
+  </div>
+  <div class="col">
+    <label for="height" class="form-label">Height (in inches)*</label>
+    <input type="text" class="form-control" id="height" placeholder="Enter height">
+  </div>
+</div>
+<div class="row mt-3">
+  <div class="col">
+    <label for="material" class="form-label">Material</label>
+    <select class="form-select" id="material" aria-label="Select material dropdown">
+      <option selected>Select a material</option>
+      <option value="1">White Polyester, 2 mil</option>
+      <option value="2">Black Polyester, 2 mil</option>
+      <option value="3">Blue Polyester, 2 mil</option>
+    </select>
+  </div>
+</div>
+<div class="row mt-3">
+  <div class="col">
+    <label for="overlaminate" class="form-label">Overlaminate</label>
+    <select class="form-select" id="overlaminate" aria-label="Select Overlaminate">
+      <option selected>Select overlaminate</option>
+      <option value="1">Gloss Polyester, 1 mil</option>
+      <option value="2">Matte Polyester, 1 mil</option>
+    </select>
+  </div>
+</div>
+<div class="row mt-3">
+  <div class="col">
+    <label for="formFactor" class="form-label">Form Factor</label>
+    <select class="form-select" id="formFactor" aria-label="Select Form Factor">
+      <option selected>Select Form Factor</option>
+      <option value="1">Rolls</option>
+      <option value="2">Sheets</option>
+    </select>
+  </div>
+</div>
+<div class="row mt-3">
+  <div class="col">
+    <label for="cutouts" class="form-label">Number of cutouts</label>
+    <input type="password" class="form-control" id="cutouts" placeholder="Add number of cutouts">
+  </div>
+</div>
+<div class="row mt-5">
+  <div class="col-12 col-lg-8">
+    <div class="text-dark-gray">Colors</div>
+    <ul class="row list-unstyled mt-2 ms-0">
+      <li class="form-check col-6 d-flex align-items-center">
+        <input class="form-check-input" type="checkbox" name="color" value="" id="black">
+        <div class="color-swatch mx-2" style="width: 2rem; height: 2rem; border-radius: 1rem; background-color: #000;"></div>
+        <label for="black" class="form-label m-0">Black</label>
+      </li>
+      <li class="form-check col-6 d-flex align-items-center">
+        <input class="form-check-input" type="checkbox" name="color" value="" id="green">
+        <div class="color-swatch mx-2" style="width: 2rem; height: 2rem; border-radius: 1rem; background-color: #095E47;"></div>
+        <label for="green" class="form-label m-0">Green</label>
+      </li>
+      <li class="form-check col-6 d-flex align-items-center mt-3">
+        <input class="form-check-input" type="checkbox" name="color" value="" id="red">
+        <div class="color-swatch mx-2" style="width: 2rem; height: 2rem; border-radius: 1rem; background-color: #B90721;"></div>
+        <label for="red" class="form-label m-0">Red</label>
+      </li>
+      <li class="form-check col-6 d-flex align-items-center mt-3">
+        <input class="form-check-input" type="checkbox" name="color" value="" id="blue">
+        <div class="color-swatch mx-2" style="width: 2rem; height: 2rem; border-radius: 1rem; background-color: #042384;"></div>
+        <label for="blue" class="form-label m-0">Blue</label>
+      </li>
+      <li class="form-check col-6 d-flex align-items-center mt-3">
+        <input class="form-check-input" type="checkbox" name="color" value="" id="orange">
+        <div class="color-swatch mx-2" style="width: 2rem; height: 2rem; border-radius: 1rem; background-color: #F55C1E;"></div>
+        <label for="orange" class="form-label m-0">Orange</label>
+      </li>
+      <li class="form-check col-6 d-flex align-items-center mt-3">
+        <input class="form-check-input" type="checkbox" name="color" value="" id="purple">
+        <div class="color-swatch mx-2" style="width: 2rem; height: 2rem; border-radius: 1rem; background-color: #47397C;"></div>
+        <label for="purple" class="form-label m-0">Purple</label>
+      </li>
+      <li class="form-check col-6 d-flex align-items-center mt-3">
+        <input class="form-check-input" type="checkbox" name="color" value="" id="yellow">
+        <div class="color-swatch mx-2" style="width: 2rem; height: 2rem; border-radius: 1rem; background-color: #FECE2F;"></div>
+        <label for="yellow" class="form-label m-0">Yellow</label>
+      </li>
+      <li class="form-check col-6 d-flex align-items-center mt-3">
+        <input class="form-check-input" type="checkbox" name="color" value="" id="eco-green">
+        <div class="color-swatch mx-2" style="width: 2rem; height: 2rem; border-radius: 1rem; background-color: #A5D93B;"></div>
+        <label for="eco-green" class="form-label m-0">Eco Green</label>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="row mt-5">
+  <div class="col-8">
+    <div class="text-dark-gray">PMS Colors</div>
+    <ul class="list-unstyled mt-2">
+      <li class="d-flex">
+        <input type="text" class="form-control w-50" id="pms-color" placeholder="Enter PMS color">
+      </li>
+      <li class="d-flex mt-2 align-items-center">
+        <input type="text" class="form-control w-50" id="pms-color" placeholder="Enter PMS color">
+        <a class="link-underline ms-4" href="javascript:alert('Added PMS color');">+ Add more</a>
+      </li>
+    </ul>
+  </div>
+</div>
         <div class="row mt-5">
           <div class="col text-center d-flex">
             <button type="button" class="btn btn-dark-blue flex-grow-1">Continue</button>
@@ -277,36 +277,36 @@
   </h2>
   <div id="fileUploadCollapse" class="accordion-collapse collapse" aria-labelledby="fileUpload" data-bs-parent="#orderInfo">
     <div class="accordion-body pt-0 pb-4">
-      <div class="row">
-        <div class="col">
-          <a class="d-block bg-base-gray d-flex flex-column justify-content-center align-content-center" style="--bs-bg-opacity: .1" href="javascript:alert('Uploading');">
-            <div class="text-center py-7">
-              <img class="d-inline-block" width="40" height="40" src="./icons/icon-upload.svg" alt="Drop Files Here">
-              <div class="text-center pt-3">Drop Files Here Or Click To Upload</div>
-            </div>
-          </a>
-        </div>
+      <div class="row ">
+  <div class="col">
+    <a class="d-block bg-base-gray d-flex flex-column justify-content-center align-content-center" style="--bs-bg-opacity: .1" href="javascript:alert('Uploading');">
+      <div class="text-center py-7">
+        <img class="d-inline-block" width="40" height="40" src="./icons/icon-upload.svg" alt="Drop Files Here">
+        <div class="text-center pt-3">Drop Files Here Or Click To Upload</div>
       </div>
-      <div class="row mt-5">
-        <div class="col">
-          <table class="table table-borderless w-75">
-            <tr>
-              <td class="p-0">
-                <img class="border rounded-3 p-2" src="./icons/icon-paper-sm.svg" alt="Paper">
-              </td>
-              <td><span class="mx-4">ul_labels_final_2022.pdf</span></td>
-              <td><a href="javascript:alert('Delete file');">X</a></td>
-            </tr>
-            <tr>
-              <td class="p-0">
-                <img class="border rounded-3 p-2" src="./icons/icon-paper-sm.svg" alt="Paper">
-              </td>
-              <td><span class="mx-4">Final_LOGO_Firebrand_2022outline.svg</span></td>
-              <td><a href="javascript:alert('Delete file');">X</a></td>
-            </tr>
-          </table>
-        </div>
-      </div>
+    </a>
+  </div>
+</div>
+<div class="row mt-5">
+  <div class="col">
+    <table class="table table-borderless w-75">
+      <tr>
+        <td class="p-0">
+          <img class="border rounded-3 p-2" src="./icons/icon-paper-sm.svg" alt="Paper">
+        </td>
+        <td><span class="mx-4">ul_labels_final_2022.pdf</span></td>
+        <td><a href="javascript:alert('Delete file');">X</a></td>
+      </tr>
+      <tr>
+        <td class="p-0">
+          <img class="border rounded-3 p-2" src="./icons/icon-paper-sm.svg" alt="Paper">
+        </td>
+        <td><span class="mx-4">Final_LOGO_Firebrand_2022outline.svg</span></td>
+        <td><a href="javascript:alert('Delete file');">X</a></td>
+      </tr>
+    </table>
+  </div>
+</div>
       <div class="row mt-5">
         <div class="col text-center d-flex">
           <button type="button" class="btn btn-dark-blue flex-grow-1">Continue</button>
@@ -323,23 +323,23 @@
   </h2>
   <div id="proofOptionCollapse" class="accordion-collapse collapse" aria-labelledby="proofOption" data-bs-parent="#orderInfo">
     <div class="accordion-body pt-0 pb-4">
-      <div class="row">
-        <div class="col">
-          <div>Would you like to review a proof before we print?</div>
-          <div class="form-check mt-3">
-            <input class="form-check-input active" type="radio" name="proof" id="proof1" checked>
-            <label class="form-check-label ms-2" for="proof1">
-              Yes, send me a proof
-            </label>
-          </div>
-          <div class="form-check mt-3">
-            <input class="form-check-input" type="radio" name="proof" id="proof2">
-            <label class="form-check-label ms-2" for="proof2">
-              No, don’t send me a proof
-            </label>
-          </div>
-        </div>
-      </div>
+      <div class="row ">
+  <div class="col">
+    <div>Would you like to review a proof before we print?</div>
+    <div class="form-check mt-3">
+      <input class="form-check-input active" type="radio" name="proof" id="proof1" checked>
+      <label class="form-check-label ms-2" for="proof1">
+        Yes, send me a proof
+      </label>
+    </div>
+    <div class="form-check mt-3">
+      <input class="form-check-input" type="radio" name="proof" id="proof2">
+      <label class="form-check-label ms-2" for="proof2">
+        No, don’t send me a proof
+      </label>
+    </div>
+  </div>
+</div>
       <div class="row mt-6">
         <div class="col text-center d-flex">
           <button type="button" class="btn btn-dark-blue flex-grow-1">Continue</button>
@@ -356,12 +356,12 @@
   </h2>
   <div id="partNumberCollapse" class="accordion-collapse collapse" aria-labelledby="partNumber" data-bs-parent="#orderInfo">
     <div class="accordion-body pt-0 pb-4">
-      <div class="row">
-        <div class="col">
-          <label for="partNumber" class="form-label">Part Number</label>
-          <input type="text" class="form-control" id="partNumber" placeholder="Enter the part number">
-        </div>
-      </div>
+      <div class="row ">
+  <div class="col">
+    <label for="partNumber" class="form-label">Part Number</label>
+    <input type="text" class="form-control" id="partNumber" placeholder="Enter the part number">
+  </div>
+</div>
       <div class="row mt-6">
         <div class="col text-center d-flex">
           <button type="button" class="btn btn-dark-blue flex-grow-1">Continue</button>
@@ -378,41 +378,41 @@
   </h2>
   <div id="productionTimeCollapse" class="accordion-collapse collapse" aria-labelledby="productionTime" data-bs-parent="#orderInfo">
     <div class="accordion-body pt-0 pb-4">
-      <div class="row">
-        <div class="col">
-          <div>What production time do you need?</div>
-          <div class="form-check mt-3">
-            <input class="form-check-input" type="radio" name="productionTime" id="productionTime1">
-            <label class="form-check-label ms-2" for="productionTime1">
-              Standard (5-7 business days)
-            </label>
-          </div>
-          <div class="form-check mt-3">
-            <input class="form-check-input" type="radio" name="productionTime" id="productionTime2">
-            <label class="form-check-label ms-2" for="productionTime2">
-              3 day
-            </label>
-          </div>
-          <div class="form-check mt-3">
-            <input class="form-check-input" type="radio" name="productionTime" id="productionTime3">
-            <label class="form-check-label ms-2" for="productionTime3">
-              2 day
-            </label>
-          </div>
-          <div class="form-check mt-3">
-            <input class="form-check-input" type="radio" name="productionTime" id="productionTime4">
-            <label class="form-check-label ms-2" for="productionTime4">
-              1 day
-            </label>
-          </div>
-          <div class="form-check mt-3">
-            <input class="form-check-input" type="radio" name="productionTime" id="productionTime5">
-            <label class="form-check-label ms-2" for="productionTime5">
-              Same day
-            </label>
-          </div>
-        </div>
-      </div>
+      <div class="row ">
+  <div class="col">
+    <div>What production time do you need?</div>
+    <div class="form-check mt-3">
+      <input class="form-check-input" type="radio" name="productionTime" id="productionTime1">
+      <label class="form-check-label ms-2" for="productionTime1">
+        Standard (5-7 business days)
+      </label>
+    </div>
+    <div class="form-check mt-3">
+      <input class="form-check-input" type="radio" name="productionTime" id="productionTime2">
+      <label class="form-check-label ms-2" for="productionTime2">
+        3 day
+      </label>
+    </div>
+    <div class="form-check mt-3">
+      <input class="form-check-input" type="radio" name="productionTime" id="productionTime3">
+      <label class="form-check-label ms-2" for="productionTime3">
+        2 day
+      </label>
+    </div>
+    <div class="form-check mt-3">
+      <input class="form-check-input" type="radio" name="productionTime" id="productionTime4">
+      <label class="form-check-label ms-2" for="productionTime4">
+        1 day
+      </label>
+    </div>
+    <div class="form-check mt-3">
+      <input class="form-check-input" type="radio" name="productionTime" id="productionTime5">
+      <label class="form-check-label ms-2" for="productionTime5">
+        Same day
+      </label>
+    </div>
+  </div>
+</div>
       <div class="row mt-6">
         <div class="col text-center d-flex">
           <button type="button" class="btn btn-dark-blue flex-grow-1">Continue</button>
@@ -429,12 +429,12 @@
   </h2>
   <div id="notesCollapse" class="accordion-collapse collapse" aria-labelledby="notes" data-bs-parent="#orderInfo">
     <div class="accordion-body pt-0 pb-4">
-      <div class="row">
-        <div class="col">
-          <label for="notes" class="form-label">Notes</label>
-          <textarea rows="6" style="height: 90%;" type="text" class="form-control" id="notes" placeholder="Type in your notes here"></textarea>
-        </div>
-      </div>
+      <div class="row ">
+  <div class="col">
+    <label for="notes" class="form-label">Notes</label>
+    <textarea rows="6" style="height: 90%;" type="text" class="form-control" id="notes" placeholder="Type in your notes here"></textarea>
+  </div>
+</div>
       <div class="row mt-6">
         <div class="col d-grid">
           <input class="btn btn-dark-blue" type="submit" value="Continue">

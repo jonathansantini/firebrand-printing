@@ -6,36 +6,9 @@
   </h2>
   <div id="fileUploadCollapse" class="accordion-collapse collapse" aria-labelledby="fileUpload" data-bs-parent="#orderInfo">
     <div class="accordion-body pt-0 pb-4">
-      <div class="row">
-        <div class="col">
-          <a class="d-block bg-base-gray d-flex flex-column justify-content-center align-content-center" style="--bs-bg-opacity: .1" href="javascript:alert('Uploading');">
-            <div class="text-center py-7">
-              <img class="d-inline-block" width="40" height="40" src="./icons/icon-upload.svg" alt="Drop Files Here">
-              <div class="text-center pt-3">Drop Files Here Or Click To Upload</div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="row mt-5">
-        <div class="col">
-          <table class="table table-borderless w-75">
-            <tr>
-              <td class="p-0">
-                <img class="border rounded-3 p-2" src="./icons/icon-paper-sm.svg" alt="Paper">
-              </td>
-              <td><span class="mx-4">ul_labels_final_2022.pdf</span></td>
-              <td><a href="javascript:alert('Delete file');">X</a></td>
-            </tr>
-            <tr>
-              <td class="p-0">
-                <img class="border rounded-3 p-2" src="./icons/icon-paper-sm.svg" alt="Paper">
-              </td>
-              <td><span class="mx-4">Final_LOGO_Firebrand_2022outline.svg</span></td>
-              <td><a href="javascript:alert('Delete file');">X</a></td>
-            </tr>
-          </table>
-        </div>
-      </div>
+      @@include('./order-form-upload.html', {
+        "classes": ""
+      })
       <div class="row mt-5">
         <div class="col text-center d-flex">
           <button type="button" class="btn btn-dark-blue flex-grow-1">Continue</button>
