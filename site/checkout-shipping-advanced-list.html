@@ -56,35 +56,36 @@
       <div class="col-12 col-lg-7 p-lg-0">
         <form action="">
           <div class="row mt-3">
-            <div class="col">
-              <span>Need part of your order shipping to a different location?</span>
-              <div class="form-group input-group mt-3">
-                <span class="form-check">
-                  <input class="form-check-input" type="radio" name="different-address" id="different-address1" checked>
-                  <label class="form-check-label ms-2" for="different-address1">
-                    No
-                  </label>
-                </span>
-                <span class="form-check ms-4">
-                  <input class="form-check-input" type="radio" name="different-address" id="different-address2">
-                  <label class="form-check-label ms-2" for="different-address2">
-                    Yes
-                  </label>
-                </span>
-              </div>
-            </div>
-          </div>
+  <fieldset class="col">
+    <legend class="fs-6">Need part of your order shipping to a different location?</legend>
+    <div class="form-group input-group mt-3">
+      <span class="form-check">
+        <input class="form-check-input" type="radio" name="different-address" id="different-address1" checked>
+        <label class="form-check-label ms-2" for="different-address1">
+          No
+        </label>
+      </span>
+      <span class="form-check ms-4">
+        <input class="form-check-input" type="radio" name="different-address" id="different-address2">
+        <label class="form-check-label ms-2" for="different-address2">
+          Yes
+        </label>
+      </span>
+    </div>
+  </fieldset>
+</div>
           <div class="row mt-6">
   <div class="col">
     <h2 class="display-4 text-uppercase text-dark-blue">Choose a shipping address</h2>
   </div>
 </div>
 <div class="row">
-  <div class="col">
+  <fieldset class="col">
+    <legend class="visually-hidden">Choose a shipping address</legend>
     <div class="form-group input-group mt-3">
       <span class="form-check col-12 col-lg-6 mb-4">
-        <input class="form-check-input" type="radio" name="address" id="address1" checked>
-        <label class="form-check-label ms-3" for="address1">
+        <input class="form-check-input" type="radio" name="address" id="@@inputLabel-address1" checked>
+        <label class="form-check-label ms-3" for="@@inputLabel-address1">
           <div class="fw-bold">Jennifer Weston</div>
           <div>FIREBRAND, LLC</div>
           <div>1234 N Main Road</div>
@@ -93,8 +94,8 @@
         </label>
       </span>
       <span class="form-check col-12 col-lg-6 mb-4">
-        <input class="form-check-input" type="radio" name="address" id="address2">
-        <label class="form-check-label ms-3" for="address2">
+        <input class="form-check-input" type="radio" name="address" id="@@inputLabel-address2">
+        <label class="form-check-label ms-3" for="@@inputLabel-address2">
           <div class="fw-bold">Jennifer Weston</div>
           <div>56789 S Printing St</div>
           <div>Seattle, WA 98122</div>
@@ -102,7 +103,7 @@
         </label>
       </span>
     </div>
-  </div>
+  </fieldset>
 </div>
 <div class="row mt-4">
   <div class="col">
@@ -181,8 +182,8 @@
       <div class="col-12 col-lg-4">
         <h3 class="display-5 text-dark-gray fw-normal">Split Quantity</h3>
         <div class="col-8 d-flex align-items-center mt-3">
-          <label for="split-qty" class="form-label visually-hidden">Email Address*</label>
-          <input type="text" class="form-control fw-bold text-end me-2" id="split-qty" placeholder="" value="60">
+          <label for="split-qty-1" class="form-label visually-hidden">Email Address*</label>
+          <input type="text" class="form-control fw-bold text-end me-2" id="split-qty-1" placeholder="" value="60">
           <span class="col-6">of 150</span>
         </div>
       </div>
@@ -218,8 +219,8 @@
       <div class="col-12 col-lg-4">
         <h3 class="display-5 text-dark-gray fw-normal">Split Quantity</h3>
         <div class="col-8 d-flex align-items-center mt-3">
-          <label for="split-qty" class="form-label visually-hidden">Email Address*</label>
-          <input type="text" class="form-control fw-bold text-end me-2" id="split-qty" placeholder="" value="70">
+          <label for="split-qty-2" class="form-label visually-hidden">Email Address*</label>
+          <input type="text" class="form-control fw-bold text-end me-2" id="split-qty-2" placeholder="" value="70">
           <span class="col-6">of 150</span>
         </div>
       </div>
@@ -347,7 +348,7 @@
 
 <div class="offcanvas offcanvas-end" tabindex="-1" id="advancedShippingForm" aria-labelledby="advancedShippingFormLabel">
   <div class="offcanvas-header border-bottom p-4 d-flex justify-content-end position-relative">
-    <h5 class="offcanvas-title display-3 position-absolute top-50 start-50 w-100 text-center translate-middle" id="advancedShippingFormLabel">Advanced shipping</h5>
+    <h2 class="offcanvas-title display-3 position-absolute top-50 start-50 w-100 text-center translate-middle" id="advancedShippingFormLabel">Advanced shipping</h2>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body d-flex align-items-center justify-content-center">

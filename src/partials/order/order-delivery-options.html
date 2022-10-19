@@ -4,7 +4,8 @@
   </div>
 </div>
 <div class="row mt-4">
-  <div class="col">
+  <fieldset class="col">
+    <legend class="visually-hidden">Delivery Options</legend>
     <div class="form-group mt-3 d-flex flex-column gap-2">
       @@include('../checkout/shipping-option.html', {
         "name": "delivery-option",
@@ -30,5 +31,5 @@
         "price": "$40.00"
       })
     </div>
-  </div>
+  </fieldset>
 </div>

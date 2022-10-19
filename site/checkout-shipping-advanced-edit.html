@@ -56,35 +56,36 @@
       <div class="col-12 col-lg-7 p-lg-0">
         <form action="">
           <div class="row mt-3">
-            <div class="col">
-              <span>Need part of your order shipping to a different location?</span>
-              <div class="form-group input-group mt-3">
-                <span class="form-check">
-                  <input class="form-check-input" type="radio" name="different-address" id="different-address1" checked>
-                  <label class="form-check-label ms-2" for="different-address1">
-                    No
-                  </label>
-                </span>
-                <span class="form-check ms-4">
-                  <input class="form-check-input" type="radio" name="different-address" id="different-address2">
-                  <label class="form-check-label ms-2" for="different-address2">
-                    Yes
-                  </label>
-                </span>
-              </div>
-            </div>
-          </div>
+  <fieldset class="col">
+    <legend class="fs-6">Need part of your order shipping to a different location?</legend>
+    <div class="form-group input-group mt-3">
+      <span class="form-check">
+        <input class="form-check-input" type="radio" name="different-address" id="different-address1" checked>
+        <label class="form-check-label ms-2" for="different-address1">
+          No
+        </label>
+      </span>
+      <span class="form-check ms-4">
+        <input class="form-check-input" type="radio" name="different-address" id="different-address2">
+        <label class="form-check-label ms-2" for="different-address2">
+          Yes
+        </label>
+      </span>
+    </div>
+  </fieldset>
+</div>
           <div class="row mt-6">
   <div class="col">
     <h2 class="display-4 text-uppercase text-dark-blue">Choose a shipping address</h2>
   </div>
 </div>
 <div class="row">
-  <div class="col">
+  <fieldset class="col">
+    <legend class="visually-hidden">Choose a shipping address</legend>
     <div class="form-group input-group mt-3">
       <span class="form-check col-12 col-lg-6 mb-4">
-        <input class="form-check-input" type="radio" name="address" id="address1" checked>
-        <label class="form-check-label ms-3" for="address1">
+        <input class="form-check-input" type="radio" name="address" id="order-shipping-address1" checked>
+        <label class="form-check-label ms-3" for="order-shipping-address1">
           <div class="fw-bold">Jennifer Weston</div>
           <div>FIREBRAND, LLC</div>
           <div>1234 N Main Road</div>
@@ -93,8 +94,8 @@
         </label>
       </span>
       <span class="form-check col-12 col-lg-6 mb-4">
-        <input class="form-check-input" type="radio" name="address" id="address2">
-        <label class="form-check-label ms-3" for="address2">
+        <input class="form-check-input" type="radio" name="address" id="order-shipping-address2">
+        <label class="form-check-label ms-3" for="order-shipping-address2">
           <div class="fw-bold">Jennifer Weston</div>
           <div>56789 S Printing St</div>
           <div>Seattle, WA 98122</div>
@@ -102,7 +103,7 @@
         </label>
       </span>
     </div>
-  </div>
+  </fieldset>
 </div>
 <div class="row mt-4">
   <div class="col">
@@ -190,11 +191,12 @@
   </div>
 </div>
 <div class="row">
-  <div class="col">
+  <fieldset class="col">
+    <legend class="visually-hidden">Choose a shipping address</legend>
     <div class="form-group input-group mt-3">
       <span class="form-check col-12 col-lg-6 mb-4">
-        <input class="form-check-input" type="radio" name="address" id="address1" checked>
-        <label class="form-check-label ms-3" for="address1">
+        <input class="form-check-input" type="radio" name="address" id="@@inputLabel-address1" checked>
+        <label class="form-check-label ms-3" for="@@inputLabel-address1">
           <div class="fw-bold">Jennifer Weston</div>
           <div>FIREBRAND, LLC</div>
           <div>1234 N Main Road</div>
@@ -203,8 +205,8 @@
         </label>
       </span>
       <span class="form-check col-12 col-lg-6 mb-4">
-        <input class="form-check-input" type="radio" name="address" id="address2">
-        <label class="form-check-label ms-3" for="address2">
+        <input class="form-check-input" type="radio" name="address" id="@@inputLabel-address2">
+        <label class="form-check-label ms-3" for="@@inputLabel-address2">
           <div class="fw-bold">Jennifer Weston</div>
           <div>56789 S Printing St</div>
           <div>Seattle, WA 98122</div>
@@ -212,7 +214,7 @@
         </label>
       </span>
     </div>
-  </div>
+  </fieldset>
 </div>
 <div class="row mt-4">
   <div class="col">
@@ -225,7 +227,8 @@
   </div>
 </div>
 <div class="row mt-4">
-  <div class="col">
+  <fieldset class="col">
+    <legend class="visually-hidden">Delivery Options</legend>
     <div class="form-group mt-3 d-flex flex-column gap-2">
       <div class="form-check py-4 px-3 px-lg-6 d-flex flex-row bg-light-purple">
   <div class="col-1 d-flex align-items-center">
@@ -310,7 +313,7 @@
   </div>
 </div>
     </div>
-  </div>
+  </fieldset>
 </div>
             <div class="row mt-6 text-end">
               <div class="col">

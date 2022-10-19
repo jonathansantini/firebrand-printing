@@ -52,9 +52,9 @@
   </div>
 </div>
 <div class="row mt-5">
-  <div class="col-12 col-lg-8">
-    <div class="text-dark-gray">Colors</div>
-    <ul class="row list-unstyled mt-2 ms-0">
+  <fieldset class="col-12 col-lg-8">
+    <legend class="text-dark-gray fs-6">Colors</legend>
+    <ul class="row list-unstyled pt-1 ms-0">
       <li class="form-check col-6 d-flex align-items-center">
         <input class="form-check-input" type="checkbox" name="color" value="" id="black">
         <div class="color-swatch mx-2" style="width: 2rem; height: 2rem; border-radius: 1rem; background-color: #000;"></div>
@@ -96,17 +96,17 @@
         <label for="eco-green" class="form-label m-0">Eco Green</label>
       </li>
     </ul>
-  </div>
+  </fieldset>
 </div>
 <div class="row mt-5">
   <div class="col-8">
-    <div class="text-dark-gray">PMS Colors</div>
+    <div id="pms-color" class="text-dark-gray">PMS Colors</div>
     <ul class="list-unstyled mt-2">
       <li class="d-flex">
-        <input type="text" class="form-control w-50" id="pms-color" placeholder="Enter PMS color">
+        <input type="text" class="form-control w-50" id="pms-color-1" aria-labelledby="pms-color" placeholder="Enter PMS color">
       </li>
       <li class="d-flex mt-2 align-items-center">
-        <input type="text" class="form-control w-50" id="pms-color" placeholder="Enter PMS color">
+        <input type="text" class="form-control w-50" id="pms-color-2" aria-labelledby="pms-color" placeholder="Enter PMS color">
         <a class="link-underline ms-4" href="javascript:alert('Added PMS color');">+ Add more</a>
       </li>
     </ul>

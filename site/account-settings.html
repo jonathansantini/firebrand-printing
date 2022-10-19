@@ -19,7 +19,11 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
     <button class="navbar-toggler border-0" type="button">
-      <span class="navbar-toggler-icon"  data-bs-toggle="offcanvas" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></span>
+      <span class="navbar-toggler-icon"  data-bs-toggle="offcanvas" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="visually-hidden">
+          Mobile Toggle
+        </div>
+      </span>
     </button>
     <a class="navbar-brand m-0" href="./"><img src="./img/logo-firebrand.svg" alt="Firebrand"></a>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarSupportedContent" aria-labelledby="navbarSupportedContent">
@@ -46,7 +50,7 @@
           </li>
           <li class="nav-item mt-4 mt-lg-0 mx-lg-2 dropdown dropdown-account order-3 order-lg-4">
             <a class="nav-link link-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <img class="d-none d-lg-block" src="./icons/icon-account.svg" alt="Account">
+              <img class="d-none d-lg-block" src="./icons/icon-account.svg" alt="">
               <span class="d-inline-block d-lg-none">Account</span>
             </a>
             <div class="dropdown-menu dropdown-menu-lg-end border-base-gray mt-lg-2 p-lg-4" aria-labelledby="navbarDropdown">
@@ -58,12 +62,12 @@
               <ul class="dropdown-item list-unstyled p-0">
                 <li>
                   <a class="text-capitalize mt-1 mt-lg-3 d-block d-lg-flex align-items-lg-center" href="./">
-                    <img class="me-2 d-none d-lg-block" width="12" height="12" src="./icons/icon-paper.svg" alt="Order History"> View Order History
+                    <img class="me-2 d-none d-lg-block" width="12" height="12" src="./icons/icon-paper.svg" alt=""> View Order History
                   </a>
                 </li>
                 <li>
                   <a class="text-capitalize mt-2 d-block d-lg-flex align-items-lg-center" href="./">
-                    <img  class="me-2 d-none d-lg-block" width="12" height="12" src="./icons/icon-account.svg" alt="Account"> Account
+                    <img  class="me-2 d-none d-lg-block" width="12" height="12" src="./icons/icon-account.svg" alt=""> Account
                   </a>
                 </li>
               </ul>
@@ -123,7 +127,7 @@
           </li>
         </ul>
         <div class="tab-content mt-3 mt-lg-5 pt-lg-5" id="productInfoContent">
-          <div class="tab-pane fade show active" id="order-tab-pane" role="tabpanel" aria-labelledby="detail-tab" tabindex="0">
+          <div class="tab-pane fade show active" id="order-tab-pane" role="tabpanel" aria-labelledby="order-tab" tabindex="0">
             <div class="row">
               <div class="col-12 col-lg-6 position-relative">
                 <label for="search" class="form-label visually-hidden">Search by part number or PO</label>
@@ -413,37 +417,37 @@
 
 <div class="offcanvas offcanvas-end" tabindex="-1" id="accountDetails" aria-labelledby="accountDetailsLabel">
   <div class="offcanvas-header border-bottom p-4 d-flex justify-content-end position-relative">
-    <h5 class="offcanvas-title display-3 position-absolute top-50 start-50 w-100 text-center translate-middle" id="accountDetailsLabel">Edit Account Details</h5>
+    <h2 class="offcanvas-title display-3 position-absolute top-50 start-50 w-100 text-center translate-middle" id="accountDetailsLabel">Edit Account Details</h2>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
     <form action="" class="my-3">
       <div class="row">
         <div class="col-12 col-lg-6">
-          <label for="first-name" class="form-label">First Name*</label>
-          <input type="text" class="form-control" id="first-name" value="Jennifer" placeholder="Enter your first name">
+          <label for="account-first-name" class="form-label">First Name*</label>
+          <input type="text" class="form-control" id="account-first-name" value="Jennifer" placeholder="Enter your first name">
         </div>
         <div class="col-12 col-lg-6 mt-3 mt-lg-0">
-          <label for="last-name" class="form-label">Last Name*</label>
-          <input type="text" class="form-control" id="last-name" value="Weston" placeholder="Enter your last name">
+          <label for="account-last-name" class="form-label">Last Name*</label>
+          <input type="text" class="form-control" id="account-last-name" value="Weston" placeholder="Enter your last name">
         </div>
       </div>
       <div class="row mt-3">
         <div class="col">
-          <label for="company" class="form-label">Company</label>
-          <input type="text" class="form-control" id="company" value="FIREBRAND, LLC" placeholder="Enter your company's name">
+          <label for="account-company" class="form-label">Company</label>
+          <input type="text" class="form-control" id="account-company" value="FIREBRAND, LLC" placeholder="Enter your company's name">
         </div>
       </div>
       <div class="row mt-3">
         <div class="col">
-          <label for="email" class="form-label">Email Address*</label>
-          <input type="email" class="form-control" id="email" value="jenwestone@gmail.com" placeholder="Enter your email address">
+          <label for="account-email" class="form-label">Email Address*</label>
+          <input type="email" class="form-control" id="account-email" value="jenwestone@gmail.com" placeholder="Enter your email address">
         </div>
       </div>
       <div class="row mt-3">
         <div class="col">
-          <label for="phone" class="form-label">Phone Number*</label>
-          <input type="tel" class="form-control" id="phone" value="(123) 456-7891" placeholder="Enter your phone number">
+          <label for="account-phone" class="form-label">Phone Number*</label>
+          <input type="tel" class="form-control" id="account-phone" value="(123) 456-7891" placeholder="Enter your phone number">
         </div>
       </div>
     </form>
@@ -462,7 +466,7 @@
 
 <div class="offcanvas offcanvas-end" tabindex="-1" id="addressForm" aria-labelledby="addressFormLabel">
   <div class="offcanvas-header border-bottom p-4 d-flex justify-content-end position-relative">
-    <h5 class="offcanvas-title display-3 position-absolute top-50 start-50 w-100 text-center translate-middle" id="addressFormLabel">Enter a new address</h5>
+    <h2 class="offcanvas-title display-3 position-absolute top-50 start-50 w-100 text-center translate-middle" id="addressFormLabel">Enter a new address</h2>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
@@ -902,7 +906,7 @@
             </div>
 
             <div class="col-12 col-lg-2 mb-6 mb-lg-3">
-                <h5 class="text-light display-5 fw-normal">Company</h5>
+                <h2 class="text-light display-5 fw-normal">Company</h2>
                 <ul class="nav flex-column mt-4">
                     <li class="nav-item mb-2"><a href="./" class="nav-link p-0 text-light">About</a></li>
                     <li class="nav-item mb-2"><a href="./" class="nav-link p-0 text-light">Contact</a></li>
@@ -910,7 +914,7 @@
             </div>
 
             <div class="col-12 col-lg-2 mb-6 mb-lg-3">
-                <h5 class="text-light display-5 fw-normal">Products</h5>
+                <h2 class="text-light display-5 fw-normal">Products</h2>
                 <ul class="nav flex-column mt-4">
                     <li class="nav-item mb-2"><a href="./" class="nav-link p-0 text-light">UL Labels</a></li>
                     <li class="nav-item mb-2"><a href="./" class="nav-link p-0 text-light">QL Labels</a></li>
@@ -919,7 +923,7 @@
             </div>
 
             <div class="col-12 col-lg-2 mb-3">
-                <h5 class="text-light display-5 fw-normal">Quicklinks</h5>
+                <h2 class="text-light display-5 fw-normal">Quicklinks</h2>
                 <ul class="nav flex-column mt-4">
                     <li class="nav-item mb-2"><a href="./" class="nav-link p-0 text-light">Get A Quote</a></li>
                     <li class="nav-item mb-2"><a href="./" class="nav-link p-0 text-light">My Account</a></li>
