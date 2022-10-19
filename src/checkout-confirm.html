@@ -127,11 +127,11 @@
         <h3 class="display-3 text-dark-gray">Order Summary</h3>
       </div>
     </div>
-    <div class="row flex-lg-nowrap justify-content-between mt-4 gx-lg-6">
-      <div class="col-12 col-lg-8 gx-6 gx-lg-0">
+    <div class="row flex-lg-nowrap justify-content-between mt-4">
+      <div class="col-12 col-lg-8 gx-6">
         <div class="row border rounded-2">
           <div class="col pt-5 px-4 px-lg-5">
-            @@include('./partials/order/order-summary-no-button.html', {
+            @@include('./partials/order/order-summary.html', {
               "title": "UL Labels",
               "accordion": "order1Accordion",
               "heading": "order1Heading",
@@ -142,7 +142,7 @@
               "accordionBodyTarget": "#order1",
               "classes": "pb-5 mb-5 border-bottom"
             })
-            @@include('./partials/order/order-summary-no-button.html', {
+            @@include('./partials/order/order-summary.html', {
               "title": "Parking Permits",
               "accordion": "order2Accordion",
               "heading": "order2Heading",
@@ -153,7 +153,7 @@
               "accordionBodyTarget": "#order2",
               "classes": "pb-5 mb-5 border-bottom"
             })
-            @@include('./partials/order/order-summary-split-no-button.html', {
+            @@include('./partials/order/order-summary-split.html', {
               "title": "Parking Permits",
               "accordion": "order3Accordion",
               "heading": "order3Heading",
@@ -167,7 +167,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-lg-4 gx-6 gx-lg-0 mt-5 mt-lg-0">
+      <div class="col-12 col-lg-4 mt-5 mt-lg-0 gx-6">
         @@include('./partials/checkout/subtotal-table.html')
       </div>
     </div>

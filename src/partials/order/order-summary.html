@@ -4,29 +4,32 @@
       <div class="col-4 col-lg-2 ps-0">
         <img class="w-100" width="126" height="88" src="./img/placeholder-small.png" alt="">
       </div>
-      <div class="col-8 col-lg-7">
-        <h3 class="display-4">@@title</h3>
-        <div class="mt-2">
-          <div class="fw-bold text-purple">$145.00</div>
+      <div class="col-8 col-lg-10">
+        <div class="row">
+          <div class="col-12 col-lg-8">
+            <h3 class="display-4">@@title</h3>
+          </div>
+          <div class="col-12 col-lg-4 text-lg-end d-flex flex-column justify-content-between">
+            <div class="fs-5 fw-bold text-purple">$145.00</div>
+          </div>
         </div>
-        <div class="mt-3">
-          <span class="fw-bolder">Quantity:</span> 150
+        <div class="row">
+          <div class="col">
+            <div class="mt-3 mt-lg-0">
+              <span class="fw-bolder">Quantity:</span> 150
+            </div>
+            <div class="mt-1">
+              <span class="fw-bolder">Size:</span> 4" x 4"
+            </div>
+            <div class="mt-1">
+              <span class="fw-bolder">Material:</span> White Polyester, 2 mil
+            </div>
+          </div>
         </div>
-        <div class="mt-2">
-          <span class="fw-bolder">Size:</span> 4" x 4"
-        </div>
-        <div class="mt-2">
-          <span class="fw-bolder">Material:</span> White Polyester, 2 mil
-        </div>
-      </div>
-      <div class="col-12 col-lg-3 text-end flex-column justify-content-between d-none d-lg-flex">
-        <div class="fs-5 fw-bold text-purple">$145.00</div>
-        <button type="button" class="btn btn-sm btn-dark-blue w-100 mt-3">Reorder</button>
       </div>
     </div>
-
-    <div class="row justify-content-end">
-      <div class="col-8 col-lg-10">
+    <div class="row p-0 justify-content-end">
+      <div class="col-8 col-lg-7">
         <div class="accordion accordion-small mt-3" id="@@accordion">
           <div class="accordion-item">
             <h2 class="accordion-header" id="@@heading">
@@ -39,16 +42,16 @@
                 <div>
                   <span class="fw-bolder">Part Number:</span> 123
                 </div>
-                <div class="mt-2">
+                <div class="mt-1">
                   <span class="fw-bolder">Overlaminate:</span> Gloss Polyester, 1 mil
                 </div>
-                <div class="mt-2">
+                <div class="mt-1">
                   <span class="fw-bolder">Color(s):</span> Blue
                 </div>
-                <div class="mt-2">
+                <div class="mt-1">
                   <span class="fw-bolder">Form Factor:</span> Rolls
                 </div>
-                <div class="mt-2">
+                <div class="mt-1">
                   <span class="fw-bolder">Production Time:</span> Standard
                 </div>
               </div>
@@ -56,11 +59,10 @@
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="row d-lg-none">
-      <div class="col d-grid">
-        <button type="button" class="btn btn-sm btn-dark-blue w-100 mt-3">Reorder</button>
+      <div class="col-12 col-lg-3 mt-4 d-grid d-lg-block text-lg-end">
+        @@if (context.button) {
+        <button type="button" class="btn btn-sm btn-dark-blue">@@button</button>
+        }
       </div>
     </div>
   </div>
