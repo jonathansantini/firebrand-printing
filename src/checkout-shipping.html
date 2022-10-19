@@ -23,7 +23,7 @@
     <div class="row flex-lg-nowrap mt-4 gap-4 justify-content-around">
       <div class="col-12 col-lg-7 p-lg-0">
         <span>Want a faster checkout and advanced shipping options? <a class="link-underline fs-6 fw-bold" href="account-login.html">Sign in</a> to your account.</span>
-        <form class="mt-6" action="">
+        <form class="mt-6 needs-validation" action="" novalidate>
           @@include('./partials/checkout/address-form.html', {
             "title": "Enter a shipping address",
             "classes": "mt-3"
@@ -34,7 +34,7 @@
           })
           <div class="row mt-6">
             <div class="col d-grid d-lg-block">
-              <button type="button" class="btn btn-dark-blue">Continue</button>
+              <input type="submit" class="btn btn-dark-blue" value="Continue">
             </div>
           </div>
         </form>

@@ -101,15 +101,21 @@
           <h1 class="display-2 text-purple">Create an account</h1>
           <div>Save designs, track your orders, and check out faster.</div>
         </div>
-        <form action="" class="my-6">
+        <form action="" class="my-6 needs-validation" novalidate>
           <div class="row">
             <div class="col-12 col-lg-6">
               <label for="first-name" class="form-label">First Name*</label>
-              <input type="text" class="form-control" id="first-name" placeholder="Enter your first name">
+              <input type="text" class="form-control" id="first-name" placeholder="Enter your first name" required>
+              <div class="invalid-feedback">
+                Please enter a valid first name.
+              </div>
             </div>
             <div class="col-12 col-lg-6 mt-3 mt-lg-0">
               <label for="last-name" class="form-label">Last Name*</label>
-              <input type="text" class="form-control" id="last-name" placeholder="Enter your last name">
+              <input type="text" class="form-control" id="last-name" placeholder="Enter your last name" required>
+              <div class="invalid-feedback">
+                Please enter a valid last name.
+              </div>
             </div>
           </div>
           <div class="row mt-3">
@@ -121,13 +127,19 @@
           <div class="row mt-3">
             <div class="col">
               <label for="email" class="form-label">Email Address*</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter your email address">
+              <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
+              <div class="invalid-feedback">
+                Please enter a valid email.
+              </div>
             </div>
           </div>
           <div class="row mt-3">
             <div class="col">
               <label for="password" class="form-label">Password*</label>
-              <input type="password" class="form-control" id="password" placeholder="Enter your password">
+              <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+              <div class="invalid-feedback">
+                Please enter a valid password.
+              </div>
               <div class="mt-1 small text-dark-gray line-height-3">
                 <div>Please make sure your password meets the following requirements:</div>
                 <ul class="list-unstyled">
@@ -139,12 +151,15 @@
           <div class="row">
             <div class="col">
               <label for="confirm-password" class="form-label">Confirm Password*</label>
-              <input type="password" class="form-control" id="confirm-password" placeholder="Re-type your password">
+              <input type="password" class="form-control" id="confirm-password" placeholder="Re-type your password" required>
+              <div class="invalid-feedback">
+                Please enter a valid password.
+              </div>
             </div>
           </div>
           <div class="row mt-6">
             <div class="col text-center d-grid d-lg-block">
-              <input class="btn btn-disabled" type="submit" value="Create Account" disabled>
+              <input class="btn btn-dark-blue" type="submit" value="Create Account">
             </div>
           </div>
           <div class="row mt-4">

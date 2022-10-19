@@ -101,22 +101,28 @@
           <h1 class="display-2 text-purple">Log in</h1>
           <div>Save designs, track your orders, and check out faster.</div>
         </div>
-        <form action="" class="my-6">
+        <form action="" class="my-6 needs-validation" novalidate>
           <div class="row mt-3">
             <div class="col">
               <label for="email" class="form-label">Email Address*</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter your email address">
+              <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
+              <div class="invalid-feedback">
+                Please enter a valid email.
+              </div>
             </div>
           </div>
           <div class="row mt-3">
             <div class="col">
               <label for="password" class="form-label">Password*</label>
-              <input type="password" class="form-control" id="password" placeholder="Enter your password">
+              <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+              <div class="invalid-feedback">
+                Please enter a password.
+              </div>
             </div>
           </div>
           <div class="row mt-6">
             <div class="col text-center d-grid d-lg-block">
-              <input class="btn btn-disabled" type="submit" value="Log In" disabled>
+              <input class="btn btn-dark-blue" type="submit" value="Log In">
             </div>
           </div>
           <div class="row mt-4">
