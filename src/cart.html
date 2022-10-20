@@ -57,35 +57,10 @@
         </div>
       </div>
       <div class="col-12 col-lg-4 gx-6 mt-5 mt-lg-0">
-        <div class="row border rounded-2">
-          <div class="col p-4">
-            <table class="table table-borderless m-0">
-              <tbody>
-              <tr>
-                <td class="fw-bold">Subtotal</td>
-                <td class="text-end">$490.00</td>
-              </tr>
-              <tr>
-                <td class="fw-bold">Discounts</td>
-                <td class="text-end">-$10.00</td>
-              </tr>
-              <tr>
-                <td class="fw-bold pb-4">Taxes</td>
-                <td class="text-end pb-4">Calculated in checkout</td>
-              </tr>
-              <tr class="table-group-divider border-base-gray">
-                <td class="fw-bold pt-4">Estimated Total</td>
-                <td class="text-end pt-4">$534.00</td>
-              </tr>
-              <tr>
-                <td class="fw-bold pt-3" colspan="2">
-                  <button type="button" class="btn btn-dark-blue w-100">Continue to Checkout</button>
-                </td>
-              </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
+        @@include('./partials/checkout/subtotal-table.html', {
+          "button": "Continue to Checkout",
+          "btnClass": "mt-3 d-none d-lg-block"
+        })
         <div class="row mt-4 border rounded-2">
           <div class="col p-4">
             <label for="promo-code" class="form-label">Have a promo code?</label>

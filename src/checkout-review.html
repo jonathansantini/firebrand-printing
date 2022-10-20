@@ -123,7 +123,17 @@
         </div>
       </div>
       <div class="col-12 col-lg-4 mt-4 mt-lg-0 gx-6 gx-lg-0">
-        @@include('./partials/checkout/subtotal-table.html')
+        @@include('./partials/checkout/subtotal-table.html', {
+          "button": "Confirm and Place Order",
+          "btnClass": "mt-3 d-none d-lg-block"
+        })
+      </div>
+    </div>
+  </section>
+  <section class="sticky-bottom p-3 mt-4 border-top bg-light d-lg-none">
+    <div class="row">
+      <div class="col">
+        <button type="button" class="btn btn-dark-blue w-100">Confirm and Place Order</button>
       </div>
     </div>
   </section>
