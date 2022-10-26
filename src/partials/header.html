@@ -1,4 +1,6 @@
 <header class="site-header border-bottom border-purple">
   @@include_once('./promo-banner.html')
-  @@include_once('./navbar.html')
+  @@include_once('./navbar.html', {
+    isLoggedIn: '@@isLoggedIn'
+  })
 </header>
